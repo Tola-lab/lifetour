@@ -1,0 +1,19 @@
+.training {
+  position: relative;
+}
+
+.training__wrapper {
+  padding: 20px 15px;
+}
+
+.training__wrapper > p {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+.training__duplicate {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+}

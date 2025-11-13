@@ -1,0 +1,25 @@
+.tours {
+  position: relative;
+}
+
+.tours__wrapper {
+  padding: 20px 15px;
+}
+
+.tours__duplicate {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+}
+
+.tours__button {
+  display: block;
+  margin: auto;
+  padding: 10px 28px 10px 10px;
+  width: 212px;
+  font-weight: 700;
+  line-height: 14px;
+  color: $base-black-color;
+  text-decoration: none;
+  text-transform: uppercase;
+}

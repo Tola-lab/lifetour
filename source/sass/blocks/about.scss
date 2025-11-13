@@ -1,0 +1,47 @@
+.about__wrapper {
+  position: relative;
+  padding: 0 15px 20px;
+}
+
+.about__wrapper h2 {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 16px 0 17px;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.about__wrapper span {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 26px;
+  opacity: 3%;
+}
+
+.about__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about__item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.about__item dt {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.about__item dd {
+  margin: 0;
+  padding: 0;
+}
+

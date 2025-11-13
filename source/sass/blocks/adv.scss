@@ -1,0 +1,47 @@
+.adv__wrapper {
+  position: relative;
+  padding: 20px 15px;
+}
+
+.adv__title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.adv__duplicate {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.adv__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.adv__item {
+  padding: 20px 10px;
+  border: 1px solid rgb(2, 102, 193, 0.1);
+}
+
+.adv__item h3 {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  padding-top: 62px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.adv__item p {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 18px;
+}

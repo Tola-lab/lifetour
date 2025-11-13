@@ -1,0 +1,85 @@
+.swiper--hero,
+.swiper--tours {
+  color: $base-white-color;
+  background-color: rgba($base-background-color, 0.8);
+  text-align: center;
+}
+
+.swiper--hero h1 {
+  margin-bottom: 15px;
+}
+
+.swiper--hero p {
+  margin: 0;
+  margin-bottom: 60px;
+  padding: 0;
+  font-size: 15px;
+}
+
+.swiper--tours {
+  margin: auto;
+  min-height: 416px;
+}
+
+.swiper--tours h3 {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: left;
+}
+
+.swiper--tours .swiper-slide {
+  padding: 30px 20px;
+}
+
+.swiper--training h3 {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.swiper--training h4 {
+  margin: 0;
+  margin-bottom: 15px;
+  line-height: 16px;
+}
+
+.swiper--training p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.swiper--training .swiper-slide {
+  padding: 15px;
+  border: 1px solid rgb(2, 102, 193, 0.1);
+}
+
+.swiper--reviews .swiper-slide {
+  padding: 20px;
+  border: 1px solid $base-white-color;
+  box-shadow: 0 0 20px 0 rgb(28, 51, 116, 0.1);
+}
+
+.swiper--reviews p {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.swiper--adv {
+  display: none;
+}
+
+.swiper--gallery .swiper-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  width: 320px;
+}

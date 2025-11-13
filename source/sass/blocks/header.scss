@@ -1,0 +1,10 @@
+.header {
+  background-color: $base-background-color;
+}
+
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+  color: $base-white-color;
+}

@@ -1,0 +1,21 @@
+.process__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.process__list {
+  margin: 0;
+  padding: 0;
+  padding-left: 29px;
+  list-style: none;
+}
+
+.process__item {
+  padding-left: 34px;
+}
+
+.process__item:not(:last-child) {
+  margin-bottom: 25px;
+}

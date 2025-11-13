@@ -1,0 +1,50 @@
+.form {
+  padding: 174px 31px;
+  background-color: rgb(45, 56, 63, 0.5);
+  color: $base-white-color;
+  text-align: center;
+}
+
+.form h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.form p {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.form input {
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 17px 15px;
+  width: 258px;
+  font: inherit;
+  font-size: 16px;
+  line-height: 16px;
+  border: none;
+  border-radius: 2px;
+}
+
+.form input::-webkit-outer-spin-button,
+.form input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.form__button {
+  padding: 21px 19px;
+  width: 258px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  border: none;
+  cursor: pointer;
+}

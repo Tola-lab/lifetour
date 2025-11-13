@@ -1,0 +1,19 @@
+.gallery {
+  position: relative;
+}
+
+.gallery p {
+  margin: 0 15px 31px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.gallery__title {
+  margin: 20px 15px 10px;
+}
+
+.gallery__duplicate {
+  position: absolute;
+  top: 0;
+  left: 15px;
+}

@@ -1,0 +1,41 @@
+.contacts p {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.contacts__title {
+  margin-bottom: 12px;
+}
+
+.contacts__duplicate {
+  position: absolute;
+  top: 20px;
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts__item {
+  padding-left: 32px;
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.contacts__line-name {
+  margin: 0;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.contacts__link {
+  font-style: normal;
+  color: inherit;
+  text-decoration: none;
+}

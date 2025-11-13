@@ -1,0 +1,23 @@
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.info__stay {
+  display: flex;
+}
+
+.info__item {
+  margin: 0;
+  padding: 4px 0 4px 32px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.info__item--place {
+  padding: 8px 12px 8px 34px;
+  background-color: $base-background-color;
+}
