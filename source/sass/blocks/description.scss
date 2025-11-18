@@ -1,6 +1,9 @@
 .description {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-top: 15px;
 }
 
 .description__item {
@@ -8,6 +11,14 @@
   font-size: 12px;
   line-height: 12px;
   text-align: left;
+}
+
+.description__item dt {
+  margin-bottom: 7px;
+}
+
+.description__item:first-child dt {
+  width: 84px;
 }
 
 .description__item dd {

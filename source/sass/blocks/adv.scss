@@ -25,8 +25,44 @@
 }
 
 .adv__item {
+  position: relative;
   padding: 20px 10px;
   border: 1px solid rgb(2, 102, 193, 0.1);
+}
+
+.adv__item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 20px;
+  left: 50%;
+  width: 42px;
+  height: 42px;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateX(-50%);
+  border: 1px solid $base-background-color;
+}
+
+.adv__item--safe::before {
+  background-image: url("../../../__spritemap#sprite-level-1-icon-view");
+}
+
+.adv__item--expert::before {
+  background-image: url("../../../__spritemap#sprite-crown-icon-view");
+}
+
+.adv__item--boots::before {
+  background-image: url("../../../__spritemap#sprite-boots-blue-view");
+}
+
+.adv__item--path::before {
+  background-image: url("../../../__spritemap#sprite-path-icon-view");
+}
+
+.adv__item--nature::before {
+  background-image: url("../../../__spritemap#sprite-leaf-icon-view");
 }
 
 .adv__item h3 {

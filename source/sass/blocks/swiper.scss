@@ -5,8 +5,52 @@
   text-align: center;
 }
 
+.swiper--hero .swiper-slide--kavkaz {
+  background:
+    linear-gradient(112.1deg, rgb(15, 20, 41, 0.33) 17.23%, rgb(15, 20, 41, 0) 94.93%),
+    url("../../img/kavkaz-hero-bg@1x.png");
+
+  @media (resolution >= 2dppx) {
+    background:
+      linear-gradient(112.1deg, rgb(15, 20, 41, 0.33) 17.23%, rgb(15, 20, 41, 0) 94.93%),
+      url("../../img/kavkaz-hero-bg@2x.png");
+  }
+}
+
+.swiper--hero .swiper-slide--kamchatka {
+  background:
+    linear-gradient(112.1deg, rgb(15, 20, 41, 0.33) 17.23%, rgb(15, 20, 41, 0) 94.93%),
+    url("../../img/kamchatka-hero-bg@1x.jpg");
+
+  @media (resolution >= 2dppx) {
+    background:
+      linear-gradient(112.1deg, rgb(15, 20, 41, 0.33) 17.23%, rgb(15, 20, 41, 0) 94.93%),
+      url("../../img/kamchatka-hero-bg@2x.jpg");
+  }
+}
+
+.swiper--hero .swiper-slide--altai {
+  background:
+    linear-gradient(112.1deg, rgb(15, 20, 41, 0.33) 17.23%, rgb(15, 20, 41, 0) 94.93%),
+    url("../../img/altai-hero-bg@1x.png");
+
+  @media (resolution >= 2dppx) {
+    background:
+      linear-gradient(112.1deg, rgb(15, 20, 41, 0.33) 17.23%, rgb(15, 20, 41, 0) 94.93%),
+      url("../../img/altai-hero-bg@2x.png");
+  }
+}
+
+.swiper--hero .swiper-slide {
+  padding: 40px 15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .swiper--hero h1 {
   margin-bottom: 15px;
+  padding-top: 104.5px;
 }
 
 .swiper--hero p {
@@ -18,7 +62,63 @@
 
 .swiper--tours {
   margin: auto;
+  margin-bottom: 25px;
   min-height: 416px;
+}
+
+.swiper--tours .swiper-slide--elbrus {
+  background:
+    linear-gradient(0deg, rgb(0, 0, 0, 0.6) 22.3%, rgb(0, 0, 0, 0) 60.32%),
+    url("../../img/elbrus-tour@1x.png");
+
+  @media (resolution >= 2dppx) {
+    background:
+      linear-gradient(0deg, rgb(0, 0, 0, 0.6) 22.3%, rgb(0, 0, 0, 0) 60.32%),
+      url("../../img/elbrus-tour@2x.png");
+  }
+}
+
+.swiper--tours .swiper-slide--beluha {
+  background:
+    linear-gradient(0deg, rgb(0, 0, 0, 0.6) 22.3%, rgb(0, 0, 0, 0) 60.32%),
+    url("../../img/beluha-tour@1x.png");
+
+  @media (resolution >= 2dppx) {
+    background:
+      linear-gradient(0deg, rgb(0, 0, 0, 0.6) 22.3%, rgb(0, 0, 0, 0) 60.32%),
+      url("../../img/beluha-tour@2x.png");
+  }
+}
+
+.swiper--tours .swiper-slide--fisht {
+  background:
+    linear-gradient(0deg, rgb(0, 0, 0, 0.6) 22.3%, rgb(0, 0, 0, 0) 60.32%),
+    url("../../img/fisht-tour@1x.png");
+
+  @media (resolution >= 2dppx) {
+    background:
+      linear-gradient(0deg, rgb(0, 0, 0, 0.6) 22.3%, rgb(0, 0, 0, 0) 60.32%),
+      url("../../img/fisht-tour@2x.png");
+  }
+}
+
+.swiper--tours .swiper-slide--manaraga {
+  background:
+    linear-gradient(0deg, rgb(0, 0, 0, 0.6) 22.3%, rgb(0, 0, 0, 0) 60.32%),
+    url("../../img/manaraga-tour@1x.jpg");
+
+  @media (resolution >= 2dppx) {
+    background:
+      linear-gradient(0deg, rgb(0, 0, 0, 0.6) 22.3%, rgb(0, 0, 0, 0) 60.32%),
+      url("../../img/manaraga-tour@2x.jpg");
+  }
+}
+
+.swiper--tours .swiper-slide {
+  padding: 224px 20px 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .swiper--tours h3 {
@@ -30,8 +130,13 @@
   text-align: left;
 }
 
-.swiper--tours .swiper-slide {
-  padding: 30px 20px;
+.swiper--training {
+  margin-bottom: 25px;
+}
+
+.swiper--training img {
+  margin-bottom: 15px;
+  object-fit: cover;
 }
 
 .swiper--training h3 {
@@ -77,9 +182,19 @@
   display: none;
 }
 
+.swiper--gallery .swiper-button-prev,
+.swiper--gallery .swiper-button-next {
+  display: none;
+}
+
 .swiper--gallery .swiper-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 5px;
-  width: 320px;
+}
+
+.swiper--gallery .swiper-slide:nth-child(2n) {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
 }

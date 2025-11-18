@@ -1,0 +1,42 @@
+.stars {
+  position: relative;
+}
+
+.stars::before,
+.stars--three::before,
+.stars--four::before {
+  content: "";
+  position: absolute;
+  display: block;
+  margin-top: -3px;
+  width: 84px;
+  height: 16px;
+  background-image: url("../../../__spritemap#sprite-star-view");
+  background-repeat: space no-repeat;
+  background-size: 16px 16px;
+}
+
+.stars--three::before {
+  width: 50px;
+}
+
+.stars--four::before {
+  width: 64px;
+}
+
+.stars--three::after,
+.stars--four::after {
+  content: "";
+  position: absolute;
+  display: block;
+  margin-top: -3px;
+  right: 0;
+  height: 16px;
+  width: 33px;
+  background-image: url("../../../__spritemap#sprite-empty-star-view");
+  background-repeat: space no-repeat;
+}
+
+.stars--four::after {
+  width: 20px;
+}

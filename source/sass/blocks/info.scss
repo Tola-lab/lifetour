@@ -1,20 +1,57 @@
 .info {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 5px;
   margin-bottom: 15px;
 }
 
 .info__stay {
   display: flex;
+  gap: 14px;
 }
 
 .info__item {
+  position: relative;
   margin: 0;
   padding: 4px 0 4px 32px;
   font-weight: 500;
   font-size: 12px;
   line-height: 12px;
+}
+
+.info__item--place::before,
+.info__item--days::before,
+.info__item--nights::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  mask-repeat: no-repeat;
+  mask-size: 20px 20px;
+  mask-position: center;
+  background-color: $base-white-color;
+}
+
+.info__item--place::before {
+  top: 6px;
+  left: 12px;
+  width: 16px;
+  height: 16px;
+  mask-image: url("../../../__spritemap#sprite-pin-stroke-icon-view");
+  mask-size: 16px 16px;
+}
+
+.info__item--days::before {
+  mask-image: url("../../../__spritemap#sprite-sun-icon-view");
+}
+
+.info__item--nights::before {
+  mask-image: url("../../../__spritemap#sprite-moon-icon-view");
 }
 
 .info__item--place {

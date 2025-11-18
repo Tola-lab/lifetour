@@ -6,16 +6,70 @@
 }
 
 .process__list {
+  position: relative;
   margin: 0;
   padding: 0;
   padding-left: 29px;
   list-style: none;
 }
 
+.process__list::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 20px;
+  bottom: 20px;
+  left: 0;
+  width: 2px;
+  background-color: $base-background-color;
+}
+
 .process__item {
+  position: relative;
   padding-left: 34px;
+}
+
+.process__item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+}
+
+.process__item--map::before {
+  background-image: url("../../../__spritemap#sprite-map-icon-view");
+}
+
+.process__item--boots::before {
+  background-image: url("../../../__spritemap#sprite-boots-icon-view");
+}
+
+.process__item--tree::before {
+  background-image: url("../../../__spritemap#sprite-tree-icon-view");
+}
+
+.process__item--mountain::before {
+  background-image: url("../../../__spritemap#sprite-mountain-icon-view");
 }
 
 .process__item:not(:last-child) {
   margin-bottom: 25px;
+}
+
+.process__item::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 50%;
+  left: -35px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  transform: translateY(50%);
+  background-color: $base-background-color;
 }

@@ -19,7 +19,32 @@
 }
 
 .contacts__item {
+  position: relative;
   padding-left: 32px;
+}
+
+.contacts__item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contacts__item--phone::before {
+  background-image: url("../../../__spritemap#sprite-phone-icon-view");
+}
+
+.contacts__item--email::before {
+  background-image: url("../../../__spritemap#sprite-mail-icon-view");
+}
+
+.contacts__item--address::before {
+  background-image: url("../../../__spritemap#sprite-pin-stroke-icon-view");
 }
 
 .contacts__item:not(:last-child) {

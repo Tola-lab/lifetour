@@ -18,9 +18,7 @@
       </button>
       <div class="navigation__wrapper">
         <a class="navigation__logo" href="#">
-          <picture>
-            <img src="#" width="142" height="42" alt="LIFETOUR">
-          </picture>
+          <img src="img/logo-white.svg" width="142" height="42" alt="LIFETOUR">
         </a>
         <ul class="navigation__list">
           <li class="navigation__item">
@@ -51,7 +49,7 @@
     <section class="hero" data-test="hero">
       <div class="swiper swiper--hero">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <div class="swiper-slide swiper-slide--kavkaz">
             <h1>Захватывающие вершины Кавказа</h1>
             <p>В сопровождении опытных гидов вы пройдёте через потрясающие
               ландшафты и совершите восход  на вершину горы Чегет.</p>
@@ -61,7 +59,7 @@
               <p class="details__info details__info--level">Высокая сложность</p>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide swiper-slide--kamchatka">
             <h1>Невероятная природа Камчатки</h1>
             <p>Незабываемое приключение,  во время которого вы отправитесь  в путешествие по одному из самых нетронутых уголков дикой  природы в мире.</p>
             <a class="hero__button button" href="#">Смотреть тур</a>
@@ -70,7 +68,7 @@
               <p class="details__info details__info--level">Средняя сложность</p>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide swiper-slide--altai">
             <h1>Магические пейзажи Алтайского Края</h1>
             <p>Алтайский трекинг-тур –  это захватывающее приключение  с посещением магических  и захватывающих дух ландшафтов Алтайских гор.</p>
             <a class="hero__button button" href="#">Смотреть тур</a>
@@ -93,7 +91,7 @@
           <div class="swiper-wrapper">
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-            <div class="swiper-slide">
+            <div class="swiper-slide swiper-slide--elbrus">
               <div class="info">
                 <p class="info__item info__item--place">Кавказ</p>
                 <div class="info__stay">
@@ -106,7 +104,7 @@
                 <div class="description__item">
                   <dt>Сложность:</dt>
                   <dd>
-                    <div class="stars" role="img" aria-label="4 звезды из 5"></div>
+                    <div class="stars stars--four" role="img" aria-label="4 звезды из 5"></div>
                   </dd>
                 </div>
                 <div class="description__item">
@@ -119,7 +117,7 @@
                 </div>
               </dl>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide swiper-slide--beluha">
               <div class="info">
                 <p class="info__item info__item--place">Алтай</p>
                 <div class="info__stay">
@@ -132,7 +130,7 @@
                 <div class="description__item">
                   <dt>Сложность:</dt>
                   <dd>
-                    <div class="stars" role="img" aria-label="3 звезды из 5"></div>
+                    <div class="stars stars--three" role="img" aria-label="3 звезды из 5"></div>
                   </dd>
                 </div>
                 <div class="description__item">
@@ -145,7 +143,7 @@
                 </div>
               </dl>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide swiper-slide--fisht">
               <div class="info">
                 <p class="info__item info__item--place">Адыгея</p>
                 <div class="info__stay">
@@ -158,7 +156,7 @@
                 <div class="description__item">
                   <dt>Сложность:</dt>
                   <dd>
-                    <div class="stars" role="img" aria-label="4 звезды из 5"></div>
+                    <div class="stars stars--four" role="img" aria-label="4 звезды из 5"></div>
                   </dd>
                 </div>
                 <div class="description__item">
@@ -171,7 +169,7 @@
                 </div>
               </dl>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide swiper-slide--manaraga">
               <div class="info">
                 <p class="info__item info__item--place">Урал</p>
                 <div class="info__stay">
@@ -214,31 +212,76 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
             <div class="swiper-slide slide">
-              <img src="#" width="260" height="200" alt="Надежда Колесниченко">
+              <picture>
+                <source width="255" height="200" type="image/webp" media="(min-width: 1440px)" srcset="img/trainer-kolesnichenko@1x.webp 1x, img/trainer-kolesnichenko@2x.webp 2x">
+                <source width="182" height="200" type="image/webp" media="(min-width: 768px)" srcset="img/trainer-kolesnichenko@1x.webp 1x, img/trainer-kolesnichenko@2x.webp 2x">
+                <source width="260" height="200" type="image/webp" srcset="img/trainer-kolesnichenko@1x.webp 1x, img/trainer-kolesnichenko@2x.webp 2x">
+
+                <source width="255" height="200" type="image/png" media="(min-width: 1440px)" srcset="img/trainer-kolesnichenko@1x.png, img/trainer-kolesnichenko@2x.png 2x">
+                <source width="182" height="200" type="image/png" media="(min-width: 768px)" srcset="img/trainer-kolesnichenko@1x.png, img/trainer-kolesnichenko@2x.png 2x">
+
+                <img src="img/trainer-kolesnichenko@1x.png" srcset="img/trainer-kolesnichenko@2x.png 2x" width="260" height="200" alt="Надежда Колесниченко">
+              </picture>
               <h4>Надежда Колесниченко</h4>
               <a href="#"><span class="visually-hidden">ВК</span></a>
               <p>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.</p>
             </div>
             <div class="swiper-slide">
-              <img src="#" width="260" height="200" alt="Светлана Афиногенова">
+              <picture>
+                <source width="255" height="200" type="image/webp" media="(min-width: 1440px)" srcset="img/trainer-afinogenova@1x.webp 1x, img/trainer-afinogenova@2x.webp 2x">
+                <source width="182" height="200" type="image/webp" media="(min-width: 768px)" srcset="img/trainer-afinogenova@1x.webp 1x, img/trainer-afinogenova@2x.webp 2x">
+                <source width="260" height="200" type="image/webp" srcset="img/trainer-afinogenova@1x.webp 1x, img/trainer-afinogenova@2x.webp 2x">
+
+                <source width="255" height="200" type="image/png" media="(min-width: 1440px)" srcset="img/trainer-afinogenova@1x.png, img/trainer-afinogenova@2x.png 2x">
+                <source width="182" height="200" type="image/png" media="(min-width: 768px)" srcset="img/trainer-afinogenova@1x.png, img/trainer-afinogenova@2x.png 2x">
+
+                <img src="img/trainer-afinogenova@1x.png" srcset="img/trainer-afinogenova@2x.png 2x" width="260" height="200" alt="Светлана Афиногенова">
+              </picture>
               <h4>Светлана Афиногенова</h4>
               <a href="#"><span class="visually-hidden">ВК</span></a>
               <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом назначение жизни.</p>
             </div>
             <div class="swiper-slide">
-              <img src="#" width="260" height="200" alt="Александр Прокофьев">
-              <h4>Александр Прокофьев</h4>
+              <picture>
+                <source width="255" height="200" type="image/webp" media="(min-width: 1440px)" srcset="img/trainer-prokofev@1x.webp 1x, img/trainer-prokofev@2x.webp 2x">
+                <source width="182" height="200" type="image/webp" media="(min-width: 768px)" srcset="img/trainer-prokofev@1x.webp 1x, img/trainer-prokofev@2x.webp 2x">
+                <source width="260" height="200" type="image/webp" srcset="img/trainer-prokofev@1x.webp 1x, img/trainer-prokofev@2x.webp 2x">
+
+                <source width="255" height="200" type="image/png" media="(min-width: 1440px)" srcset="img/trainer-prokofev@1x.png, img/trainer-prokofev@2x.png 2x">
+                <source width="182" height="200" type="image/png" media="(min-width: 768px)" srcset="img/trainer-prokofev@1x.png, img/trainer-prokofev@2x.png 2x">
+
+                <img src="img/trainer-prokofev@1x.png" srcset="img/trainer-prokofev@2x.png 2x" width="260" height="200" alt="Александр Прокофьев">
+                <h4>Александр Прокофьев</h4>
+              </picture>
               <a href="#"><span class="visually-hidden">ВК</span></a>
               <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
             </div>
             <div class="swiper-slide">
-              <img src="#" width="260" height="200" alt="Федор Кайгородов">
-              <h4>Федор Кайгородов</h4>
+              <picture>
+                <source width="255" height="200" type="image/webp" media="(min-width: 1440px)" srcset="img/trainer-kaigorodov@1x.webp 1x, img/trainer-kaigorodov@2x.webp 2x">
+                <source width="182" height="200" type="image/webp" media="(min-width: 768px)" srcset="img/trainer-kaigorodov@1x.webp 1x, img/trainer-kaigorodov@2x.webp 2x">
+                <source width="260" height="200" type="image/webp" srcset="img/trainer-kaigorodov@1x.webp 1x, img/trainer-kaigorodov@2x.webp 2x">
+
+                <source width="255" height="200" type="image/png" media="(min-width: 1440px)" srcset="img/trainer-kaigorodov@1x.png, img/trainer-kaigorodov@2x.png 2x">
+                <source width="182" height="200" type="image/png" media="(min-width: 768px)" srcset="img/trainer-kaigorodov@1x.png, img/trainer-kaigorodov@2x.png 2x">
+
+                <img src="img/trainer-kaigorodov@1x.png" srcset="img/trainer-kaigorodov@2x.png 2x" width="260" height="200" alt="Федор Кайгородов">
+                <h4>Федор Кайгородов</h4>
+              </picture>
               <a href="#"><span class="visually-hidden">ВК</span></a>
               <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
             </div>
             <div class="swiper-slide">
-              <img src="#" width="260" height="200" alt="Даниэль Васнецов">
+              <picture>
+                <source width="255" height="200" type="image/webp" media="(min-width: 1440px)" srcset="img/trainer-vasnetcov@1x.webp 1x, img/trainer-vasnetcov@2x.webp 2x">
+                <source width="182" height="200" type="image/webp" media="(min-width: 768px)" srcset="img/trainer-vasnetcov@1x.webp 1x, img/trainer-vasnetcov@2x.webp 2x">
+                <source width="260" height="200" type="image/webp" srcset="img/trainer-vasnetcov@1x.webp 1x, img/trainer-vasnetcov@2x.webp 2x">
+
+                <source width="255" height="200" type="image/png" media="(min-width: 1440px)" srcset="img/trainer-vasnetcov@1x.png, img/trainer-vasnetcov@2x.png 2x">
+                <source width="182" height="200" type="image/png" media="(min-width: 768px)" srcset="img/trainer-vasnetcov@1x.png, img/trainer-vasnetcov@2x.png 2x">
+
+                <img src="img/trainer-vasnetcov@1x.jpg" srcset="img/trainer-vasnetcov@2x.jpg 2x" width="260" height="200" alt="Даниэль Васнецов">
+              </picture>
               <h4>Даниэль Васнецов</h4>
               <a href="#"><span class="visually-hidden">ВК</span></a>
               <p>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
@@ -283,14 +326,32 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
             <div class="swiper-slide slide">
-              <img class="slide__img" src="#" width="250" height="169" alt="Фролов Александр в горах">
+              <picture>
+                <source width="258" height="253" type="image/webp" media="(min-width: 1440px)" srcset="img/review-frolov@1x.webp 1x, img/review-frolov@2x.webp 2x">
+                <source width="186" height="237" type="image/webp" media="(min-width: 768px)" srcset="img/review-frolov@1x.webp 1x, img/review-frolov@2x.webp 2x">
+                <source width="250" height="169" type="image/webp" srcset="img/review-frolov@1x.webp 1x, img/review-frolov@2x.webp 2x">
+
+                <source width="258" height="253" type="image/png" media="(min-width: 1440px)" srcset="img/review-frolov@1x.png, img/review-frolov@2x.png 2x">
+                <source width="186" height="237" type="image/png" media="(min-width: 768px)" srcset="img/review-frolov@1x.png, img/review-frolov@2x.png 2x">
+
+                <img class="slide__img" src="img/review-frolov@1x.jpg" srcset="img/review-frolov@2x.jpg 2x" width="250" height="169" alt="Фролов Александр в горах">
+              </picture>
               <p>Осенью ходили в поход на Алтай с друзьями. Впечатления потрясающие! Инструкторы – настоящие эксперты – всему научили, все показали. Делились увлекательными историями о местах, людях, культуре места.</p>
               <p>С уверенностью могу сказать, что жизнь разделилась на до этого и после. Еще никогда не отдыхал так душой  и телом. Всем очень рекомендую!</p>
               <h3 class="slide__name">Фролов Александр</h3>
               <span class="slide__age">38 лет, Москва</span>
             </div>
             <div class="swiper-slide slide">
-              <img class="slide__img" src="#" width="250" height="169" alt="Иван Соловьёв в горах">
+              <picture>
+                <source width="258" height="253" type="image/webp" media="(min-width: 1440px)" srcset="img/review-solovev@1x.webp 1x, img/review-solovev@2x.webp 2x">
+                <source width="186" height="237" type="image/webp" media="(min-width: 768px)" srcset="img/review-solovev@1x.webp 1x, img/review-solovev@2x.webp 2x">
+                <source width="250" height="169" type="image/webp" srcset="img/review-solovev@1x.webp 1x, img/review-solovev@2x.webp 2x">
+
+                <source width="258" height="253" type="image/png" media="(min-width: 1440px)" srcset="img/review-solovev@1x.png, img/review-solovev@2x.png 2x">
+                <source width="186" height="237" type="image/png" media="(min-width: 768px)" srcset="img/review-solovev@1x.png, img/review-solovev@2x.png 2x">
+
+                <img class="slide__img" src="img/review-solovev@1x.png" srcset="img/review-solovev@2x.png 2x" width="250" height="169" alt="Иван Соловьёв в горах">
+              </picture>
               <p>Хороший полноценный поход с разнообразными локациями. В начале дорога идёт по лыжне, далее прошли мимо полигона, по болотам, у озёр и лесных ручьёв, остатков дач конца 19 века. Было очень интересно!</p>
               <p>Инструктор Федор дружелюбный, внимательный к технике безопасности и своим туристам.
                 Всем советую этот тур.</p>
@@ -298,14 +359,32 @@
               <span class="slide__age">25 лет, Владивосток</span>
             </div>
             <div class="swiper-slide slide">
-              <img class="slide__img" src="#" width="250" height="169" alt="Евгения Баженова в горах">
+              <picture>
+                <source width="258" height="253" type="image/webp" media="(min-width: 1440px)" srcset="img/review-bajenova@1x.webp 1x, img/review-bajenova@2x.webp 2x">
+                <source width="186" height="237" type="image/webp" media="(min-width: 768px)" srcset="img/review-bajenova@1x.webp 1x, img/review-bajenova@2x.webp 2x">
+                <source width="250" height="169" type="image/webp" srcset="img/review-bajenova@1x.webp 1x, img/review-bajenova@2x.webp 2x">
+
+                <source width="258" height="253" type="image/png" media="(min-width: 1440px)" srcset="img/review-bajenova@1x.png, img/review-bajenova@2x.png 2x">
+                <source width="186" height="237" type="image/png" media="(min-width: 768px)" srcset="img/review-bajenova@1x.png, img/review-bajenova@2x.png 2x">
+
+                <img class="slide__img" src="img/review-bajenova@1x.jpg" srcset="img/review-bajenova@2x.jpg 2x" width="250" height="169" alt="Евгения Баженова в горах">
+              </picture>
               <p>Ранее не ходила на такие длинные дистанции. В первый день прошли около 30 км, физически я устала на 18 км, поэтому не была уверена, пройду ли до конца. Но я справилась. Второй день прошёл легче, чем ожидала, видимо организм уже привык.</p>
               <p>Спасибо ребятам, инструкторам за помощь и поддержку! Я была рада быть в такой компании.</p>
               <h3 class="slide__name">Евгения Баженова</h3>
               <span class="slide__age">23 года, Кострома</span>
             </div>
             <div class="swiper-slide slide">
-              <img class="slide__img" src="#" width="250" height="169" alt="Елена Пирогова в горах">
+              <picture>
+                <source width="258" height="253" type="image/webp" media="(min-width: 1440px)" srcset="img/review-pirogova@1x.webp 1x, img/review-pirogova@2x.webp 2x">
+                <source width="186" height="237" type="image/webp" media="(min-width: 768px)" srcset="img/review-pirogova@1x.webp 1x, img/review-pirogova@2x.webp 2x">
+                <source width="250" height="169" type="image/webp" srcset="img/review-pirogova@1x.webp 1x, img/review-pirogova@2x.webp 2x">
+
+                <source width="258" height="253" type="image/png" media="(min-width: 1440px)" srcset="img/review-pirogova@1x.png, img/review-pirogova@2x.png 2x">
+                <source width="186" height="237" type="image/png" media="(min-width: 768px)" srcset="img/review-pirogova@1x.png, img/review-pirogova@2x.png 2x">
+
+                <img class="slide__img" src="img/review-pirogova@1x.png" srcset="img/review-pirogova@2x.png 2x" width="250" height="169" alt="Елена Пирогова в горах">
+              </picture>
               <p>Это был опыт, изменивший мою жизнь! Думала, не справлюсь, но все получилось! Дух захватывает, когда наконец‑то, преодолев все трудности и препятствия, взбираешься на вершину.</p>
               <p>У нас собралась потрясающая команда. Все друг друга поддерживали, по вечерам мы сидели вместе у костра и пели песни. Обязательно повторю такое приключение!</p>
               <h3 class="slide__name">Елена Пирогова</h3>
@@ -321,23 +400,23 @@
         <h2 class="adv__title title">Преимущества</h2>
         <span class="adv__duplicate duplicate" aria-hidden="true">Преимущества</span>
         <ul class="adv__list">
-          <li class="adv__item">
+          <li class="adv__item adv__item--safe">
             <h3>Безопасность</h3>
             <p>Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем планы действий на случай непредвиденных обстоятельств и даём гарантию полной безопасности во время всего тура.</p>
           </li>
-          <li class="adv__item">
+          <li class="adv__item adv__item--expert">
             <h3>Экспертиза и знания</h3>
             <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности. Это гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом без опасений.</p>
           </li>
-          <li class="adv__item">
+          <li class="adv__item adv__item--boots">
             <h3>Оборудование и снаряжение</h3>
             <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным и экономически выгодным.</p>
           </li>
-          <li class="adv__item">
+          <li class="adv__item adv__item--path">
             <h3>Индивидуальные маршруты</h3>
             <p>Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и интересам. Мы также можем адаптировать маршруты к вашим конкретным потребностям и предпочтениям, чтобы вы получили индивидуальный опыт.</p>
           </li>
-          <li class="adv__item">
+          <li class="adv__item adv__item--nature">
             <h3>Бережное отношение  к природе</h3>
             <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».</p>
           </li>
@@ -381,21 +460,75 @@
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
           <div class="swiper-slide">
-            <img src="#" width="158" height="266" alt="Парень на фоне гор">
+            <picture>
+              <source width="284" height="463" type="image/webp" media="(min-width: 1440px)" srcset="img/gallery-man@1x.webp 1x, img/gallery-man@2x.webp 2x">
+              <source width="253" height="418" type="image/webp" media="(min-width: 768px)" srcset="img/gallery-man@1x.webp 1x, img/gallery-man@2x.webp 2x">
+              <source width="158" height="266" type="image/webp" srcset="img/gallery-man@1x.webp 1x, img/gallery-man@2x.webp 2x">
+
+              <source width="284" height="463" type="image/png" media="(min-width: 1440px)" srcset="img/gallery-man@1x.png, img/gallery-man@2x.png 2x">
+              <source width="253" height="418" type="image/png" media="(min-width: 768px)" srcset="img/gallery-man@1x.png, img/gallery-man@2x.png 2x">
+
+              <img src="img/gallery-man@1x.png" srcset="img/gallery-man@2x.png 2x" width="158" height="266" alt="Парень на фоне гор">
+            </picture>
           </div>
           <div class="swiper-slide">
-            <img src="#" width="157" height="71" alt="Люди сидят у костра">
-            <img src="#" width="157" height="71" alt="Компас на фоне гор">
+            <picture>
+              <source width="284" height="223" type="image/webp" media="(min-width: 1440px)" srcset="img/gallery-bonfire@1x.webp 1x, img/gallery-bonfire@2x.webp 2x">
+              <source width="252" height="202" type="image/webp" media="(min-width: 768px)" srcset="img/gallery-bonfire@1x.webp 1x, img/gallery-bonfire@2x.webp 2x">
+              <source width="157" height="129" type="image/webp" srcset="img/gallery-bonfire@1x.webp 1x, img/gallery-bonfire@2x.webp 2x">
+
+              <source width="284" height="223" type="image/png" media="(min-width: 1440px)" srcset="img/gallery-bonfire@1x.png, img/gallery-bonfire@2x.png 2x">
+              <source width="252" height="202" type="image/png" media="(min-width: 768px)" srcset="img/gallery-bonfire@1x.png, img/gallery-bonfire@2x.png 2x">
+
+              <img src="img/gallery-bonfire@1x.png" srcset="img/gallery-bonfire@2x.png 2x" width="157" height="129" alt="Люди сидят у костра">
+            </picture>
+            <picture>
+              <source width="284" height="223" type="image/webp" media="(min-width: 1440px)" srcset="img/gallery-compass@1x.webp 1x, img/gallery-compass@2x.webp 2x">
+              <source width="252" height="202" type="image/webp" media="(min-width: 768px)" srcset="img/gallery-compass@1x.webp 1x, img/gallery-compass@2x.webp 2x">
+              <source width="157" height="130" type="image/webp" srcset="img/gallery-compass@1x.webp 1x, img/gallery-compass@2x.webp 2x">
+
+              <img src="img/gallery-compass@1x.png" srcset="img/gallery-compass@2x.png 2x" width="157" height="130" alt="Компас на фоне гор">
+            </picture>
           </div>
           <div class="swiper-slide">
-            <img src="#" width="158" height="266" alt="Группа в походе">
+            <picture>
+              <source width="284" height="463" type="image/webp" media="(min-width: 1440px)" srcset="img/gallery-path@1x.webp 1x, img/gallery-path@2x.webp 2x">
+              <source width="253" height="418" type="image/webp" media="(min-width: 768px)" srcset="img/gallery-path@1x.webp 1x, img/gallery-path@2x.webp 2x">
+              <source width="158" height="266" type="image/webp" srcset="img/gallery-path@1x.webp 1x, img/gallery-path@2x.webp 2x">
+
+              <source width="284" height="463" type="image/png" media="(min-width: 1440px)" srcset="img/gallery-path@1x.png, img/gallery-path@2x.png 2x">
+              <source width="253" height="418" type="image/png" media="(min-width: 768px)" srcset="img/gallery-path@1x.png, img/gallery-path@2x.png 2x">
+
+              <img src="img/gallery-path@1x.jpg" srcset="img/gallery-path@2x.jpg 2x" width="158" height="266" alt="Группа в походе">
+            </picture>
           </div>
           <div class="swiper-slide">
-            <img src="#" width="157" height="71" alt="Люди идут вдоль ледника">
-            <img src="#" width="157" height="71" alt="Палатка под звездным небом">
+            <picture>
+              <source width="284" height="223" type="image/webp" media="(min-width: 1440px)" srcset="img/gallery-ice@1x.webp 1x, img/gallery-ice@2x.webp 2x">
+              <source width="252" height="202" type="image/webp" media="(min-width: 768px)" srcset="img/gallery-ice@1x.webp 1x, img/gallery-ice@2x.webp 2x">
+              <source width="157" height="129" type="image/webp" srcset="img/gallery-ice@1x.webp 1x, img/gallery-ice@2x.webp 2x">
+
+              <img src="img/gallery-ice@1x.png" srcset="img/gallery-ice@2x.png 2x" width="157" height="129" alt="Люди идут вдоль ледника">
+            </picture>
+            <picture>
+              <source width="284" height="223" type="image/webp" media="(min-width: 1440px)" srcset="img/gallery-tent@1x.webp 1x, img/gallery-tent@2x.webp 2x">
+              <source width="252" height="202" type="image/webp" media="(min-width: 768px)" srcset="img/gallery-tent@1x.webp 1x, img/gallery-tent@2x.webp 2x">
+              <source width="157" height="130" type="image/webp" srcset="img/gallery-tent@1x.webp 1x, img/gallery-tent@2x.webp 2x">
+
+              <img src="img/gallery-tent@1x.png" srcset="img/gallery-tent@2x.png 2x" width="157" height="130" alt="Палатка под звездным небом">
+            </picture>
           </div>
           <div class="swiper-slide">
-            <img src="#" width="158" height="266" alt="Два парня разводят костёр у озера">
+            <picture>
+              <source width="284" height="463" type="image/webp" media="(min-width: 1440px)" srcset="img/gallery-lake@1x.webp 1x, img/gallery-lake@2x.webp 2x">
+              <source width="253" height="418" type="image/webp" media="(min-width: 768px)" srcset="img/gallery-lake@1x.webp 1x, img/gallery-path@2x.webp 2x">
+              <source width="158" height="266" type="image/webp" srcset="img/gallery-lake@1x.webp 1x, img/gallery-lake@2x.webp 2x">
+
+              <source width="284" height="463" type="image/png" media="(min-width: 1440px)" srcset="img/gallery-lake@1x.png, img/gallery-lake@2x.png 2x">
+              <source width="253" height="418" type="image/png" media="(min-width: 768px)" srcset="img/gallery-lake@1x.png, img/gallery-lake@2x.png 2x">
+
+              <img src="img/gallery-lake@1x.png" srcset="img/gallery-lake@2x.png 2x" width="158" height="266" alt="Два парня разводят костёр у озера">
+            </picture>
           </div>
           <div class="swiper-scrollbar"></div>
         </div>
@@ -422,15 +555,15 @@
       <p>Свяжитесь с нами любым удобным  для вас способом или приходите  к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
       <address>
         <ul class="contacts__list">
-          <li class="contacts__item">
+          <li class="contacts__item contacts__item--phone">
             <h3 class="contacts__line-name">Телефон</h3>
             <a class="contacts__link" href="tel:89837454545">+7 983 745-45-45</a>
           </li>
-          <li class="contacts__item">
+          <li class="contacts__item contacts__item--email">
             <h3 class="contacts__line-name">Email</h3>
             <a class="contacts__link" href="mailto:info@lifetour.com">info@lifetour.com</a>
           </li>
-          <li class="contacts__item">
+          <li class="contacts__item contacts__item--address">
             <h3 class="contacts__line-name">Адрес</h3>
             <p class="contacts__address">г. Москва, пр-т Мира, д. 14, офис 101</p>
           </li>
@@ -438,11 +571,20 @@
       </address>
     </div>
     <div class="footer__map map">
-      <img src="#" width="320" height="343" alt="г. Москва, пр-т Мира, д. 14, офис 101">
+      <picture>
+        <source width="600" height="324" type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+        <source width="768" height="340" type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+        <source width="320" height="343" type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+
+        <source width="600" height="324" type="image/png" media="(min-width: 1440px)" srcset="img/map-desktop@1x.png, img/map-desktop@2x.png 2x">
+        <source width="768" height="340" type="image/png" media="(min-width: 768px)" srcset="img/map-tablet@1x.png, img/map-tablet@2x.png 2x">
+
+        <img src="img/map-mobile@1x.png" srcset="img/map-mobile@2x.png 2x" width="320" height="343" alt="г. Москва, пр-т Мира, д. 14, офис 101">
+      </picture>
     </div>
     <div class="footer__lower lower">
       <a class="lower__logo" href="#">
-        <img src="#" width="142" height="42" alt="LIFETOUR">
+        <img src="img/logo.svg" width="142" height="42" alt="LIFETOUR">
       </a>
       <ul class="lower__list">
         <li class="lower__item">
@@ -465,18 +607,18 @@
         </li>
       </ul>
       <ul class="lower-social__list">
-        <li class="lower-social__item">
-          <a class="lower-social__link lower-social__link--vk" href="#">
+        <li class="lower-social__item lower-social__item--vk">
+          <a class="lower-social__link" href="#">
             <span class="visually-hidden">ВК</span>
           </a>
         </li>
-        <li class="lower-social__item">
-          <a class="lower-social__link lower-social__link--ok" href="#">
+        <li class="lower-social__item lower-social__item--ok">
+          <a class="lower-social__link" href="#">
             <span class="visually-hidden">Одноклассники</span>
           </a>
         </li>
-        <li class="lower-social__item">
-          <a class="lower-social__link lower-social__link--reddit" href="#">
+        <li class="lower-social__item lower-social__item--reddit">
+          <a class="lower-social__link" href="#">
             <span class="visually-hidden">Реддит</span>
           </a>
         </li>

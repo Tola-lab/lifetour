@@ -5,7 +5,7 @@ import VitePluginSvgSpritemap from '@spiriit/vite-plugin-svg-spritemap';
 /** @type {import('vite').UserConfig} */
 export default {
   plugins: [
-    VitePluginSvgSpritemap('source/img/sprite/*.svg', {
+    VitePluginSvgSpritemap('img/sprite/*.svg', {
       styles: false,
       injectSVGOnDev: true,
     }),

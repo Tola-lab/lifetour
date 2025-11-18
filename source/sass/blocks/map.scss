@@ -1,4 +1,17 @@
 .map {
+  position: relative;
   margin-bottom: 20px;
   border-bottom: 1px solid rgb(45, 56, 63, 0.2);
+}
+
+.map::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 28px;
+  height: 28px;
+  top: 171px;
+  left: 198px;
+  background-image: url("../../../__spritemap#sprite-pin-filled-icon-view");
+  background-repeat: no-repeat;
 }
