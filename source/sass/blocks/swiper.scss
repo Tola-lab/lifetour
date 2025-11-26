@@ -1,200 +1,31 @@
-.swiper--hero,
-.swiper--tours {
-  color: $base-white-color;
-  background-color: rgba($base-background-color, 0.8);
-  text-align: center;
+.swiper-wrapper {
+  position: relative;
 }
 
-.swiper--hero .swiper-slide--kavkaz {
-  background:
-    linear-gradient(112.1deg, rgb(15, 20, 41, 0.33) 17.23%, rgb(15, 20, 41, 0) 94.93%),
-    url("../../img/kavkaz-hero-bg@1x.png");
+@media (min-width: $tablet-width) {
+  .swiper-button {
+    position: absolute;
+    display: block;
+    top: -60px;
+    right: 41px;
+    width: 37px;
+    height: 35px;
+    background-color: $base-background-color;
+    background-image: url("../../../__spritemap#sprite-arrow-left-icon-view");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 13px 8px;
+    cursor: pointer;
+  }
 
-  @media (resolution >= 2dppx) {
-    background:
-      linear-gradient(112.1deg, rgb(15, 20, 41, 0.33) 17.23%, rgb(15, 20, 41, 0) 94.93%),
-      url("../../img/kavkaz-hero-bg@2x.png");
+  .swiper-button-next {
+    right: 0;
+    transform: rotate(180deg);
+  }
+
+  .swiper-button--deactivated {
+    background-color: #999999;
+    cursor: default;
   }
 }
 
-.swiper--hero .swiper-slide--kamchatka {
-  background:
-    linear-gradient(112.1deg, rgb(15, 20, 41, 0.33) 17.23%, rgb(15, 20, 41, 0) 94.93%),
-    url("../../img/kamchatka-hero-bg@1x.jpg");
-
-  @media (resolution >= 2dppx) {
-    background:
-      linear-gradient(112.1deg, rgb(15, 20, 41, 0.33) 17.23%, rgb(15, 20, 41, 0) 94.93%),
-      url("../../img/kamchatka-hero-bg@2x.jpg");
-  }
-}
-
-.swiper--hero .swiper-slide--altai {
-  background:
-    linear-gradient(112.1deg, rgb(15, 20, 41, 0.33) 17.23%, rgb(15, 20, 41, 0) 94.93%),
-    url("../../img/altai-hero-bg@1x.png");
-
-  @media (resolution >= 2dppx) {
-    background:
-      linear-gradient(112.1deg, rgb(15, 20, 41, 0.33) 17.23%, rgb(15, 20, 41, 0) 94.93%),
-      url("../../img/altai-hero-bg@2x.png");
-  }
-}
-
-.swiper--hero .swiper-slide {
-  padding: 40px 15px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.swiper--hero h1 {
-  margin-bottom: 15px;
-  padding-top: 104.5px;
-}
-
-.swiper--hero p {
-  margin: 0;
-  margin-bottom: 60px;
-  padding: 0;
-  font-size: 15px;
-}
-
-.swiper--tours {
-  margin: auto;
-  margin-bottom: 25px;
-  min-height: 416px;
-}
-
-.swiper--tours .swiper-slide--elbrus {
-  background:
-    linear-gradient(0deg, rgb(0, 0, 0, 0.6) 22.3%, rgb(0, 0, 0, 0) 60.32%),
-    url("../../img/elbrus-tour@1x.png");
-
-  @media (resolution >= 2dppx) {
-    background:
-      linear-gradient(0deg, rgb(0, 0, 0, 0.6) 22.3%, rgb(0, 0, 0, 0) 60.32%),
-      url("../../img/elbrus-tour@2x.png");
-  }
-}
-
-.swiper--tours .swiper-slide--beluha {
-  background:
-    linear-gradient(0deg, rgb(0, 0, 0, 0.6) 22.3%, rgb(0, 0, 0, 0) 60.32%),
-    url("../../img/beluha-tour@1x.png");
-
-  @media (resolution >= 2dppx) {
-    background:
-      linear-gradient(0deg, rgb(0, 0, 0, 0.6) 22.3%, rgb(0, 0, 0, 0) 60.32%),
-      url("../../img/beluha-tour@2x.png");
-  }
-}
-
-.swiper--tours .swiper-slide--fisht {
-  background:
-    linear-gradient(0deg, rgb(0, 0, 0, 0.6) 22.3%, rgb(0, 0, 0, 0) 60.32%),
-    url("../../img/fisht-tour@1x.png");
-
-  @media (resolution >= 2dppx) {
-    background:
-      linear-gradient(0deg, rgb(0, 0, 0, 0.6) 22.3%, rgb(0, 0, 0, 0) 60.32%),
-      url("../../img/fisht-tour@2x.png");
-  }
-}
-
-.swiper--tours .swiper-slide--manaraga {
-  background:
-    linear-gradient(0deg, rgb(0, 0, 0, 0.6) 22.3%, rgb(0, 0, 0, 0) 60.32%),
-    url("../../img/manaraga-tour@1x.jpg");
-
-  @media (resolution >= 2dppx) {
-    background:
-      linear-gradient(0deg, rgb(0, 0, 0, 0.6) 22.3%, rgb(0, 0, 0, 0) 60.32%),
-      url("../../img/manaraga-tour@2x.jpg");
-  }
-}
-
-.swiper--tours .swiper-slide {
-  padding: 224px 20px 30px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.swiper--tours h3 {
-  margin: 0;
-  margin-bottom: 15px;
-  padding: 0;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: left;
-}
-
-.swiper--training {
-  margin-bottom: 25px;
-}
-
-.swiper--training img {
-  margin-bottom: 15px;
-  object-fit: cover;
-}
-
-.swiper--training h3 {
-  margin: 0;
-  margin-bottom: 25px;
-  font-weight: 800;
-  font-size: 22px;
-  line-height: 22px;
-}
-
-.swiper--training h4 {
-  margin: 0;
-  margin-bottom: 15px;
-  line-height: 16px;
-}
-
-.swiper--training p {
-  margin: 0;
-  font-size: 12px;
-  line-height: 16px;
-}
-
-.swiper--training .swiper-slide {
-  padding: 15px;
-  border: 1px solid rgb(2, 102, 193, 0.1);
-}
-
-.swiper--reviews .swiper-slide {
-  padding: 20px;
-  border: 1px solid $base-white-color;
-  box-shadow: 0 0 20px 0 rgb(28, 51, 116, 0.1);
-}
-
-.swiper--reviews p {
-  margin: 0;
-  margin-bottom: 15px;
-  padding: 0;
-  font-size: 12px;
-  line-height: 18px;
-}
-
-.swiper--adv {
-  display: none;
-}
-
-.swiper--gallery .swiper-button-prev,
-.swiper--gallery .swiper-button-next {
-  display: none;
-}
-
-.swiper--gallery .swiper-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-}
-
-.swiper--gallery .swiper-slide:nth-child(2n) {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-}

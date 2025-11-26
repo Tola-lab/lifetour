@@ -1,0 +1,121 @@
+.swiper--adv .swiper-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.swiper--adv .swiper-slide {
+  position: relative;
+  padding: 20px 10px;
+  border: 1px solid rgb(2, 102, 193, 0.1);
+}
+
+.swiper--adv .swiper-slide::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 20px;
+  left: 50%;
+  width: 42px;
+  height: 42px;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateX(-50%);
+  border: 1px solid $base-background-color;
+}
+
+.swiper--adv .swiper-slide--safe::before {
+  background-image: url("../../../__spritemap#sprite-level-1-icon-view");
+}
+
+.swiper--adv .swiper-slide--expert::before {
+  background-image: url("../../../__spritemap#sprite-crown-icon-view");
+}
+
+.swiper--adv .swiper-slide--boots::before {
+  background-image: url("../../../__spritemap#sprite-boots-blue-view");
+}
+
+.swiper--adv .swiper-slide--path::before {
+  background-image: url("../../../__spritemap#sprite-path-icon-view");
+}
+
+.swiper--adv .swiper-slide--nature::before {
+  background-image: url("../../../__spritemap#sprite-leaf-icon-view");
+}
+
+.swiper--adv h3 {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  padding-top: 62px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.swiper--adv p {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.swiper--adv .swiper-button {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .swiper--adv .swiper-wrapper {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .swiper--adv .swiper-slide {
+    padding: 30px 20px;
+    width: 324px;
+  }
+
+  .swiper--adv h3 {
+    padding-top: 73px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .swiper--adv .swiper-slide::before {
+    width: 48px;
+    height: 48px;
+  }
+
+  .swiper--adv p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .swiper--adv .swiper-wrapper {
+    flex-wrap: nowrap;
+  }
+
+  .swiper--adv .swiper-slide {
+    padding: 40px 20px;
+    min-width: 380px;
+  }
+
+  .swiper--adv .swiper-button {
+    display: block;
+    top: 399px;
+    right: 725px;
+  }
+
+  .swiper--adv .swiper-button-next {
+    right: 685px;
+  }
+}

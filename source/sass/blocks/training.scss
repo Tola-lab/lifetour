@@ -12,8 +12,76 @@
   padding: 0;
 }
 
+p br {
+  display: none;
+}
+
 .training__duplicate {
   position: absolute;
   top: 20px;
   left: 15px;
+}
+
+.training__trainer-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.training__trainer-info h4 {
+  position: relative;
+  margin: 0;
+  margin-bottom: 15px;
+  padding-right: 24px;
+  line-height: 16px;
+}
+
+.training__social-link {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgb(45, 56, 63, 0.3);
+  background-image: url("../../../__spritemap#sprite-vk-icon-view");
+  background-size: 14px 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .training__wrapper {
+    padding: 40px 45px;
+  }
+
+  .training__duplicate {
+    top: 40px;
+    left: 45px;
+  }
+
+  .training__wrapper > p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  p br {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .training__wrapper {
+    padding: 40px 120px;
+  }
+
+  .training__duplicate {
+    left: 120px;
+  }
+
+  .training__wrapper > p {
+    padding-right: 380px;
+    margin-bottom: 56px;
+  }
+
+  p br {
+    display: none;
+  }
 }

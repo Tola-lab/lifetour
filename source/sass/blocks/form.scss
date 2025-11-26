@@ -63,3 +63,68 @@
   border: none;
   cursor: pointer;
 }
+
+@media (min-width: $tablet-width) {
+  .form {
+    padding: 183px 204px;
+    text-align: center;
+  }
+
+  .form h2 {
+    margin-bottom: 25px;
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .form p {
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  p br {
+    display: none;
+  }
+
+  .form input {
+    margin-bottom: 11px;
+    padding: 20px 30px;
+    width: 360px;
+  }
+
+  .form__button {
+    padding: 20px;
+    width: 360px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    padding: 292.5px 204px;
+  }
+
+  .form h2 {
+    margin-bottom: 20px;
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .form p {
+    margin-bottom: 40px;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .form input {
+    margin: 0;
+    padding: 18px 30px;
+  }
+
+  .form__button {
+    width: 180px;
+  }
+}

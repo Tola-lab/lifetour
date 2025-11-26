@@ -12,3 +12,25 @@
   text-decoration: none;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .footer__contacts {
+    padding: 40px 43px 40px 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    position: relative;
+  }
+
+  .footer__contacts {
+    padding: 100px 720px 95px 120px;
+  }
+
+  .footer__map img {
+    position: absolute;
+    bottom: 170px;
+    right: 120px;
+  }
+}

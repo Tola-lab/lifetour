@@ -15,3 +15,25 @@
   font-size: 12px;
   line-height: 12px;
 }
+
+@media (min-width: $tablet-width) {
+  .slide__text {
+    width: 299px;
+  }
+
+  .slide__name {
+    margin-bottom: 6px;
+    font-size: 13px;
+    line-height: 13px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slide__img {
+    margin: 0;
+  }
+
+  .slide__text {
+    width: 352px;
+  }
+}

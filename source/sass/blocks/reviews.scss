@@ -11,3 +11,33 @@
   position: absolute;
   top: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .reviews__wrapper {
+    padding: 40px 0 40px 45px;
+    overflow: hidden;
+  }
+
+  .reviews__title {
+    margin-bottom: 25px;
+    padding-right: 130px;
+  }
+
+  .reviews__duplicate {
+    top: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__wrapper {
+    padding: 100px 0 77px 120px;
+  }
+
+  .reviews__title {
+    margin-bottom: 28px;
+  }
+
+  .reviews__duplicate {
+    top: 100px;
+  }
+}

@@ -1,0 +1,37 @@
+.swiper--gallery .swiper-button {
+  display: none;
+}
+
+.swiper--gallery .swiper-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.swiper--gallery .swiper-slide:nth-child(2n) {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+@media (min-width: $tablet-width) {
+  .swiper--gallery .swiper-button {
+    display: block;
+    top: -55px;
+    right: 86px;
+  }
+
+  .swiper--gallery .swiper-button-next {
+    right: 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .swiper--gallery .swiper-wrapper {
+    margin-bottom: -2px;
+  }
+
+  .swiper--gallery .swiper-button {
+    display: none;
+  }
+}

@@ -1,0 +1,35 @@
+.pagination {
+  position: absolute;
+  display: flex;
+  gap: 20px;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+}
+
+.pagination__link {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid $base-white-color;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pagination__link--active {
+  background-color: $base-white-color;
+}
+
+@media (min-width: $tablet-width) {
+  .pagination__link {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pagination {
+    left: 90%;
+    bottom: 90px;
+  }
+}

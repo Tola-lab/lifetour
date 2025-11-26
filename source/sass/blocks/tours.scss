@@ -22,4 +22,37 @@
   color: $base-black-color;
   text-decoration: none;
   text-transform: uppercase;
+  background-image: url("../../../__spritemap#sprite-arrow-icon-view");
+  background-repeat: no-repeat;
+  background-size: 20px 12px;
+  background-position: 180px 11px;
+}
+
+@media (min-width: $tablet-width) {
+  .tours__wrapper {
+    padding: 40px 45px;
+  }
+
+  .tours__duplicate {
+    top: 40px;
+    left: 45px;
+  }
+
+  .tours__button {
+    padding: 10px 12px;
+    font-size: 16px;
+    line-height: 16px;
+    background-position: 200px 11px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tours__wrapper {
+    padding: 100px 120px;
+  }
+
+  .tours__duplicate {
+    top: 100px;
+    left: 120px;
+  }
 }

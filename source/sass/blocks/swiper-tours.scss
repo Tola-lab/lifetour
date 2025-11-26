@@ -1,0 +1,106 @@
+.swiper--tours {
+  position: relative;
+  margin: auto;
+  margin-bottom: 25px;
+  min-height: 416px;
+  color: $base-white-color;
+}
+
+.swiper--tours .swiper-slide--elbrus {
+  background:
+    linear-gradient(0deg, rgb(0, 0, 0, 0.6) 22.3%, rgb(0, 0, 0, 0) 60.32%),
+    url("../../img/elbrus-tour@1x.png");
+
+  @media (resolution >= 2dppx) {
+    background:
+      linear-gradient(0deg, rgb(0, 0, 0, 0.6) 22.3%, rgb(0, 0, 0, 0) 60.32%),
+      url("../../img/elbrus-tour@2x.png");
+  }
+}
+
+.swiper--tours .swiper-slide--beluha {
+  background:
+    linear-gradient(0deg, rgb(0, 0, 0, 0.6) 22.3%, rgb(0, 0, 0, 0) 60.32%),
+    url("../../img/beluha-tour@1x.png");
+
+  @media (resolution >= 2dppx) {
+    background:
+      linear-gradient(0deg, rgb(0, 0, 0, 0.6) 22.3%, rgb(0, 0, 0, 0) 60.32%),
+      url("../../img/beluha-tour@2x.png");
+  }
+}
+
+.swiper--tours .swiper-slide--fisht {
+  background:
+    linear-gradient(0deg, rgb(0, 0, 0, 0.6) 22.3%, rgb(0, 0, 0, 0) 60.32%),
+    url("../../img/fisht-tour@1x.png");
+
+  @media (resolution >= 2dppx) {
+    background:
+      linear-gradient(0deg, rgb(0, 0, 0, 0.6) 22.3%, rgb(0, 0, 0, 0) 60.32%),
+      url("../../img/fisht-tour@2x.png");
+  }
+}
+
+.swiper--tours .swiper-slide--manaraga {
+  background:
+    linear-gradient(0deg, rgb(0, 0, 0, 0.6) 22.3%, rgb(0, 0, 0, 0) 60.32%),
+    url("../../img/manaraga-tour@1x.jpg");
+
+  @media (resolution >= 2dppx) {
+    background:
+      linear-gradient(0deg, rgb(0, 0, 0, 0.6) 22.3%, rgb(0, 0, 0, 0) 60.32%),
+      url("../../img/manaraga-tour@2x.jpg");
+  }
+}
+
+.swiper--tours .swiper-slide {
+  padding: 224px 20px 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba($base-background-color, 0.8);
+}
+
+.swiper--tours h3 {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: left;
+}
+
+@media (min-width: $tablet-width) {
+  .swiper--tours .swiper-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .swiper--tours .swiper-slide {
+    width: 330px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .swiper--tours {
+    margin-bottom: 53px;
+  }
+
+  .swiper--tours .swiper-wrapper {
+    gap: 30px;
+  }
+
+  .swiper--tours .swiper-slide {
+    width: 380px;
+  }
+
+  .swiper--tours h3 {
+    padding-right: 107px;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+  }
+}

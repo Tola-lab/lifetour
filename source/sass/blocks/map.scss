@@ -1,6 +1,6 @@
 .map {
   position: relative;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
   border-bottom: 1px solid rgb(45, 56, 63, 0.2);
 }
 
@@ -14,4 +14,30 @@
   left: 198px;
   background-image: url("../../../__spritemap#sprite-pin-filled-icon-view");
   background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    padding-bottom: 40px;
+  }
+
+  .map::after {
+    width: 42px;
+    height: 42px;
+    top: 182px;
+    left: 385px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    padding-bottom: 0;
+  }
+
+  .map::after {
+    width: 48px;
+    height: 48px;
+    top: -311px;
+    left: 1080px;
+  }
 }

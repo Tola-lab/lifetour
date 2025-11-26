@@ -1,0 +1,103 @@
+.swiper--hero {
+  color: $base-white-color;
+  background-color: rgba($base-background-color, 0.8);
+  text-align: center;
+}
+
+.swiper--hero .swiper-slide--kavkaz {
+  background:
+    linear-gradient(112.1deg, rgb(15, 20, 41, 0.33) 17.23%, rgb(15, 20, 41, 0) 94.93%),
+    url("../../img/kavkaz-hero-bg@1x.png");
+
+  @media (resolution >= 2dppx) {
+    background:
+      linear-gradient(112.1deg, rgb(15, 20, 41, 0.33) 17.23%, rgb(15, 20, 41, 0) 94.93%),
+      url("../../img/kavkaz-hero-bg@2x.png");
+  }
+}
+
+.swiper--hero .swiper-slide--kamchatka {
+  background:
+    linear-gradient(112.1deg, rgb(15, 20, 41, 0.33) 17.23%, rgb(15, 20, 41, 0) 94.93%),
+    url("../../img/kamchatka-hero-bg@1x.jpg");
+
+  @media (resolution >= 2dppx) {
+    background:
+      linear-gradient(112.1deg, rgb(15, 20, 41, 0.33) 17.23%, rgb(15, 20, 41, 0) 94.93%),
+      url("../../img/kamchatka-hero-bg@2x.jpg");
+  }
+}
+
+.swiper--hero .swiper-slide--altai {
+  background:
+    linear-gradient(112.1deg, rgb(15, 20, 41, 0.33) 17.23%, rgb(15, 20, 41, 0) 94.93%),
+    url("../../img/altai-hero-bg@1x.png");
+
+  @media (resolution >= 2dppx) {
+    background:
+      linear-gradient(112.1deg, rgb(15, 20, 41, 0.33) 17.23%, rgb(15, 20, 41, 0) 94.93%),
+      url("../../img/altai-hero-bg@2x.png");
+  }
+}
+
+.swiper--hero .swiper-wrapper {
+  position: relative;
+}
+
+.swiper--hero .swiper-slide {
+  padding: 40px 15px 56px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper--hero h1 {
+  margin-bottom: 15px;
+  padding-top: 104.5px;
+}
+
+.swiper--hero p {
+  margin: 0;
+  margin-bottom: 60px;
+  padding: 0;
+  font-size: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .swiper--hero .swiper-slide {
+    padding: 242px 45px 402px;
+  }
+
+  .swiper--hero h1 {
+    padding-top: 100px;
+    font-size: 56px;
+    line-height: 56px;
+  }
+
+  .swiper--hero p {
+    margin-bottom: 35px;
+    padding: 0 89px;
+    font-size: 17px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .swiper--hero .swiper-slide {
+    padding: 200px 376px 80px 120px;
+  }
+
+  .swiper--hero h1 {
+    padding-top: 0;
+    margin-bottom: 25px;
+    font-size: 77px;
+    line-height: 77px;
+    text-align: left;
+  }
+
+  .swiper--hero p {
+    padding: 0;
+    padding-right: 475px;
+    text-align: left;
+  }
+}

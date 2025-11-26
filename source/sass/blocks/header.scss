@@ -8,3 +8,16 @@
   margin: 15px;
   color: $base-white-color;
 }
+
+@media (min-width: $tablet-width) {
+  .header__navigation {
+    align-items: center;
+    margin: 20px 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__navigation {
+    margin: 32px 120px;
+  }
+}
