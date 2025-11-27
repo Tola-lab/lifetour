@@ -13,6 +13,7 @@
 }
 
 .tours__button {
+  position: relative;
   display: block;
   margin: auto;
   padding: 10px 28px 10px 10px;
@@ -22,10 +23,51 @@
   color: $base-black-color;
   text-decoration: none;
   text-transform: uppercase;
-  background-image: url("../../../__spritemap#sprite-arrow-icon-view");
-  background-repeat: no-repeat;
-  background-size: 20px 12px;
-  background-position: 180px 11px;
+  transition: all 0.6s;
+}
+
+.tours__button::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 7px;
+  right: -5px;
+  width: 20px;
+  height: 20px;
+  background-color: $base-black-color;
+  mask-image: url("../../../__spritemap#sprite-arrow-icon-view");
+  mask-repeat: no-repeat;
+  mask-size: 20px 12px;
+  mask-position: center;
+  transition: all 0.6s;
+}
+
+.tours__button:hover {
+  color: rgb($base-background-color, 0.1);
+}
+
+.tours__button:hover::after {
+  background-color: rgb($base-background-color, 0.1);
+}
+
+.tours__button:focus {
+  outline: none;
+}
+
+.tours__button:focus-visible {
+  color: $base-background-color;
+}
+
+.tours__button:focus-visible::after {
+  background-color: $base-background-color;
+}
+
+.tours__button:active {
+  color: #1c3374;
+}
+
+.tours__button:active::after {
+  background-color: #1c3374;
 }
 
 @media (min-width: $tablet-width) {

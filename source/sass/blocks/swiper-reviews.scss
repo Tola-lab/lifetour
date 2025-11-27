@@ -12,6 +12,10 @@
   line-height: 18px;
 }
 
+.swiper--reviews .swiper-button {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .swiper--reviews .swiper-wrapper {
     display: flex;

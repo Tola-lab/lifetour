@@ -44,8 +44,20 @@
   font: inherit;
   font-size: 16px;
   line-height: 16px;
-  border: none;
+  border: 1px solid rgb($base-background-color, 0.1);
   border-radius: 2px;
+}
+
+.form input:hover {
+  border: 1px solid $base-background-color;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+.form input:focus-visible {
+  border: 1px solid $base-black-color;
 }
 
 .form input::-webkit-outer-spin-button,
@@ -60,7 +72,6 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
-  border: none;
   cursor: pointer;
 }
 

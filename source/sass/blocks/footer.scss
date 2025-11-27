@@ -13,6 +13,14 @@
   text-align: center;
 }
 
+.footer__copyright:hover {
+  opacity: 0.8;
+}
+
+.footer__copyright:active {
+  opacity: 0.6;
+}
+
 @media (min-width: $tablet-width) {
   .footer__contacts {
     padding: 40px 43px 40px 45px;

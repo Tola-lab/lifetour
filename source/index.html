@@ -7,6 +7,10 @@
   <title>Lifetour</title>
   <link rel="preload" href="#" type="font/woff2" as="font">
   <link rel="stylesheet" href="sass/style.scss">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -62,7 +66,7 @@
           <div class="swiper-slide swiper-slide--kamchatka">
             <h1>Невероятная природа Камчатки</h1>
             <p>Незабываемое приключение,  во время которого вы отправитесь  в путешествие по одному из самых нетронутых уголков дикой  природы в мире.</p>
-            <a class="hero__button button" href="#">Смотреть тур</a>
+            <a class="hero__button button" href="#" disabled>Смотреть тур</a>
             <div class="hero__details">
               <span class="hero__info hero__info--duration">9 дней/10 ночей</span>
               <span class="hero__info hero__info--level">Средняя сложность</span>
@@ -105,12 +109,12 @@
         <span class="tours__duplicate duplicate" aria-hidden="true">Ближайшие туры</span>
         <div class="swiper swiper--tours">
           <div class="swiper-wrapper">
-            <div class="swiper-button swiper-button-prev swiper-button--deactivated">
+            <button class="swiper-button swiper-button-prev swiper-button--deactivated" type="button">
               <span class="visually-hidden">Предыдущий слайд</span>
-            </div>
-            <div class="swiper-button swiper-button-next">
+            </button>
+            <button class="swiper-button swiper-button-next" type="button">
               <span class="visually-hidden">Следующий слайд</span>
-            </div>
+            </button>
             <div class="swiper-slide swiper-slide--elbrus">
               <div class="info">
                 <p class="info__item info__item--place">Кавказ</p>
@@ -229,12 +233,12 @@
         <div class="swiper swiper--training">
           <h3>Наши инструкторы</h3>
           <div class="swiper-wrapper">
-            <div class="swiper-button swiper-button-prev swiper-button--deactivated">
+            <button class="swiper-button swiper-button-prev swiper-button--deactivated" type="button">
               <span class="visually-hidden">Предыдущий слайд</span>
-            </div>
-            <div class="swiper-button swiper-button-next">
+            </button>
+            <button class="swiper-button swiper-button-next" type="button">
               <span class="visually-hidden">Следующий слайд</span>
-            </div>
+            </button>
             <div class="swiper-slide">
               <picture>
                 <source width="255" height="200" type="image/webp" media="(min-width: 1440px)" srcset="img/trainer-prokofev@1x.webp 1x, img/trainer-prokofev@2x.webp 2x">
@@ -357,12 +361,12 @@
         <span class="reviews__duplicate duplicate" aria-hidden="true">Отзывы</span>
         <div class="swiper swiper--reviews">
           <div class="swiper-wrapper">
-            <div class="swiper-button swiper-button-prev swiper-button--deactivated">
+            <button class="swiper-button swiper-button-prev swiper-button--deactivated" type="button">
               <span class="visually-hidden">Предыдущий слайд</span>
-            </div>
-            <div class="swiper-button swiper-button-next">
+            </button>
+            <button class="swiper-button swiper-button-next" type="button">
               <span class="visually-hidden">Следующий слайд</span>
-            </div>
+            </button>
             <div class="swiper-slide slide">
               <picture>
                 <source width="258" height="253" type="image/webp" media="(min-width: 1440px)" srcset="img/review-frolov@1x.webp 1x, img/review-frolov@2x.webp 2x">
@@ -467,12 +471,12 @@
               <h3>Бережное отношение  к природе</h3>
               <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».</p>
             </div>
-            <div class="swiper-button swiper-button-prev">
+            <button class="swiper-button swiper-button-prev" type="button">
               <span class="visually-hidden">Предыдущий слайд</span>
-            </div>
-            <div class="swiper-button swiper-button-next">
+            </button>
+            <button class="swiper-button swiper-button-next" type="button">
               <span class="visually-hidden">Следующий слайд</span>
-            </div>
+            </button>
           </div>
         </div>
       </div>
@@ -485,12 +489,12 @@
         Лучшие&nbsp;фотографии украсят этот раздел нашего сайта.</p>
       <div class="swiper swiper--gallery">
         <div class="swiper-wrapper">
-          <div class="swiper-button swiper-button-prev">
+          <button class="swiper-button swiper-button-prev" type="button">
             <span class="visually-hidden">Предыдущий слайд</span>
-          </div>
-          <div class="swiper-button swiper-button-next">
+          </button>
+          <button class="swiper-button swiper-button-next" type="button">
             <span class="visually-hidden">Следующий слайд</span>
-          </div>
+          </button>
           <div class="swiper-slide">
             <picture>
               <source width="284" height="463" type="image/webp" media="(min-width: 1440px)" srcset="img/gallery-man@1x.webp 1x, img/gallery-man@2x.webp 2x">

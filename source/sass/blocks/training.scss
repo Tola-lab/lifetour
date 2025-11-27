@@ -36,15 +36,49 @@ p br {
 }
 
 .training__social-link {
+  position: relative;
   display: block;
   width: 24px;
   height: 24px;
   border: 1px solid rgb(45, 56, 63, 0.3);
-  background-image: url("../../../__spritemap#sprite-vk-icon-view");
-  background-size: 14px 8px;
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
+  transition: all 0.6s;
+}
+
+.training__social-link:hover {
+  border: 1px solid $base-black-color;
+}
+
+.training__social-link:focus {
+  outline: none;
+}
+
+.training__social-link:focus-visible {
+  border: none;
+}
+
+.training__social-link:active {
+  background-color: $base-background-color;
+  border: 1px solid $base-background-color;
+}
+
+.training__social-link::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 7px;
+  left: 4px;
+  width: 14px;
+  height: 8px;
+  background-color: $base-black-color;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-image: url("../../../__spritemap#sprite-vk-icon-view");
+  transition: all 0.6s;
+}
+
+.training__social-link:active::after {
+  background-color: $base-white-color;
 }
 
 @media (min-width: $tablet-width) {

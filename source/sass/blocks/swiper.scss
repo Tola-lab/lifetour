@@ -11,11 +11,56 @@
     width: 37px;
     height: 35px;
     background-color: $base-background-color;
-    background-image: url("../../../__spritemap#sprite-arrow-left-icon-view");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 13px 8px;
+    border: none;
     cursor: pointer;
+    transition: all 0.6s;
+  }
+
+  .swiper-button::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 12px;
+    width: 13px;
+    height: 8px;
+    mask-image: url("../../../__spritemap#sprite-arrow-left-icon-view");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 13px 8px;
+    background-color: $base-white-color;
+    transform: translateY(-50%);
+  }
+
+  .swiper-button:hover {
+    background-color: $base-white-color;
+    border: 1px solid #1c3374;
+  }
+
+  .swiper-button:hover::after {
+    background-color: #1c3374;
+  }
+
+  .swiper-button:focus {
+    outline: none;
+  }
+
+  .swiper-button:focus-visible {
+    background-color: $base-white-color;
+    border: none;
+  }
+
+  .swiper-button:focus-visible::after {
+    background-color: #1c3374;
+  }
+
+  .swiper-button:active {
+    color: $base-white-color;
+    background-color: #1c3374;
+  }
+
+  .swiper-button:active::after {
+    background-color: $base-white-color;
   }
 
   .swiper-button-next {
@@ -23,9 +68,17 @@
     transform: rotate(180deg);
   }
 
-  .swiper-button--deactivated {
+  .swiper-button--deactivated,
+  .swiper-button--deactivated:hover,
+  .swiper-button--deactivated:focus-visible {
     background-color: #999999;
+    border: none;
     cursor: default;
+  }
+
+  .swiper-button--deactivated:hover::after,
+  .swiper-button--deactivated:focus-visible::after {
+    background-color: $base-white-color;
   }
 }
 
