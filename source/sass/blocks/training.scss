@@ -3,7 +3,9 @@
 }
 
 .training__wrapper {
+  position: relative;
   padding: 20px 15px;
+  z-index: 1;
 }
 
 .training__wrapper > p {
@@ -20,6 +22,14 @@ p br {
   position: absolute;
   top: 20px;
   left: 15px;
+}
+
+.training h3 {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 22px;
 }
 
 .training__trainer-info {
@@ -82,6 +92,42 @@ p br {
 }
 
 @media (min-width: $tablet-width) {
+  .training::before {
+    content: "";
+    position: absolute;
+    display: block;
+    right: -179px;
+    top: -731px;
+    width: 602px;
+    height: 1630px;
+    background-image: url("../../img/clouds-bg-tours@1x.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/clouds-bg-tours@2x.png");
+    }
+  }
+
+  .training::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 840px;
+    height: 280px;
+    bottom: 158px;
+    left: 200px;
+    background-image: url("../../img/clouds-bg-trainers@1x.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/clouds-bg-trainers@2x.png");
+    }
+  }
+
   .training__wrapper {
     padding: 40px 45px;
   }
@@ -99,9 +145,29 @@ p br {
   p br {
     display: block;
   }
+
+  .training h3 {
+    margin-bottom: 30px;
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .training .swiper-button {
+    top: 218px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .training::before {
+    top: -942px;
+    right: 0;
+  }
+
+  .training::after {
+    bottom: 0;
+    left: 693px;
+  }
+
   .training__wrapper {
     padding: 40px 120px;
   }
@@ -117,5 +183,15 @@ p br {
 
   p br {
     display: none;
+  }
+
+  .training h3 {
+    margin-bottom: 20px;
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .training .swiper-button {
+    top: 236px;
   }
 }

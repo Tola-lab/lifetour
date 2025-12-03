@@ -60,6 +60,10 @@
   border: 1px solid $base-black-color;
 }
 
+.form--error input:invalid {
+  border: 1px solid #ff121f;
+}
+
 .form input::-webkit-outer-spin-button,
 .form input::-webkit-inner-spin-button {
   appearance: none;

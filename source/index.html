@@ -26,22 +26,22 @@
         </a>
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Туры</a>
+            <a class="navigation__link" href="#tours">Туры</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Обучение</a>
+            <a class="navigation__link" href="#training">Обучение</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">О нас</a>
+            <a class="navigation__link" href="#about">О нас</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Отзывы</a>
+            <a class="navigation__link" href="#reviews">Отзывы</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Фотографии</a>
+            <a class="navigation__link" href="#gallery">Фотографии</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Контакты</a>
+            <a class="navigation__link" href="#footer">Контакты</a>
           </li>
         </ul>
         <a class="navigation__phone" href="tel:88000000000">8 800 000-00-00</a>
@@ -81,40 +81,23 @@
               <span class="hero__info hero__info--level">Лёгкая сложность</span>
             </div>
           </div>
-          <div class="swiper-pagination pagination">
-            <div class="pagination__item">
-              <a class="pagination__link pagination__link--active" href="#">
-                <span class="visually-hidden">1 слайд</span>
-              </a>
-            </div>
-            <div class="pagination__item">
-              <a class="pagination__link" href="#">
-                <span class="visually-hidden">2 слайд</span>
-              </a>
-            </div>
-            <div class="pagination__item">
-              <a class="pagination__link" href="#">
-                <span class="visually-hidden">3 слайд</span>
-              </a>
-            </div>
-          </div>
-          <div class="swiper-scrollbar"></div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
 
-    <section class="tours" data-test="tours">
+    <section class="tours" data-test="tours" id="tours">
       <div class="tours__wrapper">
         <h2 class="tours__title title">Ближайшие туры</h2>
         <span class="tours__duplicate duplicate" aria-hidden="true">Ближайшие туры</span>
+        <button class="swiper-button swiper-button-prev swiper-button--deactivated" type="button">
+          <span class="visually-hidden">Предыдущий слайд</span>
+        </button>
+        <button class="swiper-button swiper-button-next" type="button">
+          <span class="visually-hidden">Следующий слайд</span>
+        </button>
         <div class="swiper swiper--tours">
           <div class="swiper-wrapper">
-            <button class="swiper-button swiper-button-prev swiper-button--deactivated" type="button">
-              <span class="visually-hidden">Предыдущий слайд</span>
-            </button>
-            <button class="swiper-button swiper-button-next" type="button">
-              <span class="visually-hidden">Следующий слайд</span>
-            </button>
             <div class="swiper-slide swiper-slide--elbrus">
               <div class="info">
                 <p class="info__item info__item--place">Кавказ</p>
@@ -225,20 +208,20 @@
       </div>
     </section>
 
-    <section class="training" data-test="training">
+    <section class="training" data-test="training" id="training">
       <div class="training__wrapper">
         <h2 class="training__title title">Обучение</h2>
         <span class="training__duplicate duplicate" aria-hidden="true">Обучение</span>
         <p>Обучение проводится квалифицированными специалистами,<br> за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
+        <h3>Наши инструкторы</h3>
+        <button class="swiper-button swiper-button-prev swiper-button--deactivated" type="button">
+          <span class="visually-hidden">Предыдущий слайд</span>
+        </button>
+        <button class="swiper-button swiper-button-next" type="button">
+          <span class="visually-hidden">Следующий слайд</span>
+        </button>
         <div class="swiper swiper--training">
-          <h3>Наши инструкторы</h3>
           <div class="swiper-wrapper">
-            <button class="swiper-button swiper-button-prev swiper-button--deactivated" type="button">
-              <span class="visually-hidden">Предыдущий слайд</span>
-            </button>
-            <button class="swiper-button swiper-button-next" type="button">
-              <span class="visually-hidden">Следующий слайд</span>
-            </button>
             <div class="swiper-slide">
               <picture>
                 <source width="255" height="200" type="image/webp" media="(min-width: 1440px)" srcset="img/trainer-prokofev@1x.webp 1x, img/trainer-prokofev@2x.webp 2x">
@@ -338,7 +321,7 @@
       </div>
     </section>
 
-    <section class="about" data-test="about">
+    <section class="about" data-test="about" id="about">
       <div class="about__wrapper">
         <h2>О нас</h2>
         <span aria-hidden="true">О нас</span>
@@ -355,18 +338,18 @@
       </div>
     </section>
 
-    <section class="reviews" data-test="reviews">
+    <section class="reviews" data-test="reviews" id="reviews">
       <div class="reviews__wrapper">
         <h2 class="reviews__title title">Отзывы</h2>
         <span class="reviews__duplicate duplicate" aria-hidden="true">Отзывы</span>
+        <button class="swiper-button swiper-button-prev swiper-button--deactivated" type="button">
+          <span class="visually-hidden">Предыдущий слайд</span>
+        </button>
+        <button class="swiper-button swiper-button-next" type="button">
+          <span class="visually-hidden">Следующий слайд</span>
+        </button>
         <div class="swiper swiper--reviews">
           <div class="swiper-wrapper">
-            <button class="swiper-button swiper-button-prev swiper-button--deactivated" type="button">
-              <span class="visually-hidden">Предыдущий слайд</span>
-            </button>
-            <button class="swiper-button swiper-button-next" type="button">
-              <span class="visually-hidden">Следующий слайд</span>
-            </button>
             <div class="swiper-slide slide">
               <picture>
                 <source width="258" height="253" type="image/webp" media="(min-width: 1440px)" srcset="img/review-frolov@1x.webp 1x, img/review-frolov@2x.webp 2x">
@@ -461,7 +444,7 @@
             </div>
             <div class="swiper-slide swiper-slide--boots">
               <h3>Оборудование и снаряжение</h3>
-              <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным и экономически выгодным.</p>
+              <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным и экономически выгодным.</p>
             </div>
             <div class="swiper-slide swiper-slide--path">
               <h3>Индивидуальные маршруты</h3>
@@ -471,30 +454,43 @@
               <h3>Бережное отношение  к природе</h3>
               <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».</p>
             </div>
-            <button class="swiper-button swiper-button-prev" type="button">
-              <span class="visually-hidden">Предыдущий слайд</span>
-            </button>
-            <button class="swiper-button swiper-button-next" type="button">
-              <span class="visually-hidden">Следующий слайд</span>
-            </button>
+
+            <div class="swiper-slide swiper-slide--boots swiper-slide--extra">
+              <h3>Оборудование и снаряжение</h3>
+              <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным и экономически выгодным.</p>
+            </div>
+            <div class="swiper-slide swiper-slide--boots swiper-slide--extra">
+              <h3>Оборудование и снаряжение</h3>
+              <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным и экономически выгодным.</p>
+            </div>
+            <div class="swiper-slide swiper-slide--boots swiper-slide--extra">
+              <h3>Оборудование и снаряжение</h3>
+              <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным и экономически выгодным.</p>
+            </div>
           </div>
         </div>
+        <button class="swiper-button swiper-button-prev" type="button">
+          <span class="visually-hidden">Предыдущий слайд</span>
+        </button>
+        <button class="swiper-button swiper-button-next" type="button">
+          <span class="visually-hidden">Следующий слайд</span>
+        </button>
       </div>
     </section>
 
-    <section class="gallery" data-test="gallery">
+    <section class="gallery" data-test="gallery" id="gallery">
       <h2 class="gallery__title title">Фотогалерея</h2>
       <span class="gallery__duplicate duplicate" aria-hidden="true">Фотогалерея</span>
       <p>Добавляйте фото с хэштегом #лайфтур,<br> а также отмечайте нас на фото.
         Лучшие&nbsp;фотографии украсят этот раздел нашего сайта.</p>
+      <button class="swiper-button swiper-button-prev" type="button">
+        <span class="visually-hidden">Предыдущий слайд</span>
+      </button>
+      <button class="swiper-button swiper-button-next" type="button">
+        <span class="visually-hidden">Следующий слайд</span>
+      </button>
       <div class="swiper swiper--gallery">
         <div class="swiper-wrapper">
-          <button class="swiper-button swiper-button-prev" type="button">
-            <span class="visually-hidden">Предыдущий слайд</span>
-          </button>
-          <button class="swiper-button swiper-button-next" type="button">
-            <span class="visually-hidden">Следующий слайд</span>
-          </button>
           <div class="swiper-slide">
             <picture>
               <source width="284" height="463" type="image/webp" media="(min-width: 1440px)" srcset="img/gallery-man@1x.webp 1x, img/gallery-man@2x.webp 2x">
@@ -507,7 +503,7 @@
               <img src="img/gallery-man@1x.png" srcset="img/gallery-man@2x.png 2x" width="158" height="266" alt="Парень на фоне гор">
             </picture>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide swiper-slide--double">
             <picture>
               <source width="284" height="228" type="image/webp" media="(min-width: 1440px)" srcset="img/gallery-bonfire@1x.webp 1x, img/gallery-bonfire@2x.webp 2x">
               <source width="252" height="205" type="image/webp" media="(min-width: 768px)" srcset="img/gallery-bonfire@1x.webp 1x, img/gallery-bonfire@2x.webp 2x">
@@ -541,7 +537,7 @@
               <img src="img/gallery-path@1x.jpg" srcset="img/gallery-path@2x.jpg 2x" width="158" height="266" alt="Группа в походе">
             </picture>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide swiper-slide--double">
             <picture>
               <source width="284" height="228" type="image/webp" media="(min-width: 1440px)" srcset="img/gallery-ice@1x.webp 1x, img/gallery-ice@2x.webp 2x">
               <source width="252" height="205" type="image/webp" media="(min-width: 768px)" srcset="img/gallery-ice@1x.webp 1x, img/gallery-ice@2x.webp 2x">
@@ -566,7 +562,7 @@
           <div class="swiper-slide">
             <picture>
               <source width="284" height="463" type="image/webp" media="(min-width: 1440px)" srcset="img/gallery-lake@1x.webp 1x, img/gallery-lake@2x.webp 2x">
-              <source width="253" height="418" type="image/webp" media="(min-width: 768px)" srcset="img/gallery-lake@1x.webp 1x, img/gallery-path@2x.webp 2x">
+              <source width="253" height="418" type="image/webp" media="(min-width: 768px)" srcset="img/gallery-lake@1x.webp 1x, img/gallery-lake@2x.webp 2x">
               <source width="158" height="266" type="image/webp" srcset="img/gallery-lake@1x.webp 1x, img/gallery-lake@2x.webp 2x">
 
               <source width="284" height="463" type="image/png" media="(min-width: 1440px)" srcset="img/gallery-lake@1x.png, img/gallery-lake@2x.png 2x">
@@ -583,7 +579,7 @@
     <section class="form" data-test="form">
       <h2>Остались вопросы?</h2>
       <p>Заполните форму и наш оператор свяжется <br> с вами для консультации.</p>
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form action="https://echo.htmlacademy.ru" method="post" novalidate>
         <label class="visually-hidden" for="phone">Телефон</label>
         <input type="number" name="phone" id="phone" placeholder="Телефон" required>
         <label class="visually-hidden" for="email">Email</label>
@@ -593,7 +589,7 @@
     </section>
   </main>
 
-  <section class="footer" data-test="footer">
+  <section class="footer" data-test="footer" id="footer">
     <div class="footer__contacts contacts">
       <h2 class="contacts__title title">Контакты</h2>
       <span class="contacts__duplicate duplicate" aria-hidden="true">Контакты</span>
@@ -634,22 +630,22 @@
         </a>
         <ul class="lower__list">
           <li class="lower__item">
-            <a class="lower__link" href="#">Туры</a>
+            <a class="lower__link" href="#tours">Туры</a>
           </li>
           <li class="lower__item">
-            <a class="lower__link" href="#">Обучение</a>
+            <a class="lower__link" href="#training">Обучение</a>
           </li>
           <li class="lower__item">
-            <a class="lower__link" href="#">О нас</a>
+            <a class="lower__link" href="#about">О нас</a>
           </li>
           <li class="lower__item">
-            <a class="lower__link" href="#">Отзывы</a>
+            <a class="lower__link" href="#reviews">Отзывы</a>
           </li>
           <li class="lower__item">
-            <a class="lower__link" href="#">Фотографии</a>
+            <a class="lower__link" href="#gallery">Фотографии</a>
           </li>
           <li class="lower__item">
-            <a class="lower__link" href="#">Контакты</a>
+            <a class="lower__link" href="#footer">Контакты</a>
           </li>
         </ul>
         <span class="lower__phone">
@@ -679,7 +675,7 @@
     </div>
   </section>
 
-  <script type=" module" src="js/main.js"></script>
+  <script type="module" src="js/main.js"></script>
 </body>
 
 </html>

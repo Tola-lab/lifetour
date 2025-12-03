@@ -23,15 +23,28 @@
   .adv__title {
     margin-bottom: 50px;
   }
+
+  .adv .swiper-button {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .adv__wrapper {
     padding: 100px 0;
-    overflow: hidden;
   }
 
   .adv__duplicate {
     top: 93px;
+  }
+
+  .adv .swiper-button {
+    display: block;
+    top: 599px;
+    right: 722px;
+  }
+
+  .adv .swiper-button-next {
+    right: 681px;
   }
 }

@@ -1,7 +1,5 @@
 .swiper--adv .swiper-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+  display: block;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -10,7 +8,17 @@
 .swiper--adv .swiper-slide {
   position: relative;
   padding: 20px 10px;
+  width: 290px;
+  background-color: $base-white-color;
   border: 1px solid rgb(2, 102, 193, 0.1);
+}
+
+.swiper--adv .swiper-slide:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.swiper--adv .swiper-slide--extra {
+  display: none;
 }
 
 .swiper--adv .swiper-slide::before {
@@ -65,21 +73,22 @@
   line-height: 18px;
 }
 
-.swiper--adv .swiper-button {
-  display: none;
-}
-
 @media (min-width: $tablet-width) {
   .swiper--adv .swiper-wrapper {
-    justify-content: center;
-    flex-direction: row;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
   }
 
   .swiper--adv .swiper-slide {
     padding: 30px 20px;
     width: 324px;
+    min-height: 329px;
+  }
+
+  .swiper--adv .swiper-slide:not(:last-child) {
+    margin-bottom: 0;
   }
 
   .swiper--adv h3 {
@@ -89,6 +98,7 @@
   }
 
   .swiper--adv .swiper-slide::before {
+    top: 30px;
     width: 48px;
     height: 48px;
   }
@@ -101,12 +111,31 @@
 
 @media (min-width: $desktop-width) {
   .swiper--adv .swiper-wrapper {
+    display: flex;
     flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 0;
   }
 
   .swiper--adv .swiper-slide {
     padding: 40px 20px;
-    min-width: 380px;
+    width: 380px;
+  }
+
+  .swiper--adv .swiper-slide--extra {
+    display: block;
+  }
+
+  .swiper--adv .swiper-slide::before {
+    top: 40px;
+    width: 54px;
+    height: 54px;
+  }
+
+  .swiper--adv h3 {
+    padding-top: 84px;
+    font-size: 18px;
+    line-height: 18px;
   }
 
   .swiper--adv .swiper-button {

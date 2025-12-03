@@ -2,7 +2,6 @@
   position: relative;
   margin: auto;
   margin-bottom: 25px;
-  min-height: 416px;
   color: $base-white-color;
 }
 
@@ -55,7 +54,11 @@
 }
 
 .swiper--tours .swiper-slide {
-  padding: 224px 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px 20px;
+  min-height: 416px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -71,30 +74,9 @@
   text-align: left;
 }
 
-@media (min-width: $tablet-width) {
-  .swiper--tours .swiper-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 18px;
-  }
-
-  .swiper--tours .swiper-slide {
-    width: 330px;
-  }
-}
-
 @media (min-width: $desktop-width) {
   .swiper--tours {
     margin-bottom: 53px;
-  }
-
-  .swiper--tours .swiper-wrapper {
-    gap: 30px;
-  }
-
-  .swiper--tours .swiper-slide {
-    width: 380px;
   }
 
   .swiper--tours h3 {

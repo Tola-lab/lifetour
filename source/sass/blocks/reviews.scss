@@ -1,43 +1,88 @@
 .reviews__wrapper {
   position: relative;
-  padding: 20px 15px;
+  padding-top: 20px;
 }
 
 .reviews__title {
-  margin-bottom: 15px;
+  padding-left: 15px;
+  margin: 0;
 }
 
 .reviews__duplicate {
   position: absolute;
   top: 20px;
+  left: 15px;
 }
 
 @media (min-width: $tablet-width) {
+  .reviews {
+    position: relative;
+    z-index: 1;
+  }
+
+  .reviews::before,
+  .reviews::after {
+    content: "";
+    position: absolute;
+    display: block;
+    right: -140px;
+    top: 1228px;
+    width: 788px;
+    height: 263px;
+    background-image: url("../../img/clouds-bg-trainers@1x.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/clouds-bg-trainers@2x.png");
+    }
+  }
+
+  .reviews::after {
+    right: 163px;
+    top: 721px;
+    width: 1200px;
+    height: 401px;
+  }
+
   .reviews__wrapper {
-    padding: 40px 0 40px 45px;
-    overflow: hidden;
+    padding-top: 40px;
   }
 
   .reviews__title {
-    margin-bottom: 25px;
+    padding-left: 45px;
     padding-right: 130px;
   }
 
   .reviews__duplicate {
     top: 40px;
+    left: 45px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .reviews::before,
+  .reviews::after {
+    right: -140px;
+    top: 490px;
+  }
+
+  .reviews::after {
+    right: 705px;
+    top: 271px;
+  }
+
   .reviews__wrapper {
-    padding: 100px 0 77px 120px;
+    padding-top: 100px;
   }
 
   .reviews__title {
-    margin-bottom: 28px;
+    padding-left: 120px;
   }
 
   .reviews__duplicate {
     top: 100px;
+    left: 120px;
   }
 }

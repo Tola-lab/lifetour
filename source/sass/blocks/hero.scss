@@ -13,6 +13,12 @@
   display: none;
 }
 
+@media (min-width: $tablet-width) {
+  .hero__button {
+    margin-bottom: 302px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .hero__button {
     margin: 0;

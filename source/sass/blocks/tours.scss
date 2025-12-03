@@ -1,5 +1,23 @@
 .tours {
   position: relative;
+  overflow: hidden;
+}
+
+.tours::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 346px;
+  height: 595px;
+  top: 71px;
+  right: -204px;
+  background-image: url("../../img/clouds-bg-tours@1x.png");
+  background-size: cover;
+  background-position: center;
+
+  @media (resolution >= 2dppx) {
+    background-image: url("../../img/clouds-bg-tours@2x.png");
+  }
 }
 
 .tours__wrapper {
@@ -24,6 +42,7 @@
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.6s;
+  z-index: 3;
 }
 
 .tours__button::after {
@@ -71,6 +90,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .tours::after {
+    content: none;
+  }
+
   .tours__wrapper {
     padding: 40px 45px;
   }

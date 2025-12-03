@@ -2,13 +2,7 @@
   display: none;
 }
 
-.swiper--gallery .swiper-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-}
-
-.swiper--gallery .swiper-slide:nth-child(2n) {
+.swiper--gallery .swiper-slide--double {
   display: flex;
   flex-direction: column;
   gap: 7px;
@@ -29,9 +23,5 @@
 @media (min-width: $desktop-width) {
   .swiper--gallery .swiper-wrapper {
     margin-bottom: -2px;
-  }
-
-  .swiper--gallery .swiper-button {
-    display: none;
   }
 }
