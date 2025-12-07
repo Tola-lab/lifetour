@@ -4,18 +4,12 @@
 
 .training__wrapper {
   position: relative;
-  padding: 20px 15px;
+  padding: 18px 15px 20px;
   z-index: 1;
 }
 
-.training__wrapper > p {
-  margin: 0;
-  margin-bottom: 25px;
-  padding: 0;
-}
-
-p br {
-  display: none;
+.training__title {
+  margin-bottom: 17px;
 }
 
 .training__duplicate {
@@ -24,9 +18,19 @@ p br {
   left: 15px;
 }
 
+.training__wrapper > p {
+  margin: 0;
+  margin-bottom: 28px;
+  padding: 0;
+}
+
+.training__wrapper > p br {
+  display: none;
+}
+
 .training h3 {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   font-weight: 800;
   font-size: 22px;
   line-height: 22px;
@@ -96,8 +100,8 @@ p br {
     content: "";
     position: absolute;
     display: block;
-    right: -179px;
-    top: -731px;
+    right: -177px;
+    top: -729px;
     width: 602px;
     height: 1630px;
     background-image: url("../../img/clouds-bg-tours@1x.png");
@@ -132,6 +136,10 @@ p br {
     padding: 40px 45px;
   }
 
+  .training__title {
+    margin-bottom: 24px;
+  }
+
   .training__duplicate {
     top: 40px;
     left: 45px;
@@ -142,12 +150,12 @@ p br {
     line-height: 24px;
   }
 
-  p br {
+  .training__wrapper > p br {
     display: block;
   }
 
   .training h3 {
-    margin-bottom: 30px;
+    margin-bottom: 38px;
     font-size: 25px;
     line-height: 25px;
   }
@@ -159,7 +167,7 @@ p br {
 
 @media (min-width: $desktop-width) {
   .training::before {
-    top: -942px;
+    top: -939px;
     right: 0;
   }
 
@@ -169,24 +177,29 @@ p br {
   }
 
   .training__wrapper {
-    padding: 40px 120px;
+    padding: 40px 120px 30px;
+  }
+
+  .training__title {
+    margin-bottom: 33px;
   }
 
   .training__duplicate {
+    top: 45px;
     left: 120px;
   }
 
   .training__wrapper > p {
     padding-right: 380px;
-    margin-bottom: 56px;
+    margin-bottom: 60px;
   }
 
-  p br {
+  .training__wrapper > p br {
     display: none;
   }
 
   .training h3 {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     font-size: 35px;
     line-height: 35px;
   }

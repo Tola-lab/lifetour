@@ -60,9 +60,13 @@ export const initTrainingSwiper = () => new Swiper('.swiper--training', {
   },
 
   breakpoints: {
+    320: {
+      initialSlide: 2,
+    },
     768: {
       slidesPerView: 3,
       spaceBetween: 20,
+      initialSlide: 0,
     },
     1440: {
       slidesPerView: 4,
@@ -113,7 +117,6 @@ export const initAdvSwiper = () => new Swiper('.swiper--adv', {
   breakpoints: {
     768: {
       slidesPerView: 'auto',
-      // spaceBetween: 30,
     },
     1440: {
       enabled: true,
@@ -145,12 +148,12 @@ export const initGallerySwiper = () => new Swiper('.swiper--gallery', {
 
   breakpoints: {
     320: {
-      slidesPerView: 2,
+      slidesPerView: 'auto',
       slidesPerGroup: 1,
       spaceBetween: 5,
     },
     768: {
-      slidesPerView: 3,
+      slidesPerView: 'auto',
       slidesPerGroup: 1,
       spaceBetween: 5,
     },

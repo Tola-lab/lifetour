@@ -4,13 +4,14 @@
 }
 
 .reviews__title {
+  padding-top: 17px;
   padding-left: 15px;
   margin: 0;
 }
 
 .reviews__duplicate {
   position: absolute;
-  top: 20px;
+  top: 24px;
   left: 15px;
 }
 
@@ -25,8 +26,8 @@
     content: "";
     position: absolute;
     display: block;
-    right: -140px;
-    top: 1228px;
+    right: -135px;
+    top: 1205px;
     width: 788px;
     height: 263px;
     background-image: url("../../img/clouds-bg-trainers@1x.png");
@@ -41,22 +42,21 @@
 
   .reviews::after {
     right: 163px;
-    top: 721px;
+    top: 704px;
     width: 1200px;
     height: 401px;
   }
 
   .reviews__wrapper {
-    padding-top: 40px;
+    padding-top: 37px;
   }
 
   .reviews__title {
-    padding-left: 45px;
-    padding-right: 130px;
+    padding: 23px 130px 10px 45px;
   }
 
   .reviews__duplicate {
-    top: 40px;
+    top: 45px;
     left: 45px;
   }
 }
@@ -74,15 +74,20 @@
   }
 
   .reviews__wrapper {
-    padding-top: 100px;
+    padding-top: 98px;
   }
 
   .reviews__title {
+    padding-top: 47px;
     padding-left: 120px;
   }
 
   .reviews__duplicate {
-    top: 100px;
+    top: 106px;
     left: 120px;
+  }
+
+  .reviews .swiper-button {
+    top: 147px;
   }
 }

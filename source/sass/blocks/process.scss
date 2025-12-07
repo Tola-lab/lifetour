@@ -1,6 +1,6 @@
 .process__title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   font-size: 16px;
   line-height: 16px;
 }
@@ -19,7 +19,7 @@
   display: block;
   top: 20px;
   bottom: 20px;
-  left: 0;
+  left: 6px;
   width: 2px;
   background-color: $base-background-color;
 }
@@ -27,6 +27,8 @@
 .process__item {
   position: relative;
   padding-left: 34px;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 .process__item::before {
@@ -66,7 +68,7 @@
   position: absolute;
   display: block;
   bottom: 50%;
-  left: -35px;
+  left: -29px;
   width: 14px;
   height: 14px;
   border-radius: 50%;
@@ -76,15 +78,15 @@
 
 @media (min-width: $tablet-width) {
   .process__title {
-    margin-bottom: 104px;
+    margin-bottom: 101px;
     font-size: 18px;
     line-height: 18px;
   }
 
   .process__list {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    gap: 104px 174px;
     padding: 0;
   }
 
@@ -94,14 +96,28 @@
 
   .process__item {
     width: 232px;
+    font-size: 14px;
+    line-height: 22px;
   }
 
   .process__item:not(:last-child) {
     margin: 0;
   }
 
-  .process__item:not(:nth-last-child(-n + 2)) {
-    margin-bottom: 104px;
+  .process__item:nth-child(4) {
+    order: 2;
+  }
+
+  .process__item:nth-child(2) {
+    order: 3;
+  }
+
+  .process__item:nth-child(3) {
+    order: 4;
+  }
+
+  .process__item::before {
+    top: 2px;
   }
 
   .process__item::after {
@@ -118,20 +134,24 @@
 
   .process__list {
     justify-content: start;
+    gap: 0;
+    padding-left: 10px;
   }
 
   .process__list::before {
     content: "";
-    top: 86px;
-    left: 15px;
-    width: 1187px;
+    top: 85px;
+    left: 22px;
+    width: 1178px;
     height: 2px;
     transform: rotate(180deg);
   }
 
   .process__item {
-    padding: 8px 41px 34px 34px;
+    padding: 4px 16px 34px 34px;
     width: 253px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .process__item::before {
@@ -141,11 +161,19 @@
 
   .process__item::after {
     content: "";
-    left: 5px;
-    bottom: 15px;
+    left: 10px;
+    bottom: 24px;
   }
 
-  .process__item:not(:nth-last-child(-n + 2)) {
-    margin: 0;
+  .process__item:nth-child(4) {
+    order: 4;
+  }
+
+  .process__item:nth-child(3)::after {
+    left: -9px;
+  }
+
+  .process__item br {
+    display: none;
   }
 }

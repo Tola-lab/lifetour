@@ -56,8 +56,13 @@
   border: none;
 }
 
-.swiper--hero h1 {
+.swiper--hero h2 {
+  margin: 0;
   margin-bottom: 15px;
+  padding: 0;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 26px;
 }
 
 .swiper--hero p {
@@ -122,7 +127,7 @@
     }
   }
 
-  .swiper--hero h1 {
+  .swiper--hero h2 {
     font-size: 56px;
     line-height: 56px;
   }
@@ -142,7 +147,7 @@
 
 @media (min-width: $desktop-width) {
   .swiper--hero .swiper-slide {
-    padding: 200px 376px 80px 120px;
+    padding: 120px 376px 80px 120px;
     min-height: 800px;
   }
 
@@ -164,21 +169,22 @@
     }
   }
 
-  .swiper--hero h1 {
-    margin-bottom: 25px;
+  .swiper--hero h2 {
+    margin-bottom: 22px;
     font-size: 77px;
     line-height: 77px;
     text-align: left;
   }
 
   .swiper--hero p {
+    margin-bottom: 38px;
     padding: 0;
     padding-right: 475px;
     text-align: left;
   }
 
   .swiper--hero .swiper-pagination {
-    left: 90%;
-    bottom: 90px;
+    left: 88.2%;
+    bottom: 93px;
   }
 }

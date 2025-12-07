@@ -4,7 +4,7 @@
 
 .navigation__logo {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 13px;
   width: 142px;
   height: 42px;
   transition: all 0.6s;
@@ -48,7 +48,7 @@
 .navigation__toggle > .hamburger::after {
   content: "";
   position: absolute;
-  top: 6px;
+  top: 4px;
   left: 0;
   width: 26px;
   height: 2px;
@@ -58,11 +58,11 @@
 
 .navigation__toggle > .hamburger::before {
   width: 16px;
-  top: 6px;
+  top: 8px;
 }
 
 .navigation__toggle > .hamburger::after {
-  top: 12px;
+  top: 16px;
 }
 
 .navigation__phone {
@@ -149,11 +149,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 452px;
+    width: 410px;
   }
 
   .navigation__logo {
     margin: 0;
+  }
+
+  .navigation__phone {
+    font-size: 16px;
+    line-height: 16px;
   }
 
   .navigation--open .navigation__list {
@@ -186,7 +191,7 @@
   .navigation__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
   }
 
   .navigation__link {

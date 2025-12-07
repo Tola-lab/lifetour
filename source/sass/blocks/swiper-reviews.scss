@@ -1,9 +1,9 @@
 .swiper.swiper--reviews {
-  padding: 15px 15px 20px;
+  padding: 15px 15px 0;
 }
 
 .swiper--reviews .swiper-slide {
-  padding: 20px;
+  padding: 19px 19px 16px;
   border: 1px solid $base-white-color;
   box-shadow: 0 0 20px 0 rgb(28, 51, 116, 0.1);
   background-color: $base-white-color;
@@ -12,7 +12,7 @@
 
 .swiper--reviews p {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   padding: 0;
   font-size: 12px;
   line-height: 18px;
@@ -29,7 +29,7 @@
 
   .swiper--reviews .swiper-slide {
     display: flex;
-    justify-content: space-between;
+    padding: 19px;
     width: 565px;
     box-shadow: 0 0 30px 0 rgb(28, 51, 116, 0.1);
   }
@@ -37,7 +37,7 @@
 
 @media (min-width: $desktop-width) {
   .swiper.swiper--reviews {
-    padding: 38px 130px 87px;
+    padding: 28px 130px 87px;
   }
 
   .swiper--reviews .swiper-button {
@@ -61,10 +61,10 @@
   }
 
   .swiper--reviews p:first-child {
-    margin-bottom: 15px;
+    margin-bottom: 8px;
   }
 
   .swiper--reviews p:last-of-type {
-    margin-bottom: 2px;
+    margin: 0;
   }
 }

@@ -15,7 +15,7 @@
 .info__item {
   position: relative;
   margin: 0;
-  padding: 4px 0 4px 32px;
+  padding: 4px 1px 4px 32px;
   font-weight: 500;
   font-size: 12px;
   line-height: 12px;
@@ -42,19 +42,32 @@
   left: 12px;
   width: 16px;
   height: 16px;
-  mask-image: url("../../../__spritemap#sprite-pin-stroke-icon-view");
-  mask-size: 16px 16px;
+  mask-image: url("../../../__spritemap#sprite-pin-filled-icon-view");
+  mask-size: 14px 14px;
 }
 
 .info__item--days::before {
   mask-image: url("../../../__spritemap#sprite-sun-icon-view");
+  mask-size: 20px 20px;
 }
 
 .info__item--nights::before {
   mask-image: url("../../../__spritemap#sprite-moon-icon-view");
+  mask-size: 18px 18px;
 }
 
 .info__item--place {
-  padding: 8px 12px 8px 34px;
+  padding: 8px 12px 9px 34px;
   background-color: $base-background-color;
+}
+
+.info__underline {
+  position: absolute;
+  display: block;
+  bottom: 77px;
+  left: 20px;
+  width: 80px;
+  height: 1px;
+  background-color: $base-white-color;
+  opacity: 0.2;
 }

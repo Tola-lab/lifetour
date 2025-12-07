@@ -1,5 +1,7 @@
 .swiper--adv .swiper-wrapper {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -7,14 +9,10 @@
 
 .swiper--adv .swiper-slide {
   position: relative;
-  padding: 20px 10px;
+  padding: 82px 9px 19px;
   width: 290px;
   background-color: $base-white-color;
   border: 1px solid rgb(2, 102, 193, 0.1);
-}
-
-.swiper--adv .swiper-slide:not(:last-child) {
-  margin-bottom: 15px;
 }
 
 .swiper--adv .swiper-slide--extra {
@@ -58,9 +56,8 @@
 
 .swiper--adv h3 {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   padding: 0;
-  padding-top: 62px;
   font-weight: 600;
   font-size: 14px;
   line-height: 14px;
@@ -76,13 +73,14 @@
 @media (min-width: $tablet-width) {
   .swiper--adv .swiper-wrapper {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
   }
 
   .swiper--adv .swiper-slide {
-    padding: 30px 20px;
+    padding: 29px 19px;
     width: 324px;
     min-height: 329px;
   }
@@ -92,13 +90,14 @@
   }
 
   .swiper--adv h3 {
+    margin-bottom: 15px;
     padding-top: 73px;
     font-size: 16px;
     line-height: 16px;
   }
 
   .swiper--adv .swiper-slide::before {
-    top: 30px;
+    top: 29px;
     width: 48px;
     height: 48px;
   }
@@ -118,7 +117,7 @@
   }
 
   .swiper--adv .swiper-slide {
-    padding: 40px 20px;
+    padding: 40px 19px;
     width: 380px;
   }
 
@@ -136,6 +135,10 @@
     padding-top: 84px;
     font-size: 18px;
     line-height: 18px;
+  }
+
+  .swiper--adv h3 br {
+    display: none;
   }
 
   .swiper--adv .swiper-button {

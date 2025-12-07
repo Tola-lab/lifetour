@@ -1,54 +1,79 @@
 .gallery {
   position: relative;
+  padding-top: 21px;
 }
 
 .gallery__title {
-  margin: 20px 15px 10px;
+  margin-bottom: 10px;
+  padding: 16px 15px;
 }
 
 .gallery__duplicate {
   position: absolute;
-  top: 0;
+  top: 24px;
   left: 15px;
 }
 
 .gallery p {
-  margin: 0 15px 31px;
+  margin: 0 15px 30px;
   font-size: 12px;
   line-height: 18px;
 }
 
 @media (min-width: $tablet-width) {
+  .gallery {
+    padding-top: 35px;
+  }
+
   .gallery__title {
-    margin: 40px 45px 20px;
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 25px 45px 15px;
   }
 
   .gallery__duplicate {
-    top: 5px;
+    top: 46px;
     left: 45px;
   }
 
   .gallery p {
-    margin: 0 350px 21px 45px;
-    font-size: 12px;
-    line-height: 18px;
+    margin: 0 335px 22px 45px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .gallery p br {
+    display: block;
+  }
+
+  .gallery .swiper-button {
+    top: 147px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .gallery {
+    padding-top: 103px;
+  }
+
   .gallery__title {
-    margin: 100px 120px 26px;
+    margin-bottom: 23px;
+    padding: 21px 120px 0;
   }
 
   .gallery__duplicate {
-    top: 0;
+    top: 107px;
     left: 120px;
   }
 
   .gallery p {
-    margin: 0 754px 46px 120px;
-    font-size: 12px;
-    line-height: 18px;
+    margin: 0 660px 46px 120px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .gallery p br {
+    display: none;
   }
 
   .gallery .swiper-button {

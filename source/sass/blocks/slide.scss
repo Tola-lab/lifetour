@@ -4,8 +4,9 @@
 
 .slide__name {
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   padding: 0;
+  padding-top: 5px;
   font-size: 12px;
   line-height: 12px;
 }
@@ -17,23 +18,32 @@
 }
 
 @media (min-width: $tablet-width) {
+  .slide__img {
+    margin: 0;
+    margin-right: 30px;
+  }
+
   .slide__text {
+    padding-top: 3px;
     width: 299px;
   }
 
   .slide__name {
-    margin-bottom: 6px;
+    margin-bottom: 2px;
+    padding-top: 16px;
     font-size: 13px;
     line-height: 13px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .slide__img {
-    margin: 0;
+  .slide__text {
+    padding: 0;
+    width: 352px;
   }
 
-  .slide__text {
-    width: 352px;
+  .slide__name {
+    padding-top: 4px;
+    margin-bottom: 3px;
   }
 }

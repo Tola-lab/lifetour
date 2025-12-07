@@ -43,8 +43,8 @@
     content: "";
     position: absolute;
     display: block;
-    top: 15px;
-    left: 18px;
+    top: 14px;
+    left: 19px;
     width: 12px;
     height: 12px;
     background-color: $base-white-color;
@@ -56,6 +56,7 @@
   }
 
   .hero__info--level::after {
+    left: 20px;
     mask-image: url("../../../__spritemap#sprite-level-icon-view");
   }
 }

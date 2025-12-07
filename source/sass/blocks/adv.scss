@@ -4,24 +4,26 @@
 }
 
 .adv__title {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
+  padding-top: 17px;
   text-align: center;
 }
 
 .adv__duplicate {
   position: absolute;
-  top: 20px;
+  top: 24px;
   left: 50%;
   transform: translateX(-50%);
 }
 
 @media (min-width: $tablet-width) {
   .adv__wrapper {
-    padding: 40px 45px;
+    padding: 40px 45px 45px;
   }
 
   .adv__title {
     margin-bottom: 50px;
+    padding-top: 20px;
   }
 
   .adv .swiper-button {
@@ -31,11 +33,16 @@
 
 @media (min-width: $desktop-width) {
   .adv__wrapper {
-    padding: 100px 0;
+    padding: 100px 0 182px;
+  }
+
+  .adv__title {
+    margin-bottom: 49px;
+    padding-top: 35px;
   }
 
   .adv__duplicate {
-    top: 93px;
+    top: 106px;
   }
 
   .adv .swiper-button {

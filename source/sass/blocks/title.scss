@@ -1,7 +1,7 @@
 .title {
   margin: 0;
-  margin-bottom: 25px;
-  padding: 16px 0 17px;
+  margin-bottom: 23px;
+  padding: 19px 0 16px;
   font-weight: 800;
   font-size: 22px;
   line-height: 22px;
@@ -9,6 +9,7 @@
 
 @media (min-width: $tablet-width) {
   .title {
+    margin-bottom: 25px;
     padding: 20px 0 10px;
     font-size: 25px;
     line-height: 25px;
@@ -17,7 +18,8 @@
 
 @media (min-width: $desktop-width) {
   .title {
-    padding: 19px 0 1px;
+    margin-bottom: 49px;
+    padding: 23px 0 1px;
     font-size: 35px;
     line-height: 35px;
   }

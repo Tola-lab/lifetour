@@ -1,27 +1,44 @@
-.swiper--gallery .swiper-button {
+.swiper--gallery {
+  margin-bottom: 5px;
+}
+
+.swiper--gallery.swiper-button {
   display: none;
+}
+
+.swiper--gallery .swiper-slide {
+  width: 158px;
+  height: 266px;
 }
 
 .swiper--gallery .swiper-slide--double {
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 2px;
 }
 
 @media (min-width: $tablet-width) {
-  .swiper--gallery .swiper-button {
-    display: block;
-    top: -55px;
-    right: 86px;
+  .swiper--gallery {
+    margin-bottom: 2px;
   }
 
-  .swiper--gallery .swiper-button-next {
-    right: 45px;
+  .swiper--gallery .swiper-slide {
+    width: 253px;
+    height: 419px;
+  }
+
+  .swiper--gallery .swiper-slide--double {
+    gap: 7px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .swiper--gallery .swiper-wrapper {
     margin-bottom: -2px;
+  }
+
+  .swiper--gallery .swiper-slide {
+    width: 284px;
+    height: 464px;
   }
 }

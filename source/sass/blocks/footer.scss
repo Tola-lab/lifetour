@@ -1,6 +1,12 @@
 .footer__contacts {
   position: relative;
-  padding: 20px 15px 30px;
+  padding: 22px 15px 30px;
+}
+
+.footer__map {
+  position: relative;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(45, 56, 63, 0.2);
 }
 
 .footer__copyright {
@@ -25,6 +31,10 @@
   .footer__contacts {
     padding: 40px 43px 40px 45px;
   }
+
+  .footer__map {
+    padding-bottom: 40px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -33,12 +43,18 @@
   }
 
   .footer__contacts {
-    padding: 100px 720px 95px 120px;
+    padding: 102px 720px 94px 120px;
+    border-bottom: 1px solid rgb(45, 56, 63, 0.2);
+  }
+
+  .footer__map {
+    padding: 0;
+    border: none;
   }
 
   .footer__map img {
     position: absolute;
-    bottom: 170px;
+    bottom: 146px;
     right: 120px;
   }
 }

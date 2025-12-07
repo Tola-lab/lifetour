@@ -26,7 +26,7 @@
 
 .tours__duplicate {
   position: absolute;
-  top: 20px;
+  top: 23px;
   left: 15px;
 }
 
@@ -38,6 +38,7 @@
   width: 212px;
   font-weight: 700;
   line-height: 14px;
+  letter-spacing: 0.03em;
   color: $base-black-color;
   text-decoration: none;
   text-transform: uppercase;
@@ -50,13 +51,13 @@
   position: absolute;
   display: block;
   top: 7px;
-  right: -5px;
+  right: 2px;
   width: 20px;
   height: 20px;
   background-color: $base-black-color;
   mask-image: url("../../../__spritemap#sprite-arrow-icon-view");
   mask-repeat: no-repeat;
-  mask-size: 20px 12px;
+  mask-size: 17px 14px;
   mask-position: center;
   transition: all 0.6s;
 }
@@ -99,15 +100,21 @@
   }
 
   .tours__duplicate {
-    top: 40px;
+    top: 45px;
     left: 45px;
+    z-index: 2;
   }
 
   .tours__button {
-    padding: 10px 12px;
+    padding: 10px 0;
     font-size: 16px;
     line-height: 16px;
     background-position: 200px 11px;
+  }
+
+  .tours__button::after {
+    top: 9px;
+    right: -11px;
   }
 }
 
@@ -117,7 +124,7 @@
   }
 
   .tours__duplicate {
-    top: 100px;
+    top: 104px;
     left: 120px;
   }
 }
