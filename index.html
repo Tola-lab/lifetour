@@ -10,8 +10,8 @@
   <link rel="icon" href="/lifetour/assets/favicon-dXV0Wo_Q.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/lifetour/assets/apple-Cpsi4GwL.png">
   <link rel="manifest" href="/lifetour/assets/manifest-CIesVjf9.webmanifest">
-  <script type="module" crossorigin src="/lifetour/assets/index-5Vqza2Dy.js"></script>
-  <link rel="stylesheet" crossorigin href="/lifetour/assets/index-C3MeOaHm.css">
+  <script type="module" crossorigin src="/lifetour/assets/index-C87PWyJq.js"></script>
+  <link rel="stylesheet" crossorigin href="/lifetour/assets/index-D1qi5Psy.css">
 </head>
 
 <body class="page__body">
@@ -52,39 +52,41 @@
 
   <main class="main-container">
     <section class="hero" data-test="hero">
-      <h1 class="visually-hidden">Туры по горам и невероятная природа</h1>
-      <div class="swiper swiper--hero">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide swiper-slide--kavkaz">
-            <h2>Захватывающие вершины Кавказа</h2>
-            <p>В сопровождении опытных гидов вы пройдёте через потрясающие
-              ландшафты и совершите восход на вершину горы Чегет.</p>
-            <a class="hero__button button" href="#">Смотреть тур</a>
-            <div class="hero__details">
-              <span class="hero__info hero__info--duration">6 дней/5 ночей</span>
-              <span class="hero__info hero__info--level">Высокая сложность</span>
+      <div class="hero__wrapper">
+        <h1 class="visually-hidden">Туры по горам и невероятная природа</h1>
+        <div class="hero__swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide--kavkaz">
+              <h2>Захватывающие вершины Кавказа</h2>
+              <p>В сопровождении опытных гидов вы пройдёте через потрясающие
+                ландшафты и совершите восход на вершину горы Чегет.</p>
+              <a class="hero__button button" href="#">Смотреть тур</a>
+              <div class="hero__details">
+                <span class="hero__info hero__info--duration">6 дней/5 ночей</span>
+                <span class="hero__info hero__info--level">Высокая сложность</span>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--kamchatka">
+              <h2>Невероятная природа Камчатки</h2>
+              <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
+              <a class="hero__button button" href="#">Смотреть тур</a>
+              <div class="hero__details">
+                <span class="hero__info hero__info--duration">9 дней/10 ночей</span>
+                <span class="hero__info hero__info--level">Средняя сложность</span>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--altai">
+              <h2>Магические пейзажи Алтайского Края</h2>
+              <p>Алтайский трекинг-тур – это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
+              <a class="hero__button button" href="#">Смотреть тур</a>
+              <div class="hero__details">
+                <span class="hero__info hero__info--duration">8 дней/7 ночей</span>
+                <span class="hero__info hero__info--level">Лёгкая сложность</span>
+              </div>
             </div>
           </div>
-          <div class="swiper-slide swiper-slide--kamchatka">
-            <h2>Невероятная природа Камчатки</h2>
-            <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
-            <a class="hero__button button" href="#">Смотреть тур</a>
-            <div class="hero__details">
-              <span class="hero__info hero__info--duration">9 дней/10 ночей</span>
-              <span class="hero__info hero__info--level">Средняя сложность</span>
-            </div>
-          </div>
-          <div class="swiper-slide swiper-slide--altai">
-            <h2>Магические пейзажи Алтайского Края</h2>
-            <p>Алтайский трекинг-тур – это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
-            <a class="hero__button button" href="#">Смотреть тур</a>
-            <div class="hero__details">
-              <span class="hero__info hero__info--duration">8 дней/7 ночей</span>
-              <span class="hero__info hero__info--level">Лёгкая сложность</span>
-            </div>
-          </div>
+          <div class="hero__pagination swiper-pagination"></div>
         </div>
-        <div class="swiper-pagination"></div>
       </div>
     </section>
 
@@ -98,7 +100,7 @@
         <button class="swiper-button swiper-button-next" type="button">
           <span class="visually-hidden">Следующий слайд</span>
         </button>
-        <div class="swiper swiper--tours">
+        <div class="tours__swiper swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide swiper-slide--elbrus">
               <div class="info">
@@ -226,7 +228,7 @@
         <button class="swiper-button swiper-button-next" type="button">
           <span class="visually-hidden">Следующий слайд</span>
         </button>
-        <div class="swiper swiper--training">
+        <div class="training__swiper swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <picture>
@@ -354,7 +356,7 @@
         <button class="swiper-button swiper-button-next" type="button">
           <span class="visually-hidden">Следующий слайд</span>
         </button>
-        <div class="swiper swiper--reviews">
+        <div class="reviews__swiper swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide slide">
               <picture>
@@ -434,11 +436,11 @@
       </div>
     </section>
 
-    <section class="adv" data-test="adv">
-      <div class="adv__wrapper">
-        <h2 class="adv__title title">Преимущества</h2>
-        <span class="adv__duplicate duplicate" aria-hidden="true">Преимущества</span>
-        <div class="swiper swiper--adv">
+    <section class="advantages" data-test="adv">
+      <div class="advantages__wrapper">
+        <h2 class="advantages__title title">Преимущества</h2>
+        <span class="advantages__duplicate duplicate" aria-hidden="true">Преимущества</span>
+        <div class="advantages__swiper swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide swiper-slide--safe">
               <h3>Безопасность</h3>
@@ -485,201 +487,207 @@
     </section>
 
     <section class="gallery" data-test="gallery" id="gallery">
-      <h2 class="gallery__title title">Фотогалерея</h2>
-      <span class="gallery__duplicate duplicate" aria-hidden="true">Фотогалерея</span>
-      <p>Добавляйте фото с хэштегом #лайфтур,<br> а также отмечайте нас на фото.
-        Лучшие фотографии украсят этот раздел нашего сайта.</p>
-      <button class="swiper-button swiper-button-prev" type="button">
-        <span class="visually-hidden">Предыдущий слайд</span>
-      </button>
-      <button class="swiper-button swiper-button-next" type="button">
-        <span class="visually-hidden">Следующий слайд</span>
-      </button>
-      <div class="swiper swiper--gallery">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <picture>
-              <source width="284" height="463" type="image/webp" media="(min-width: 1440px)" srcset="/lifetour/assets/gallery-man-desktop@1x-pwQrjR63.webp 1x, /lifetour/assets/gallery-man-desktop@2x-HnLsa41c.webp 2x">
-              <source width="253" height="418" type="image/webp" media="(min-width: 768px)" srcset="/lifetour/assets/gallery-man-tablet@1x-CXzlY-54.webp 1x, /lifetour/assets/gallery-man-tablet@2x-CTK3d7K1.webp 2x">
-              <source width="158" height="266" type="image/webp" srcset="/lifetour/assets/gallery-man-mobile@1x-B8Y8PDfR.webp 1x, /lifetour/assets/gallery-man-mobile@2x-Dd6Q5OZU.webp 2x">
+      <div class="gallery__wrapper">
+        <h2 class="gallery__title title">Фотогалерея</h2>
+        <span class="gallery__duplicate duplicate" aria-hidden="true">Фотогалерея</span>
+        <p>Добавляйте фото с хэштегом #лайфтур,<br> а также отмечайте нас на фото.
+          Лучшие фотографии украсят этот раздел нашего сайта.</p>
+        <button class="swiper-button swiper-button-prev" type="button">
+          <span class="visually-hidden">Предыдущий слайд</span>
+        </button>
+        <button class="swiper-button swiper-button-next" type="button">
+          <span class="visually-hidden">Следующий слайд</span>
+        </button>
+        <div class="gallery__swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <picture>
+                <source width="284" height="463" type="image/webp" media="(min-width: 1440px)" srcset="/lifetour/assets/gallery-man-desktop@1x-pwQrjR63.webp 1x, /lifetour/assets/gallery-man-desktop@2x-HnLsa41c.webp 2x">
+                <source width="253" height="418" type="image/webp" media="(min-width: 768px)" srcset="/lifetour/assets/gallery-man-tablet@1x-CXzlY-54.webp 1x, /lifetour/assets/gallery-man-tablet@2x-CTK3d7K1.webp 2x">
+                <source width="158" height="266" type="image/webp" srcset="/lifetour/assets/gallery-man-mobile@1x-B8Y8PDfR.webp 1x, /lifetour/assets/gallery-man-mobile@2x-Dd6Q5OZU.webp 2x">
 
-              <source width="284" height="463" type="image/png" media="(min-width: 1440px)" srcset="/lifetour/assets/gallery-man-desktop@1x-BM0_nzAs.png, /lifetour/assets/gallery-man-desktop@2x-C1GI4ntI.png 2x">
-              <source width="253" height="418" type="image/png" media="(min-width: 768px)" srcset="/lifetour/assets/gallery-man-tablet@1x-BJxrN5Pp.png, /lifetour/assets/gallery-man-tablet@2x-GIAtsuab.png 2x">
+                <source width="284" height="463" type="image/png" media="(min-width: 1440px)" srcset="/lifetour/assets/gallery-man-desktop@1x-BM0_nzAs.png, /lifetour/assets/gallery-man-desktop@2x-C1GI4ntI.png 2x">
+                <source width="253" height="418" type="image/png" media="(min-width: 768px)" srcset="/lifetour/assets/gallery-man-tablet@1x-BJxrN5Pp.png, /lifetour/assets/gallery-man-tablet@2x-GIAtsuab.png 2x">
 
-              <img src="/lifetour/assets/gallery-man-mobile@1x-ChjOmDL1.png" srcset="/lifetour/assets/gallery-man-mobile@2x-CSfESRTm.png 2x" width="158" height="266" alt="Парень на фоне гор">
-            </picture>
+                <img src="/lifetour/assets/gallery-man-mobile@1x-ChjOmDL1.png" srcset="/lifetour/assets/gallery-man-mobile@2x-CSfESRTm.png 2x" width="158" height="266" alt="Парень на фоне гор">
+              </picture>
+            </div>
+            <div class="swiper-slide swiper-slide--double">
+              <picture>
+                <source width="284" height="232" type="image/webp" media="(min-width: 1440px)" srcset="/lifetour/assets/gallery-bonfire-desktop@1x-CkGFcw5f.webp 1x, /lifetour/assets/gallery-bonfire-desktop@2x-CZqCWY9Q.webp 2x">
+                <source width="252" height="210" type="image/webp" media="(min-width: 768px)" srcset="/lifetour/assets/gallery-bonfire-tablet@1x-Jyrq2dsF.webp 1x, /lifetour/assets/gallery-bonfire-tablet@2x-DacNeJoE.webp 2x">
+                <source width="157" height="140" type="image/webp" srcset="/lifetour/assets/gallery-bonfire-mobile@1x-3Gc1TTjE.webp 1x, /lifetour/assets/gallery-bonfire-mobile@2x-0otKsuQo.webp 2x">
+
+                <source width="284" height="232" type="image/png" media="(min-width: 1440px)" srcset="/lifetour/assets/gallery-bonfire-desktop@1x-Cl_6t2bM.png, /lifetour/assets/gallery-bonfire-desktop@2x-CKeMTKXm.png 2x">
+                <source width="252" height="210" type="image/png" media="(min-width: 768px)" srcset="/lifetour/assets/gallery-bonfire-tablet@1x-Ciz6Dj_l.png, /lifetour/assets/gallery-bonfire-tablet@2x-jPNWCy6U.png 2x">
+
+                <img src="/lifetour/assets/gallery-bonfire-mobile@1x-BwwJUR-p.png" srcset="/lifetour/assets/gallery-bonfire-mobile@2x-CM7kfUQs.png 2x" width="157" height="140" alt="Люди сидят у костра">
+              </picture>
+              <picture>
+                <source width="284" height="224" type="image/webp" media="(min-width: 1440px)" srcset="/lifetour/assets/gallery-compass-desktop@1x-0HDh6pRx.webp 1x, /lifetour/assets/gallery-compass-desktop@2x-kkT41sOI.webp 2x">
+                <source width="252" height="200" type="image/webp" media="(min-width: 768px)" srcset="/lifetour/assets/gallery-compass-tablet@1x-BaXqGvXp.webp 1x, /lifetour/assets/gallery-compass-tablet@2x-l-QI2Uhd.webp 2x">
+                <source width="157" height="125" type="image/webp" srcset="data:image/webp;base64,UklGRqoEAABXRUJQVlA4IJ4EAADQFQCdASpPAD8APm00lEgkIyGhJngKAIANiWMAtKQFUWjg/usWyQAqe/hj+W8H66ytjvxmMBAGVCsI77H2voqqjw2rWPgvajJP/BE46bElu882gddQR9nUg6Ya1LR/wNHUSiJI2R8NcRRoFwIoJx1avLRgIs6MU+hjLUhThlOeTB1AX5pPG0vFGOiyceox/WjeD7Pt4BGeoL/LX0SUnEKXHHRk8RC/iEE0OiWAeamwNy85KXPH5wAA/rFeV5rqD6Gai5NyJtYvpz4CebHRvns2xxcGvUXyjHZwV0pejsNOLxw23FJPi9ZuplyMwK9z3zgnnOQK2H4JCsUbuABbldMLmmG2aahKXAcIGqbHkKEiHF7bUs4TO5UShXulOHKuurrg0jmIkMglm8Vdj2upf/jf9NxkvEH4mApvAXRJ2wfF6ivzR/k2ngzNlpK/QEhDnSP5vqOWdstngeSAQ+bPZ8d8D7B5TRQ5p+7HpMIyLjastWMaGJEx14j4YvLOoYa/o91XUpz94kyhn4khOzdBgfDdJ9bh7jYlACWoQ1pzczPfglNT/cofHxYtVbhp7WekSZRZz7tJUR5kEB2O7Em3K9JF1987EZueJRRX8SjavYmrK9dKIgBxjXl+Jp3GIlxqUG1KHbl9DiJsOCi0UAhCoYLO6+H5qjwNic8QYEaukCyh+I1hNbTlXWBnsL2xQc6i0qZ7Suk4051lI9Ef3QAsnOfpy0J3Q5oScRBX/PMOlFWCYcKXPG9wvpFF7aiesBR5S71RrrDr/uKY9lIF1ZOy7tp8CYajPRmEifFIzDpKUo2d6DypaTUhPn2KLbUWz983ryHhiyZNvrZXHSEvKuSl0N6W4T4k0lLM3Q116EJXknH4OnTq5U2EO77gHylo04ICJT0QyyTlPQoC0s5hy1iYicHah3lmUgBg1gWIf7ukZb3t9XwWTmDc/HY7+/PJu2czG7jMdJ8VuujAx7OI5B/J4i5exnAfo4XvXMT6EmTiTEUPMc6C0NvGTSDk3jW1/ogiHQbi4DBcglDKQ718lrq79fOEqgX+yWJTMhyUUQ89befO575Vu4RxzrkWy6AWqfRh2xkU9S3oiTKq8zkOgx5M5j5zZvh4smuP1lsvibi/lzqr4In6fGuOZkiwcBZA8B8Xk/P7bdJ2uUw90EF0REditm3cFjkjatvdzsD+2+ALiaaz7YKkXfZ73zkYs0k9gvw5zsMAucmUnW0XC0b2KqGf6rIBI5FSLRHww1PXdow/JXlUe+DxhXsSIPh9vVeX4TdHfbIp+8p0nPTYc8rum4MxCpoGfLX4fO8YSlrIpyjcx0tEYpzsd4K0erMPS/xR6hFeRs+EG1QhQNCzWlr/GfC9v2kMg6uLNx+6PFTwYJH4Q3lO7vFb0f/nzyAIEq+zzcB8+9rox51nlOqDHF5XQdWTmCrVnzclaoT4HSsYzZwSo6i3wdtN3WjaNl8IzOQno53ME6X11K+9RTdQAVyJGQOm6LiXSnSddWaSnOmOiUfWk9jUx5kcJ6/0/pVrORSgxm7LQ595QRUJ03enBbWY9OzX9QN3tQ4h4P0RlvKbcSEHEAA= 1x, data:image/webp;base64,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 2x">
+
+                <source width="284" height="224" type="image/png" media="(min-width: 1440px)" srcset="/lifetour/assets/gallery-compass-desktop@1x-D-q6ekZU.png, /lifetour/assets/gallery-compass-desktop@2x-W8FCE4eO.png 2x">
+                <source width="252" height="200" type="image/png" media="(min-width: 768px)" srcset="/lifetour/assets/gallery-compass-tablet@1x-BUNAw82G.png, /lifetour/assets/gallery-compass-tablet@2x-BIWmUSOc.png 2x">
+
+                <img src="/lifetour/assets/gallery-compass-mobile@1x-36GlwNpH.png" srcset="/lifetour/assets/gallery-compass-mobile@2x-Ca6MXAlg.png 2x" width="157" height="125" alt="Компас на фоне гор">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source width="284" height="463" type="image/webp" media="(min-width: 1440px)" srcset="/lifetour/assets/gallery-path@1x-CTSdMBZ6.webp 1x, /lifetour/assets/gallery-path@2x-CBW3cBB3.webp 2x">
+                <source width="251" height="420" type="image/webp" media="(min-width: 768px)" srcset="/lifetour/assets/gallery-path@1x-CTSdMBZ6.webp 1x, /lifetour/assets/gallery-path@2x-CBW3cBB3.webp 2x">
+                <source width="158" height="266" type="image/webp" srcset="/lifetour/assets/gallery-path@1x-CTSdMBZ6.webp 1x, /lifetour/assets/gallery-path@2x-CBW3cBB3.webp 2x">
+
+                <source width="284" height="463" type="image/png" media="(min-width: 1440px)" srcset="img/gallery-path@1x.png, img/gallery-path@2x.png 2x">
+                <source width="251" height="420" type="image/png" media="(min-width: 768px)" srcset="img/gallery-path@1x.png, img/gallery-path@2x.png 2x">
+
+                <img src="/lifetour/assets/gallery-path@1x-C_Huddx2.jpg" srcset="/lifetour/assets/gallery-path@2x-CeaJXpDr.jpg 2x" width="158" height="266" alt="Группа в походе">
+              </picture>
+            </div>
+            <div class="swiper-slide swiper-slide--double">
+              <picture>
+                <source width="284" height="232" type="image/webp" media="(min-width: 1440px)" srcset="/lifetour/assets/gallery-ice@1x-bZGI1jNf.webp 1x, /lifetour/assets/gallery-ice@2x-KsfiOqOT.webp 2x">
+                <source width="252" height="205" type="image/webp" media="(min-width: 768px)" srcset="/lifetour/assets/gallery-ice@1x-bZGI1jNf.webp 1x, /lifetour/assets/gallery-ice@2x-KsfiOqOT.webp 2x">
+                <source width="157" height="140" type="image/webp" srcset="/lifetour/assets/gallery-ice@1x-bZGI1jNf.webp 1x, /lifetour/assets/gallery-ice@2x-KsfiOqOT.webp 2x">
+
+                <source width="284" height="232" type="image/png" media="(min-width: 1440px)" srcset="/lifetour/assets/gallery-ice@1x-C72qYxPN.png, /lifetour/assets/gallery-ice@2x-DKAmbtOR.png 2x">
+                <source width="252" height="205" type="image/png" media="(min-width: 768px)" srcset="/lifetour/assets/gallery-ice@1x-C72qYxPN.png, /lifetour/assets/gallery-ice@2x-DKAmbtOR.png 2x">
+
+                <img src="/lifetour/assets/gallery-ice@1x-C72qYxPN.png" srcset="/lifetour/assets/gallery-ice@2x-DKAmbtOR.png 2x" width="157" height="140" alt="Люди идут вдоль ледника">
+              </picture>
+              <picture>
+                <source width="284" height="224" type="image/webp" media="(min-width: 1440px)" srcset="/lifetour/assets/gallery-tent@1x-r2vyvBZW.webp 1x, /lifetour/assets/gallery-tent@2x-MNDamXVE.webp 2x">
+                <source width="252" height="206" type="image/webp" media="(min-width: 768px)" srcset="/lifetour/assets/gallery-tent@1x-r2vyvBZW.webp 1x, /lifetour/assets/gallery-tent@2x-MNDamXVE.webp 2x">
+                <source width="157" height="125" type="image/webp" srcset="/lifetour/assets/gallery-tent@1x-r2vyvBZW.webp 1x, /lifetour/assets/gallery-tent@2x-MNDamXVE.webp 2x">
+
+                <source width="284" height="224" type="image/png" media="(min-width: 1440px)" srcset="/lifetour/assets/gallery-tent@1x-u9R38qXq.png, /lifetour/assets/gallery-tent@2x-ChjdTh-v.png 2x">
+                <source width="252" height="206" type="image/png" media="(min-width: 768px)" srcset="/lifetour/assets/gallery-tent@1x-u9R38qXq.png, /lifetour/assets/gallery-tent@2x-ChjdTh-v.png 2x">
+
+                <img src="/lifetour/assets/gallery-tent@1x-u9R38qXq.png" srcset="/lifetour/assets/gallery-tent@2x-ChjdTh-v.png 2x" width="157" height="125" alt="Палатка под звездным небом">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source width="284" height="463" type="image/webp" media="(min-width: 1440px)" srcset="/lifetour/assets/gallery-lake@1x-CStaEM2y.webp 1x, /lifetour/assets/gallery-lake@2x-CpCH4Gp4.webp 2x">
+                <source width="253" height="418" type="image/webp" media="(min-width: 768px)" srcset="/lifetour/assets/gallery-lake@1x-CStaEM2y.webp 1x, /lifetour/assets/gallery-lake@2x-CpCH4Gp4.webp 2x">
+                <source width="158" height="266" type="image/webp" srcset="/lifetour/assets/gallery-lake@1x-CStaEM2y.webp 1x, /lifetour/assets/gallery-lake@2x-CpCH4Gp4.webp 2x">
+
+                <source width="284" height="463" type="image/png" media="(min-width: 1440px)" srcset="/lifetour/assets/gallery-lake@1x-BobnxG3S.png, /lifetour/assets/gallery-lake@2x-CVPXw6g7.png 2x">
+                <source width="253" height="418" type="image/png" media="(min-width: 768px)" srcset="/lifetour/assets/gallery-lake@1x-BobnxG3S.png, /lifetour/assets/gallery-lake@2x-CVPXw6g7.png 2x">
+
+                <img src="/lifetour/assets/gallery-lake@1x-BobnxG3S.png" srcset="/lifetour/assets/gallery-lake@2x-CVPXw6g7.png 2x" width="158" height="266" alt="Два парня разводят костёр у озера">
+              </picture>
+            </div>
+            <div class="swiper-scrollbar"></div>
           </div>
-          <div class="swiper-slide swiper-slide--double">
-            <picture>
-              <source width="284" height="232" type="image/webp" media="(min-width: 1440px)" srcset="/lifetour/assets/gallery-bonfire-desktop@1x-CkGFcw5f.webp 1x, /lifetour/assets/gallery-bonfire-desktop@2x-CZqCWY9Q.webp 2x">
-              <source width="252" height="210" type="image/webp" media="(min-width: 768px)" srcset="/lifetour/assets/gallery-bonfire-tablet@1x-Jyrq2dsF.webp 1x, /lifetour/assets/gallery-bonfire-tablet@2x-DacNeJoE.webp 2x">
-              <source width="157" height="140" type="image/webp" srcset="/lifetour/assets/gallery-bonfire-mobile@1x-3Gc1TTjE.webp 1x, /lifetour/assets/gallery-bonfire-mobile@2x-0otKsuQo.webp 2x">
-
-              <source width="284" height="232" type="image/png" media="(min-width: 1440px)" srcset="/lifetour/assets/gallery-bonfire-desktop@1x-Cl_6t2bM.png, /lifetour/assets/gallery-bonfire-desktop@2x-CKeMTKXm.png 2x">
-              <source width="252" height="210" type="image/png" media="(min-width: 768px)" srcset="/lifetour/assets/gallery-bonfire-tablet@1x-Ciz6Dj_l.png, /lifetour/assets/gallery-bonfire-tablet@2x-jPNWCy6U.png 2x">
-
-              <img src="/lifetour/assets/gallery-bonfire-mobile@1x-BwwJUR-p.png" srcset="/lifetour/assets/gallery-bonfire-mobile@2x-CM7kfUQs.png 2x" width="157" height="140" alt="Люди сидят у костра">
-            </picture>
-            <picture>
-              <source width="284" height="224" type="image/webp" media="(min-width: 1440px)" srcset="/lifetour/assets/gallery-compass-desktop@1x-0HDh6pRx.webp 1x, /lifetour/assets/gallery-compass-desktop@2x-kkT41sOI.webp 2x">
-              <source width="252" height="200" type="image/webp" media="(min-width: 768px)" srcset="/lifetour/assets/gallery-compass-tablet@1x-BaXqGvXp.webp 1x, /lifetour/assets/gallery-compass-tablet@2x-l-QI2Uhd.webp 2x">
-              <source width="157" height="125" type="image/webp" srcset="data:image/webp;base64,UklGRqoEAABXRUJQVlA4IJ4EAADQFQCdASpPAD8APm00lEgkIyGhJngKAIANiWMAtKQFUWjg/usWyQAqe/hj+W8H66ytjvxmMBAGVCsI77H2voqqjw2rWPgvajJP/BE46bElu882gddQR9nUg6Ya1LR/wNHUSiJI2R8NcRRoFwIoJx1avLRgIs6MU+hjLUhThlOeTB1AX5pPG0vFGOiyceox/WjeD7Pt4BGeoL/LX0SUnEKXHHRk8RC/iEE0OiWAeamwNy85KXPH5wAA/rFeV5rqD6Gai5NyJtYvpz4CebHRvns2xxcGvUXyjHZwV0pejsNOLxw23FJPi9ZuplyMwK9z3zgnnOQK2H4JCsUbuABbldMLmmG2aahKXAcIGqbHkKEiHF7bUs4TO5UShXulOHKuurrg0jmIkMglm8Vdj2upf/jf9NxkvEH4mApvAXRJ2wfF6ivzR/k2ngzNlpK/QEhDnSP5vqOWdstngeSAQ+bPZ8d8D7B5TRQ5p+7HpMIyLjastWMaGJEx14j4YvLOoYa/o91XUpz94kyhn4khOzdBgfDdJ9bh7jYlACWoQ1pzczPfglNT/cofHxYtVbhp7WekSZRZz7tJUR5kEB2O7Em3K9JF1987EZueJRRX8SjavYmrK9dKIgBxjXl+Jp3GIlxqUG1KHbl9DiJsOCi0UAhCoYLO6+H5qjwNic8QYEaukCyh+I1hNbTlXWBnsL2xQc6i0qZ7Suk4051lI9Ef3QAsnOfpy0J3Q5oScRBX/PMOlFWCYcKXPG9wvpFF7aiesBR5S71RrrDr/uKY9lIF1ZOy7tp8CYajPRmEifFIzDpKUo2d6DypaTUhPn2KLbUWz983ryHhiyZNvrZXHSEvKuSl0N6W4T4k0lLM3Q116EJXknH4OnTq5U2EO77gHylo04ICJT0QyyTlPQoC0s5hy1iYicHah3lmUgBg1gWIf7ukZb3t9XwWTmDc/HY7+/PJu2czG7jMdJ8VuujAx7OI5B/J4i5exnAfo4XvXMT6EmTiTEUPMc6C0NvGTSDk3jW1/ogiHQbi4DBcglDKQ718lrq79fOEqgX+yWJTMhyUUQ89befO575Vu4RxzrkWy6AWqfRh2xkU9S3oiTKq8zkOgx5M5j5zZvh4smuP1lsvibi/lzqr4In6fGuOZkiwcBZA8B8Xk/P7bdJ2uUw90EF0REditm3cFjkjatvdzsD+2+ALiaaz7YKkXfZ73zkYs0k9gvw5zsMAucmUnW0XC0b2KqGf6rIBI5FSLRHww1PXdow/JXlUe+DxhXsSIPh9vVeX4TdHfbIp+8p0nPTYc8rum4MxCpoGfLX4fO8YSlrIpyjcx0tEYpzsd4K0erMPS/xR6hFeRs+EG1QhQNCzWlr/GfC9v2kMg6uLNx+6PFTwYJH4Q3lO7vFb0f/nzyAIEq+zzcB8+9rox51nlOqDHF5XQdWTmCrVnzclaoT4HSsYzZwSo6i3wdtN3WjaNl8IzOQno53ME6X11K+9RTdQAVyJGQOm6LiXSnSddWaSnOmOiUfWk9jUx5kcJ6/0/pVrORSgxm7LQ595QRUJ03enBbWY9OzX9QN3tQ4h4P0RlvKbcSEHEAA= 1x, data:image/webp;base64,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 2x">
-
-              <source width="284" height="224" type="image/png" media="(min-width: 1440px)" srcset="/lifetour/assets/gallery-compass-desktop@1x-D-q6ekZU.png, /lifetour/assets/gallery-compass-desktop@2x-W8FCE4eO.png 2x">
-              <source width="252" height="200" type="image/png" media="(min-width: 768px)" srcset="/lifetour/assets/gallery-compass-tablet@1x-BUNAw82G.png, /lifetour/assets/gallery-compass-tablet@2x-BIWmUSOc.png 2x">
-
-              <img src="/lifetour/assets/gallery-compass-mobile@1x-36GlwNpH.png" srcset="/lifetour/assets/gallery-compass-mobile@2x-Ca6MXAlg.png 2x" width="157" height="125" alt="Компас на фоне гор">
-            </picture>
-          </div>
-          <div class="swiper-slide">
-            <picture>
-              <source width="284" height="463" type="image/webp" media="(min-width: 1440px)" srcset="/lifetour/assets/gallery-path@1x-CTSdMBZ6.webp 1x, /lifetour/assets/gallery-path@2x-CBW3cBB3.webp 2x">
-              <source width="251" height="420" type="image/webp" media="(min-width: 768px)" srcset="/lifetour/assets/gallery-path@1x-CTSdMBZ6.webp 1x, /lifetour/assets/gallery-path@2x-CBW3cBB3.webp 2x">
-              <source width="158" height="266" type="image/webp" srcset="/lifetour/assets/gallery-path@1x-CTSdMBZ6.webp 1x, /lifetour/assets/gallery-path@2x-CBW3cBB3.webp 2x">
-
-              <source width="284" height="463" type="image/png" media="(min-width: 1440px)" srcset="img/gallery-path@1x.png, img/gallery-path@2x.png 2x">
-              <source width="251" height="420" type="image/png" media="(min-width: 768px)" srcset="img/gallery-path@1x.png, img/gallery-path@2x.png 2x">
-
-              <img src="/lifetour/assets/gallery-path@1x-C_Huddx2.jpg" srcset="/lifetour/assets/gallery-path@2x-CeaJXpDr.jpg 2x" width="158" height="266" alt="Группа в походе">
-            </picture>
-          </div>
-          <div class="swiper-slide swiper-slide--double">
-            <picture>
-              <source width="284" height="232" type="image/webp" media="(min-width: 1440px)" srcset="/lifetour/assets/gallery-ice@1x-bZGI1jNf.webp 1x, /lifetour/assets/gallery-ice@2x-KsfiOqOT.webp 2x">
-              <source width="252" height="205" type="image/webp" media="(min-width: 768px)" srcset="/lifetour/assets/gallery-ice@1x-bZGI1jNf.webp 1x, /lifetour/assets/gallery-ice@2x-KsfiOqOT.webp 2x">
-              <source width="157" height="140" type="image/webp" srcset="/lifetour/assets/gallery-ice@1x-bZGI1jNf.webp 1x, /lifetour/assets/gallery-ice@2x-KsfiOqOT.webp 2x">
-
-              <source width="284" height="232" type="image/png" media="(min-width: 1440px)" srcset="/lifetour/assets/gallery-ice@1x-C72qYxPN.png, /lifetour/assets/gallery-ice@2x-DKAmbtOR.png 2x">
-              <source width="252" height="205" type="image/png" media="(min-width: 768px)" srcset="/lifetour/assets/gallery-ice@1x-C72qYxPN.png, /lifetour/assets/gallery-ice@2x-DKAmbtOR.png 2x">
-
-              <img src="/lifetour/assets/gallery-ice@1x-C72qYxPN.png" srcset="/lifetour/assets/gallery-ice@2x-DKAmbtOR.png 2x" width="157" height="140" alt="Люди идут вдоль ледника">
-            </picture>
-            <picture>
-              <source width="284" height="224" type="image/webp" media="(min-width: 1440px)" srcset="/lifetour/assets/gallery-tent@1x-r2vyvBZW.webp 1x, /lifetour/assets/gallery-tent@2x-MNDamXVE.webp 2x">
-              <source width="252" height="206" type="image/webp" media="(min-width: 768px)" srcset="/lifetour/assets/gallery-tent@1x-r2vyvBZW.webp 1x, /lifetour/assets/gallery-tent@2x-MNDamXVE.webp 2x">
-              <source width="157" height="125" type="image/webp" srcset="/lifetour/assets/gallery-tent@1x-r2vyvBZW.webp 1x, /lifetour/assets/gallery-tent@2x-MNDamXVE.webp 2x">
-
-              <source width="284" height="224" type="image/png" media="(min-width: 1440px)" srcset="/lifetour/assets/gallery-tent@1x-u9R38qXq.png, /lifetour/assets/gallery-tent@2x-ChjdTh-v.png 2x">
-              <source width="252" height="206" type="image/png" media="(min-width: 768px)" srcset="/lifetour/assets/gallery-tent@1x-u9R38qXq.png, /lifetour/assets/gallery-tent@2x-ChjdTh-v.png 2x">
-
-              <img src="/lifetour/assets/gallery-tent@1x-u9R38qXq.png" srcset="/lifetour/assets/gallery-tent@2x-ChjdTh-v.png 2x" width="157" height="125" alt="Палатка под звездным небом">
-            </picture>
-          </div>
-          <div class="swiper-slide">
-            <picture>
-              <source width="284" height="463" type="image/webp" media="(min-width: 1440px)" srcset="/lifetour/assets/gallery-lake@1x-CStaEM2y.webp 1x, /lifetour/assets/gallery-lake@2x-CpCH4Gp4.webp 2x">
-              <source width="253" height="418" type="image/webp" media="(min-width: 768px)" srcset="/lifetour/assets/gallery-lake@1x-CStaEM2y.webp 1x, /lifetour/assets/gallery-lake@2x-CpCH4Gp4.webp 2x">
-              <source width="158" height="266" type="image/webp" srcset="/lifetour/assets/gallery-lake@1x-CStaEM2y.webp 1x, /lifetour/assets/gallery-lake@2x-CpCH4Gp4.webp 2x">
-
-              <source width="284" height="463" type="image/png" media="(min-width: 1440px)" srcset="/lifetour/assets/gallery-lake@1x-BobnxG3S.png, /lifetour/assets/gallery-lake@2x-CVPXw6g7.png 2x">
-              <source width="253" height="418" type="image/png" media="(min-width: 768px)" srcset="/lifetour/assets/gallery-lake@1x-BobnxG3S.png, /lifetour/assets/gallery-lake@2x-CVPXw6g7.png 2x">
-
-              <img src="/lifetour/assets/gallery-lake@1x-BobnxG3S.png" srcset="/lifetour/assets/gallery-lake@2x-CVPXw6g7.png 2x" width="158" height="266" alt="Два парня разводят костёр у озера">
-            </picture>
-          </div>
-          <div class="swiper-scrollbar"></div>
         </div>
       </div>
     </section>
 
     <section class="form" data-test="form">
-      <h2>Остались вопросы?</h2>
-      <p>Заполните форму и наш оператор свяжется <br> с вами для консультации.</p>
-      <form action="https://echo.htmlacademy.ru" method="post" novalidate>
-        <label class="visually-hidden" for="phone">Телефон</label>
-        <input type="number" name="phone" id="phone" placeholder="Телефон" required>
-        <label class="visually-hidden" for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="Email" required>
-        <button class="form__button button" type="submit">Отправить</button>
-      </form>
+      <div class="form__wrapper">
+        <h2>Остались вопросы?</h2>
+        <p>Заполните форму и наш оператор свяжется <br> с вами для консультации.</p>
+        <form action="https://echo.htmlacademy.ru" method="post" novalidate>
+          <label class="visually-hidden" for="phone">Телефон</label>
+          <input type="number" name="phone" id="phone" placeholder="Телефон" required>
+          <label class="visually-hidden" for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Email" required>
+          <button class="form__button button" type="submit">Отправить</button>
+        </form>
+      </div>
     </section>
   </main>
 
-  <section class="footer" data-test="footer" id="footer">
-    <div class="footer__contacts contacts">
-      <h2 class="contacts__title title">Контакты</h2>
-      <span class="contacts__duplicate duplicate" aria-hidden="true">Контакты</span>
-      <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
-      <address>
-        <ul class="contacts__list">
-          <li class="contacts__item contacts__item--phone">
-            <p class="contacts__line-name">Телефон</p>
-            <a class="contacts__link" href="tel:89837454545">+7 983 745-45-45</a>
-          </li>
-          <li class="contacts__item contacts__item--email">
-            <p class="contacts__line-name">Email</p>
-            <a class="contacts__link" href="mailto:info@lifetour.com">info@lifetour.com</a>
-          </li>
-          <li class="contacts__item contacts__item--address">
-            <p class="contacts__line-name">Адрес</p>
-            <p class="contacts__address">г. Москва, пр-т Мира,<br> д. 14, офис 101</p>
-          </li>
-        </ul>
-      </address>
-    </div>
-    <div class="footer__map map">
-      <picture>
-        <source width="600" height="324" type="image/webp" media="(min-width: 1440px)" srcset="/lifetour/assets/map-desktop@1x-B4MySccH.webp 1x, /lifetour/assets/map-desktop@2x-BLtguvDK.webp 2x">
-        <source width="768" height="340" type="image/webp" media="(min-width: 768px)" srcset="/lifetour/assets/map-tablet@1x-D6eU_Ecn.webp 1x, /lifetour/assets/map-tablet@2x-DjpWfVgU.webp 2x">
-        <source width="320" height="343" type="image/webp" srcset="/lifetour/assets/map-mobile@1x-DOeC6Glb.webp 1x, /lifetour/assets/map-mobile@2x-euWJNz9k.webp 2x">
-
-        <source width="600" height="324" type="image/png" media="(min-width: 1440px)" srcset="/lifetour/assets/map-desktop@1x-D4UxqpQX.png, /lifetour/assets/map-desktop@2x-By9Gk-zM.png 2x">
-        <source width="768" height="340" type="image/png" media="(min-width: 768px)" srcset="/lifetour/assets/map-tablet@1x-BiMP7eHJ.png, /lifetour/assets/map-tablet@2x-BoyuubGW.png 2x">
-
-        <img src="/lifetour/assets/map-mobile@1x-MDIT3lTj.png" srcset="/lifetour/assets/map-mobile@2x-CH5n4wrd.png 2x" width="320" height="343" alt="г. Москва, пр-т Мира, д. 14, офис 101">
-      </picture>
-    </div>
-    <div class="footer__lower lower">
-      <div class="lower__header">
-        <a class="lower__logo" href="#">
-          <img src="/lifetour/assets/logo-BQtUVQBt.svg" width="142" height="42" alt="LIFETOUR">
-        </a>
-        <ul class="lower__list">
-          <li class="lower__item">
-            <a class="lower__link" href="#tours">Туры</a>
-          </li>
-          <li class="lower__item">
-            <a class="lower__link" href="#training">Обучение</a>
-          </li>
-          <li class="lower__item">
-            <a class="lower__link" href="#about">О нас</a>
-          </li>
-          <li class="lower__item">
-            <a class="lower__link" href="#reviews">Отзывы</a>
-          </li>
-          <li class="lower__item">
-            <a class="lower__link" href="#gallery">Фотографии</a>
-          </li>
-          <li class="lower__item">
-            <a class="lower__link" href="#footer">Контакты</a>
-          </li>
-        </ul>
-        <span class="lower__phone">
-          <a href="tel:88007253232">8 800 725-32-32</a>
-        </span>
+  <footer class="footer" data-test="footer" id="footer">
+    <div class="footer__wrapper">
+      <div class="footer__contacts contacts">
+        <h2 class="contacts__title title">Контакты</h2>
+        <span class="contacts__duplicate duplicate" aria-hidden="true">Контакты</span>
+        <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
+        <address>
+          <ul class="contacts__list">
+            <li class="contacts__item contacts__item--phone">
+              <p class="contacts__line-name">Телефон</p>
+              <a class="contacts__link" href="tel:89837454545">+7 983 745-45-45</a>
+            </li>
+            <li class="contacts__item contacts__item--email">
+              <p class="contacts__line-name">Email</p>
+              <a class="contacts__link" href="mailto:info@lifetour.com">info@lifetour.com</a>
+            </li>
+            <li class="contacts__item contacts__item--address">
+              <p class="contacts__line-name">Адрес</p>
+              <p class="contacts__address">г. Москва, пр-т Мира,<br> д. 14, офис 101</p>
+            </li>
+          </ul>
+        </address>
       </div>
-      <ul class="lower-social__list">
-        <li class="lower-social__item">
-          <a class="lower-social__link lower-social__link--vk" href="#">
-            <span class="visually-hidden">ВК</span>
+      <div class="footer__map map">
+        <picture>
+          <source width="600" height="324" type="image/webp" media="(min-width: 1440px)" srcset="/lifetour/assets/map-desktop@1x-B4MySccH.webp 1x, /lifetour/assets/map-desktop@2x-BLtguvDK.webp 2x">
+          <source width="768" height="340" type="image/webp" media="(min-width: 768px)" srcset="/lifetour/assets/map-tablet@1x-D6eU_Ecn.webp 1x, /lifetour/assets/map-tablet@2x-DjpWfVgU.webp 2x">
+          <source width="320" height="343" type="image/webp" srcset="/lifetour/assets/map-mobile@1x-DOeC6Glb.webp 1x, /lifetour/assets/map-mobile@2x-euWJNz9k.webp 2x">
+
+          <source width="600" height="324" type="image/png" media="(min-width: 1440px)" srcset="/lifetour/assets/map-desktop@1x-D4UxqpQX.png, /lifetour/assets/map-desktop@2x-By9Gk-zM.png 2x">
+          <source width="768" height="340" type="image/png" media="(min-width: 768px)" srcset="/lifetour/assets/map-tablet@1x-BiMP7eHJ.png, /lifetour/assets/map-tablet@2x-BoyuubGW.png 2x">
+
+          <img src="/lifetour/assets/map-mobile@1x-MDIT3lTj.png" srcset="/lifetour/assets/map-mobile@2x-CH5n4wrd.png 2x" width="320" height="343" alt="г. Москва, пр-т Мира, д. 14, офис 101">
+        </picture>
+      </div>
+      <div class="footer__lower lower">
+        <div class="lower__header">
+          <a class="lower__logo" href="#">
+            <img src="/lifetour/assets/logo-BQtUVQBt.svg" width="142" height="42" alt="LIFETOUR">
           </a>
-        </li>
-        <li class="lower-social__item">
-          <a class="lower-social__link lower-social__link--ok" href="#">
-            <span class="visually-hidden">Одноклассники</span>
-          </a>
-        </li>
-        <li class="lower-social__item">
-          <a class="lower-social__link lower-social__link--reddit" href="#">
-            <span class="visually-hidden">Реддит</span>
-          </a>
-        </li>
-      </ul>
-      <a class="footer__copyright" href="#">
-        <span>Политика конфиденциальности</span>
-      </a>
+          <ul class="lower__list">
+            <li class="lower__item">
+              <a class="lower__link" href="#tours">Туры</a>
+            </li>
+            <li class="lower__item">
+              <a class="lower__link" href="#training">Обучение</a>
+            </li>
+            <li class="lower__item">
+              <a class="lower__link" href="#about">О нас</a>
+            </li>
+            <li class="lower__item">
+              <a class="lower__link" href="#reviews">Отзывы</a>
+            </li>
+            <li class="lower__item">
+              <a class="lower__link" href="#gallery">Фотографии</a>
+            </li>
+            <li class="lower__item">
+              <a class="lower__link" href="#footer">Контакты</a>
+            </li>
+          </ul>
+          <span class="lower__phone">
+            <a href="tel:88007253232">8 800 725-32-32</a>
+          </span>
+        </div>
+        <ul class="lower-social__list">
+          <li class="lower-social__item">
+            <a class="lower-social__link lower-social__link--vk" href="#">
+              <span class="visually-hidden">ВК</span>
+            </a>
+          </li>
+          <li class="lower-social__item">
+            <a class="lower-social__link lower-social__link--ok" href="#">
+              <span class="visually-hidden">Одноклассники</span>
+            </a>
+          </li>
+          <li class="lower-social__item">
+            <a class="lower-social__link lower-social__link--reddit" href="#">
+              <span class="visually-hidden">Реддит</span>
+            </a>
+          </li>
+        </ul>
+        <a class="footer__copyright" href="#">
+          <span>Политика конфиденциальности</span>
+        </a>
+      </div>
     </div>
-  </section>
+  </footer>
 
 </body>
 
