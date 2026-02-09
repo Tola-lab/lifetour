@@ -51,39 +51,41 @@
 
   <main class="main-container">
     <section class="hero" data-test="hero">
-      <h1 class="visually-hidden">Туры по горам и невероятная природа</h1>
-      <div class="swiper swiper--hero">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide swiper-slide--kavkaz">
-            <h2>Захватывающие вершины Кавказа</h2>
-            <p>В сопровождении опытных гидов вы пройдёте через потрясающие
-              ландшафты и совершите восход на вершину горы Чегет.</p>
-            <a class="hero__button button" href="#">Смотреть тур</a>
-            <div class="hero__details">
-              <span class="hero__info hero__info--duration">6 дней/5 ночей</span>
-              <span class="hero__info hero__info--level">Высокая сложность</span>
+      <div class="hero__wrapper">
+        <h1 class="visually-hidden">Туры по горам и невероятная природа</h1>
+        <div class="hero__swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide--kavkaz">
+              <h2>Захватывающие вершины Кавказа</h2>
+              <p>В сопровождении опытных гидов вы пройдёте через потрясающие
+                ландшафты и совершите восход на вершину горы Чегет.</p>
+              <a class="hero__button button" href="#">Смотреть тур</a>
+              <div class="hero__details">
+                <span class="hero__info hero__info--duration">6 дней/5 ночей</span>
+                <span class="hero__info hero__info--level">Высокая сложность</span>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--kamchatka">
+              <h2>Невероятная природа Камчатки</h2>
+              <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
+              <a class="hero__button button" href="#">Смотреть тур</a>
+              <div class="hero__details">
+                <span class="hero__info hero__info--duration">9 дней/10 ночей</span>
+                <span class="hero__info hero__info--level">Средняя сложность</span>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--altai">
+              <h2>Магические пейзажи Алтайского Края</h2>
+              <p>Алтайский трекинг-тур – это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
+              <a class="hero__button button" href="#">Смотреть тур</a>
+              <div class="hero__details">
+                <span class="hero__info hero__info--duration">8 дней/7 ночей</span>
+                <span class="hero__info hero__info--level">Лёгкая сложность</span>
+              </div>
             </div>
           </div>
-          <div class="swiper-slide swiper-slide--kamchatka">
-            <h2>Невероятная природа Камчатки</h2>
-            <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
-            <a class="hero__button button" href="#">Смотреть тур</a>
-            <div class="hero__details">
-              <span class="hero__info hero__info--duration">9 дней/10 ночей</span>
-              <span class="hero__info hero__info--level">Средняя сложность</span>
-            </div>
-          </div>
-          <div class="swiper-slide swiper-slide--altai">
-            <h2>Магические пейзажи Алтайского Края</h2>
-            <p>Алтайский трекинг-тур – это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
-            <a class="hero__button button" href="#">Смотреть тур</a>
-            <div class="hero__details">
-              <span class="hero__info hero__info--duration">8 дней/7 ночей</span>
-              <span class="hero__info hero__info--level">Лёгкая сложность</span>
-            </div>
-          </div>
+          <div class="hero__pagination swiper-pagination"></div>
         </div>
-        <div class="swiper-pagination"></div>
       </div>
     </section>
 
@@ -97,7 +99,7 @@
         <button class="swiper-button swiper-button-next" type="button">
           <span class="visually-hidden">Следующий слайд</span>
         </button>
-        <div class="swiper swiper--tours">
+        <div class="tours__swiper swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide swiper-slide--elbrus">
               <div class="info">
@@ -225,7 +227,7 @@
         <button class="swiper-button swiper-button-next" type="button">
           <span class="visually-hidden">Следующий слайд</span>
         </button>
-        <div class="swiper swiper--training">
+        <div class="training__swiper swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <picture>
@@ -353,7 +355,7 @@
         <button class="swiper-button swiper-button-next" type="button">
           <span class="visually-hidden">Следующий слайд</span>
         </button>
-        <div class="swiper swiper--reviews">
+        <div class="reviews__swiper swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide slide">
               <picture>
@@ -433,11 +435,11 @@
       </div>
     </section>
 
-    <section class="adv" data-test="adv">
-      <div class="adv__wrapper">
-        <h2 class="adv__title title">Преимущества</h2>
-        <span class="adv__duplicate duplicate" aria-hidden="true">Преимущества</span>
-        <div class="swiper swiper--adv">
+    <section class="advantages" data-test="adv">
+      <div class="advantages__wrapper">
+        <h2 class="advantages__title title">Преимущества</h2>
+        <span class="advantages__duplicate duplicate" aria-hidden="true">Преимущества</span>
+        <div class="advantages__swiper swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide swiper-slide--safe">
               <h3>Безопасность</h3>
@@ -484,201 +486,207 @@
     </section>
 
     <section class="gallery" data-test="gallery" id="gallery">
-      <h2 class="gallery__title title">Фотогалерея</h2>
-      <span class="gallery__duplicate duplicate" aria-hidden="true">Фотогалерея</span>
-      <p>Добавляйте фото с хэштегом #лайфтур,<br> а также отмечайте нас на фото.
-        Лучшие фотографии украсят этот раздел нашего сайта.</p>
-      <button class="swiper-button swiper-button-prev" type="button">
-        <span class="visually-hidden">Предыдущий слайд</span>
-      </button>
-      <button class="swiper-button swiper-button-next" type="button">
-        <span class="visually-hidden">Следующий слайд</span>
-      </button>
-      <div class="swiper swiper--gallery">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <picture>
-              <source width="284" height="463" type="image/webp" media="(min-width: 1440px)" srcset="img/gallery-man-desktop@1x.webp 1x, img/gallery-man-desktop@2x.webp 2x">
-              <source width="253" height="418" type="image/webp" media="(min-width: 768px)" srcset="img/gallery-man-tablet@1x.webp 1x, img/gallery-man-tablet@2x.webp 2x">
-              <source width="158" height="266" type="image/webp" srcset="img/gallery-man-mobile@1x.webp 1x, img/gallery-man-mobile@2x.webp 2x">
+      <div class="gallery__wrapper">
+        <h2 class="gallery__title title">Фотогалерея</h2>
+        <span class="gallery__duplicate duplicate" aria-hidden="true">Фотогалерея</span>
+        <p>Добавляйте фото с хэштегом #лайфтур,<br> а также отмечайте нас на фото.
+          Лучшие фотографии украсят этот раздел нашего сайта.</p>
+        <button class="swiper-button swiper-button-prev" type="button">
+          <span class="visually-hidden">Предыдущий слайд</span>
+        </button>
+        <button class="swiper-button swiper-button-next" type="button">
+          <span class="visually-hidden">Следующий слайд</span>
+        </button>
+        <div class="gallery__swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <picture>
+                <source width="284" height="463" type="image/webp" media="(min-width: 1440px)" srcset="img/gallery-man-desktop@1x.webp 1x, img/gallery-man-desktop@2x.webp 2x">
+                <source width="253" height="418" type="image/webp" media="(min-width: 768px)" srcset="img/gallery-man-tablet@1x.webp 1x, img/gallery-man-tablet@2x.webp 2x">
+                <source width="158" height="266" type="image/webp" srcset="img/gallery-man-mobile@1x.webp 1x, img/gallery-man-mobile@2x.webp 2x">
 
-              <source width="284" height="463" type="image/png" media="(min-width: 1440px)" srcset="img/gallery-man-desktop@1x.png, img/gallery-man-desktop@2x.png 2x">
-              <source width="253" height="418" type="image/png" media="(min-width: 768px)" srcset="img/gallery-man-tablet@1x.png, img/gallery-man-tablet@2x.png 2x">
+                <source width="284" height="463" type="image/png" media="(min-width: 1440px)" srcset="img/gallery-man-desktop@1x.png, img/gallery-man-desktop@2x.png 2x">
+                <source width="253" height="418" type="image/png" media="(min-width: 768px)" srcset="img/gallery-man-tablet@1x.png, img/gallery-man-tablet@2x.png 2x">
 
-              <img src="img/gallery-man-mobile@1x.png" srcset="img/gallery-man-mobile@2x.png 2x" width="158" height="266" alt="Парень на фоне гор">
-            </picture>
+                <img src="img/gallery-man-mobile@1x.png" srcset="img/gallery-man-mobile@2x.png 2x" width="158" height="266" alt="Парень на фоне гор">
+              </picture>
+            </div>
+            <div class="swiper-slide swiper-slide--double">
+              <picture>
+                <source width="284" height="232" type="image/webp" media="(min-width: 1440px)" srcset="img/gallery-bonfire-desktop@1x.webp 1x, img/gallery-bonfire-desktop@2x.webp 2x">
+                <source width="252" height="210" type="image/webp" media="(min-width: 768px)" srcset="img/gallery-bonfire-tablet@1x.webp 1x, img/gallery-bonfire-tablet@2x.webp 2x">
+                <source width="157" height="140" type="image/webp" srcset="img/gallery-bonfire-mobile@1x.webp 1x, img/gallery-bonfire-mobile@2x.webp 2x">
+
+                <source width="284" height="232" type="image/png" media="(min-width: 1440px)" srcset="img/gallery-bonfire-desktop@1x.png, img/gallery-bonfire-desktop@2x.png 2x">
+                <source width="252" height="210" type="image/png" media="(min-width: 768px)" srcset="img/gallery-bonfire-tablet@1x.png, img/gallery-bonfire-tablet@2x.png 2x">
+
+                <img src="img/gallery-bonfire-mobile@1x.png" srcset="img/gallery-bonfire-mobile@2x.png 2x" width="157" height="140" alt="Люди сидят у костра">
+              </picture>
+              <picture>
+                <source width="284" height="224" type="image/webp" media="(min-width: 1440px)" srcset="img/gallery-compass-desktop@1x.webp 1x, img/gallery-compass-desktop@2x.webp 2x">
+                <source width="252" height="200" type="image/webp" media="(min-width: 768px)" srcset="img/gallery-compass-tablet@1x.webp 1x, img/gallery-compass-tablet@2x.webp 2x">
+                <source width="157" height="125" type="image/webp" srcset="img/gallery-compass-mobile@1x.webp 1x, img/gallery-compass-mobile@2x.webp 2x">
+
+                <source width="284" height="224" type="image/png" media="(min-width: 1440px)" srcset="img/gallery-compass-desktop@1x.png, img/gallery-compass-desktop@2x.png 2x">
+                <source width="252" height="200" type="image/png" media="(min-width: 768px)" srcset="img/gallery-compass-tablet@1x.png, img/gallery-compass-tablet@2x.png 2x">
+
+                <img src="img/gallery-compass-mobile@1x.png" srcset="img/gallery-compass-mobile@2x.png 2x" width="157" height="125" alt="Компас на фоне гор">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source width="284" height="463" type="image/webp" media="(min-width: 1440px)" srcset="img/gallery-path@1x.webp 1x, img/gallery-path@2x.webp 2x">
+                <source width="251" height="420" type="image/webp" media="(min-width: 768px)" srcset="img/gallery-path@1x.webp 1x, img/gallery-path@2x.webp 2x">
+                <source width="158" height="266" type="image/webp" srcset="img/gallery-path@1x.webp 1x, img/gallery-path@2x.webp 2x">
+
+                <source width="284" height="463" type="image/png" media="(min-width: 1440px)" srcset="img/gallery-path@1x.png, img/gallery-path@2x.png 2x">
+                <source width="251" height="420" type="image/png" media="(min-width: 768px)" srcset="img/gallery-path@1x.png, img/gallery-path@2x.png 2x">
+
+                <img src="img/gallery-path@1x.jpg" srcset="img/gallery-path@2x.jpg 2x" width="158" height="266" alt="Группа в походе">
+              </picture>
+            </div>
+            <div class="swiper-slide swiper-slide--double">
+              <picture>
+                <source width="284" height="232" type="image/webp" media="(min-width: 1440px)" srcset="img/gallery-ice@1x.webp 1x, img/gallery-ice@2x.webp 2x">
+                <source width="252" height="205" type="image/webp" media="(min-width: 768px)" srcset="img/gallery-ice@1x.webp 1x, img/gallery-ice@2x.webp 2x">
+                <source width="157" height="140" type="image/webp" srcset="img/gallery-ice@1x.webp 1x, img/gallery-ice@2x.webp 2x">
+
+                <source width="284" height="232" type="image/png" media="(min-width: 1440px)" srcset="img/gallery-ice@1x.png, img/gallery-ice@2x.png 2x">
+                <source width="252" height="205" type="image/png" media="(min-width: 768px)" srcset="img/gallery-ice@1x.png, img/gallery-ice@2x.png 2x">
+
+                <img src="img/gallery-ice@1x.png" srcset="img/gallery-ice@2x.png 2x" width="157" height="140" alt="Люди идут вдоль ледника">
+              </picture>
+              <picture>
+                <source width="284" height="224" type="image/webp" media="(min-width: 1440px)" srcset="img/gallery-tent@1x.webp 1x, img/gallery-tent@2x.webp 2x">
+                <source width="252" height="206" type="image/webp" media="(min-width: 768px)" srcset="img/gallery-tent@1x.webp 1x, img/gallery-tent@2x.webp 2x">
+                <source width="157" height="125" type="image/webp" srcset="img/gallery-tent@1x.webp 1x, img/gallery-tent@2x.webp 2x">
+
+                <source width="284" height="224" type="image/png" media="(min-width: 1440px)" srcset="img/gallery-tent@1x.png, img/gallery-tent@2x.png 2x">
+                <source width="252" height="206" type="image/png" media="(min-width: 768px)" srcset="img/gallery-tent@1x.png, img/gallery-tent@2x.png 2x">
+
+                <img src="img/gallery-tent@1x.png" srcset="img/gallery-tent@2x.png 2x" width="157" height="125" alt="Палатка под звездным небом">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source width="284" height="463" type="image/webp" media="(min-width: 1440px)" srcset="img/gallery-lake@1x.webp 1x, img/gallery-lake@2x.webp 2x">
+                <source width="253" height="418" type="image/webp" media="(min-width: 768px)" srcset="img/gallery-lake@1x.webp 1x, img/gallery-lake@2x.webp 2x">
+                <source width="158" height="266" type="image/webp" srcset="img/gallery-lake@1x.webp 1x, img/gallery-lake@2x.webp 2x">
+
+                <source width="284" height="463" type="image/png" media="(min-width: 1440px)" srcset="img/gallery-lake@1x.png, img/gallery-lake@2x.png 2x">
+                <source width="253" height="418" type="image/png" media="(min-width: 768px)" srcset="img/gallery-lake@1x.png, img/gallery-lake@2x.png 2x">
+
+                <img src="img/gallery-lake@1x.png" srcset="img/gallery-lake@2x.png 2x" width="158" height="266" alt="Два парня разводят костёр у озера">
+              </picture>
+            </div>
+            <div class="swiper-scrollbar"></div>
           </div>
-          <div class="swiper-slide swiper-slide--double">
-            <picture>
-              <source width="284" height="232" type="image/webp" media="(min-width: 1440px)" srcset="img/gallery-bonfire-desktop@1x.webp 1x, img/gallery-bonfire-desktop@2x.webp 2x">
-              <source width="252" height="210" type="image/webp" media="(min-width: 768px)" srcset="img/gallery-bonfire-tablet@1x.webp 1x, img/gallery-bonfire-tablet@2x.webp 2x">
-              <source width="157" height="140" type="image/webp" srcset="img/gallery-bonfire-mobile@1x.webp 1x, img/gallery-bonfire-mobile@2x.webp 2x">
-
-              <source width="284" height="232" type="image/png" media="(min-width: 1440px)" srcset="img/gallery-bonfire-desktop@1x.png, img/gallery-bonfire-desktop@2x.png 2x">
-              <source width="252" height="210" type="image/png" media="(min-width: 768px)" srcset="img/gallery-bonfire-tablet@1x.png, img/gallery-bonfire-tablet@2x.png 2x">
-
-              <img src="img/gallery-bonfire-mobile@1x.png" srcset="img/gallery-bonfire-mobile@2x.png 2x" width="157" height="140" alt="Люди сидят у костра">
-            </picture>
-            <picture>
-              <source width="284" height="224" type="image/webp" media="(min-width: 1440px)" srcset="img/gallery-compass-desktop@1x.webp 1x, img/gallery-compass-desktop@2x.webp 2x">
-              <source width="252" height="200" type="image/webp" media="(min-width: 768px)" srcset="img/gallery-compass-tablet@1x.webp 1x, img/gallery-compass-tablet@2x.webp 2x">
-              <source width="157" height="125" type="image/webp" srcset="img/gallery-compass-mobile@1x.webp 1x, img/gallery-compass-mobile@2x.webp 2x">
-
-              <source width="284" height="224" type="image/png" media="(min-width: 1440px)" srcset="img/gallery-compass-desktop@1x.png, img/gallery-compass-desktop@2x.png 2x">
-              <source width="252" height="200" type="image/png" media="(min-width: 768px)" srcset="img/gallery-compass-tablet@1x.png, img/gallery-compass-tablet@2x.png 2x">
-
-              <img src="img/gallery-compass-mobile@1x.png" srcset="img/gallery-compass-mobile@2x.png 2x" width="157" height="125" alt="Компас на фоне гор">
-            </picture>
-          </div>
-          <div class="swiper-slide">
-            <picture>
-              <source width="284" height="463" type="image/webp" media="(min-width: 1440px)" srcset="img/gallery-path@1x.webp 1x, img/gallery-path@2x.webp 2x">
-              <source width="251" height="420" type="image/webp" media="(min-width: 768px)" srcset="img/gallery-path@1x.webp 1x, img/gallery-path@2x.webp 2x">
-              <source width="158" height="266" type="image/webp" srcset="img/gallery-path@1x.webp 1x, img/gallery-path@2x.webp 2x">
-
-              <source width="284" height="463" type="image/png" media="(min-width: 1440px)" srcset="img/gallery-path@1x.png, img/gallery-path@2x.png 2x">
-              <source width="251" height="420" type="image/png" media="(min-width: 768px)" srcset="img/gallery-path@1x.png, img/gallery-path@2x.png 2x">
-
-              <img src="img/gallery-path@1x.jpg" srcset="img/gallery-path@2x.jpg 2x" width="158" height="266" alt="Группа в походе">
-            </picture>
-          </div>
-          <div class="swiper-slide swiper-slide--double">
-            <picture>
-              <source width="284" height="232" type="image/webp" media="(min-width: 1440px)" srcset="img/gallery-ice@1x.webp 1x, img/gallery-ice@2x.webp 2x">
-              <source width="252" height="205" type="image/webp" media="(min-width: 768px)" srcset="img/gallery-ice@1x.webp 1x, img/gallery-ice@2x.webp 2x">
-              <source width="157" height="140" type="image/webp" srcset="img/gallery-ice@1x.webp 1x, img/gallery-ice@2x.webp 2x">
-
-              <source width="284" height="232" type="image/png" media="(min-width: 1440px)" srcset="img/gallery-ice@1x.png, img/gallery-ice@2x.png 2x">
-              <source width="252" height="205" type="image/png" media="(min-width: 768px)" srcset="img/gallery-ice@1x.png, img/gallery-ice@2x.png 2x">
-
-              <img src="img/gallery-ice@1x.png" srcset="img/gallery-ice@2x.png 2x" width="157" height="140" alt="Люди идут вдоль ледника">
-            </picture>
-            <picture>
-              <source width="284" height="224" type="image/webp" media="(min-width: 1440px)" srcset="img/gallery-tent@1x.webp 1x, img/gallery-tent@2x.webp 2x">
-              <source width="252" height="206" type="image/webp" media="(min-width: 768px)" srcset="img/gallery-tent@1x.webp 1x, img/gallery-tent@2x.webp 2x">
-              <source width="157" height="125" type="image/webp" srcset="img/gallery-tent@1x.webp 1x, img/gallery-tent@2x.webp 2x">
-
-              <source width="284" height="224" type="image/png" media="(min-width: 1440px)" srcset="img/gallery-tent@1x.png, img/gallery-tent@2x.png 2x">
-              <source width="252" height="206" type="image/png" media="(min-width: 768px)" srcset="img/gallery-tent@1x.png, img/gallery-tent@2x.png 2x">
-
-              <img src="img/gallery-tent@1x.png" srcset="img/gallery-tent@2x.png 2x" width="157" height="125" alt="Палатка под звездным небом">
-            </picture>
-          </div>
-          <div class="swiper-slide">
-            <picture>
-              <source width="284" height="463" type="image/webp" media="(min-width: 1440px)" srcset="img/gallery-lake@1x.webp 1x, img/gallery-lake@2x.webp 2x">
-              <source width="253" height="418" type="image/webp" media="(min-width: 768px)" srcset="img/gallery-lake@1x.webp 1x, img/gallery-lake@2x.webp 2x">
-              <source width="158" height="266" type="image/webp" srcset="img/gallery-lake@1x.webp 1x, img/gallery-lake@2x.webp 2x">
-
-              <source width="284" height="463" type="image/png" media="(min-width: 1440px)" srcset="img/gallery-lake@1x.png, img/gallery-lake@2x.png 2x">
-              <source width="253" height="418" type="image/png" media="(min-width: 768px)" srcset="img/gallery-lake@1x.png, img/gallery-lake@2x.png 2x">
-
-              <img src="img/gallery-lake@1x.png" srcset="img/gallery-lake@2x.png 2x" width="158" height="266" alt="Два парня разводят костёр у озера">
-            </picture>
-          </div>
-          <div class="swiper-scrollbar"></div>
         </div>
       </div>
     </section>
 
     <section class="form" data-test="form">
-      <h2>Остались вопросы?</h2>
-      <p>Заполните форму и наш оператор свяжется <br> с вами для консультации.</p>
-      <form action="https://echo.htmlacademy.ru" method="post" novalidate>
-        <label class="visually-hidden" for="phone">Телефон</label>
-        <input type="number" name="phone" id="phone" placeholder="Телефон" required>
-        <label class="visually-hidden" for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="Email" required>
-        <button class="form__button button" type="submit">Отправить</button>
-      </form>
+      <div class="form__wrapper">
+        <h2>Остались вопросы?</h2>
+        <p>Заполните форму и наш оператор свяжется <br> с вами для консультации.</p>
+        <form action="https://echo.htmlacademy.ru" method="post" novalidate>
+          <label class="visually-hidden" for="phone">Телефон</label>
+          <input type="number" name="phone" id="phone" placeholder="Телефон" required>
+          <label class="visually-hidden" for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Email" required>
+          <button class="form__button button" type="submit">Отправить</button>
+        </form>
+      </div>
     </section>
   </main>
 
-  <section class="footer" data-test="footer" id="footer">
-    <div class="footer__contacts contacts">
-      <h2 class="contacts__title title">Контакты</h2>
-      <span class="contacts__duplicate duplicate" aria-hidden="true">Контакты</span>
-      <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
-      <address>
-        <ul class="contacts__list">
-          <li class="contacts__item contacts__item--phone">
-            <p class="contacts__line-name">Телефон</p>
-            <a class="contacts__link" href="tel:89837454545">+7 983 745-45-45</a>
-          </li>
-          <li class="contacts__item contacts__item--email">
-            <p class="contacts__line-name">Email</p>
-            <a class="contacts__link" href="mailto:info@lifetour.com">info@lifetour.com</a>
-          </li>
-          <li class="contacts__item contacts__item--address">
-            <p class="contacts__line-name">Адрес</p>
-            <p class="contacts__address">г. Москва, пр-т Мира,<br> д. 14, офис 101</p>
-          </li>
-        </ul>
-      </address>
-    </div>
-    <div class="footer__map map">
-      <picture>
-        <source width="600" height="324" type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
-        <source width="768" height="340" type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
-        <source width="320" height="343" type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
-
-        <source width="600" height="324" type="image/png" media="(min-width: 1440px)" srcset="img/map-desktop@1x.png, img/map-desktop@2x.png 2x">
-        <source width="768" height="340" type="image/png" media="(min-width: 768px)" srcset="img/map-tablet@1x.png, img/map-tablet@2x.png 2x">
-
-        <img src="img/map-mobile@1x.png" srcset="img/map-mobile@2x.png 2x" width="320" height="343" alt="г. Москва, пр-т Мира, д. 14, офис 101">
-      </picture>
-    </div>
-    <div class="footer__lower lower">
-      <div class="lower__header">
-        <a class="lower__logo" href="#">
-          <img src="img/logo.svg" width="142" height="42" alt="LIFETOUR">
-        </a>
-        <ul class="lower__list">
-          <li class="lower__item">
-            <a class="lower__link" href="#tours">Туры</a>
-          </li>
-          <li class="lower__item">
-            <a class="lower__link" href="#training">Обучение</a>
-          </li>
-          <li class="lower__item">
-            <a class="lower__link" href="#about">О нас</a>
-          </li>
-          <li class="lower__item">
-            <a class="lower__link" href="#reviews">Отзывы</a>
-          </li>
-          <li class="lower__item">
-            <a class="lower__link" href="#gallery">Фотографии</a>
-          </li>
-          <li class="lower__item">
-            <a class="lower__link" href="#footer">Контакты</a>
-          </li>
-        </ul>
-        <span class="lower__phone">
-          <a href="tel:88007253232">8 800 725-32-32</a>
-        </span>
+  <footer class="footer" data-test="footer" id="footer">
+    <div class="footer__wrapper">
+      <div class="footer__contacts contacts">
+        <h2 class="contacts__title title">Контакты</h2>
+        <span class="contacts__duplicate duplicate" aria-hidden="true">Контакты</span>
+        <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
+        <address>
+          <ul class="contacts__list">
+            <li class="contacts__item contacts__item--phone">
+              <p class="contacts__line-name">Телефон</p>
+              <a class="contacts__link" href="tel:89837454545">+7 983 745-45-45</a>
+            </li>
+            <li class="contacts__item contacts__item--email">
+              <p class="contacts__line-name">Email</p>
+              <a class="contacts__link" href="mailto:info@lifetour.com">info@lifetour.com</a>
+            </li>
+            <li class="contacts__item contacts__item--address">
+              <p class="contacts__line-name">Адрес</p>
+              <p class="contacts__address">г. Москва, пр-т Мира,<br> д. 14, офис 101</p>
+            </li>
+          </ul>
+        </address>
       </div>
-      <ul class="lower-social__list">
-        <li class="lower-social__item">
-          <a class="lower-social__link lower-social__link--vk" href="#">
-            <span class="visually-hidden">ВК</span>
+      <div class="footer__map map">
+        <picture>
+          <source width="600" height="324" type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+          <source width="768" height="340" type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+          <source width="320" height="343" type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+
+          <source width="600" height="324" type="image/png" media="(min-width: 1440px)" srcset="img/map-desktop@1x.png, img/map-desktop@2x.png 2x">
+          <source width="768" height="340" type="image/png" media="(min-width: 768px)" srcset="img/map-tablet@1x.png, img/map-tablet@2x.png 2x">
+
+          <img src="img/map-mobile@1x.png" srcset="img/map-mobile@2x.png 2x" width="320" height="343" alt="г. Москва, пр-т Мира, д. 14, офис 101">
+        </picture>
+      </div>
+      <div class="footer__lower lower">
+        <div class="lower__header">
+          <a class="lower__logo" href="#">
+            <img src="img/logo.svg" width="142" height="42" alt="LIFETOUR">
           </a>
-        </li>
-        <li class="lower-social__item">
-          <a class="lower-social__link lower-social__link--ok" href="#">
-            <span class="visually-hidden">Одноклассники</span>
-          </a>
-        </li>
-        <li class="lower-social__item">
-          <a class="lower-social__link lower-social__link--reddit" href="#">
-            <span class="visually-hidden">Реддит</span>
-          </a>
-        </li>
-      </ul>
-      <a class="footer__copyright" href="#">
-        <span>Политика конфиденциальности</span>
-      </a>
+          <ul class="lower__list">
+            <li class="lower__item">
+              <a class="lower__link" href="#tours">Туры</a>
+            </li>
+            <li class="lower__item">
+              <a class="lower__link" href="#training">Обучение</a>
+            </li>
+            <li class="lower__item">
+              <a class="lower__link" href="#about">О нас</a>
+            </li>
+            <li class="lower__item">
+              <a class="lower__link" href="#reviews">Отзывы</a>
+            </li>
+            <li class="lower__item">
+              <a class="lower__link" href="#gallery">Фотографии</a>
+            </li>
+            <li class="lower__item">
+              <a class="lower__link" href="#footer">Контакты</a>
+            </li>
+          </ul>
+          <span class="lower__phone">
+            <a href="tel:88007253232">8 800 725-32-32</a>
+          </span>
+        </div>
+        <ul class="lower-social__list">
+          <li class="lower-social__item">
+            <a class="lower-social__link lower-social__link--vk" href="#">
+              <span class="visually-hidden">ВК</span>
+            </a>
+          </li>
+          <li class="lower-social__item">
+            <a class="lower-social__link lower-social__link--ok" href="#">
+              <span class="visually-hidden">Одноклассники</span>
+            </a>
+          </li>
+          <li class="lower-social__item">
+            <a class="lower-social__link lower-social__link--reddit" href="#">
+              <span class="visually-hidden">Реддит</span>
+            </a>
+          </li>
+        </ul>
+        <a class="footer__copyright" href="#">
+          <span>Политика конфиденциальности</span>
+        </a>
+      </div>
     </div>
-  </section>
+  </footer>
 
   <script type="module" src="js/main.js"></script>
 </body>

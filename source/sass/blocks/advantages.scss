@@ -1,4 +1,22 @@
-.swiper--adv .swiper-wrapper {
+.advantages__wrapper {
+  position: relative;
+  padding: 20px 15px;
+}
+
+.advantages__title {
+  margin-bottom: 19px;
+  padding-top: 17px;
+  text-align: center;
+}
+
+.advantages__duplicate {
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.advantages__swiper .swiper-wrapper {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -7,7 +25,7 @@
   text-align: center;
 }
 
-.swiper--adv .swiper-slide {
+.advantages__swiper .swiper-slide {
   position: relative;
   padding: 82px 9px 19px;
   width: 290px;
@@ -15,11 +33,11 @@
   border: 1px solid rgb(2, 102, 193, 0.1);
 }
 
-.swiper--adv .swiper-slide--extra {
+.advantages__swiper .swiper-slide--extra {
   display: none;
 }
 
-.swiper--adv .swiper-slide::before {
+.advantages__swiper .swiper-slide::before {
   content: "";
   position: absolute;
   display: block;
@@ -34,27 +52,27 @@
   border: 1px solid $base-background-color;
 }
 
-.swiper--adv .swiper-slide--safe::before {
+.advantages__swiper .swiper-slide--safe::before {
   background-image: url("../../../__spritemap#sprite-level-1-icon-view");
 }
 
-.swiper--adv .swiper-slide--expert::before {
+.advantages__swiper .swiper-slide--expert::before {
   background-image: url("../../../__spritemap#sprite-crown-icon-view");
 }
 
-.swiper--adv .swiper-slide--boots::before {
+.advantages__swiper .swiper-slide--boots::before {
   background-image: url("../../../__spritemap#sprite-boots-blue-view");
 }
 
-.swiper--adv .swiper-slide--path::before {
+.advantages__swiper .swiper-slide--path::before {
   background-image: url("../../../__spritemap#sprite-path-icon-view");
 }
 
-.swiper--adv .swiper-slide--nature::before {
+.advantages__swiper .swiper-slide--nature::before {
   background-image: url("../../../__spritemap#sprite-leaf-icon-view");
 }
 
-.swiper--adv h3 {
+.advantages__swiper h3 {
   margin: 0;
   margin-bottom: 14px;
   padding: 0;
@@ -63,7 +81,7 @@
   line-height: 14px;
 }
 
-.swiper--adv p {
+.advantages__swiper p {
   margin: 0;
   padding: 0;
   font-size: 12px;
@@ -71,7 +89,20 @@
 }
 
 @media (min-width: $tablet-width) {
-  .swiper--adv .swiper-wrapper {
+  .advantages__wrapper {
+    padding: 40px 45px 45px;
+  }
+
+  .advantages__title {
+    margin-bottom: 50px;
+    padding-top: 20px;
+  }
+
+  .advantages .swiper-button {
+    display: none;
+  }
+
+  .advantages__swiper .swiper-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -79,75 +110,100 @@
     gap: 30px;
   }
 
-  .swiper--adv .swiper-slide {
+  .advantages__swiper .swiper-slide {
     padding: 29px 19px;
     width: 324px;
     min-height: 329px;
   }
 
-  .swiper--adv .swiper-slide:not(:last-child) {
+  .advantages__swiper .swiper-slide:not(:last-child) {
     margin-bottom: 0;
   }
 
-  .swiper--adv h3 {
+  .advantages__swiper h3 {
     margin-bottom: 15px;
     padding-top: 73px;
     font-size: 16px;
     line-height: 16px;
   }
 
-  .swiper--adv .swiper-slide::before {
+  .advantages__swiper .swiper-slide::before {
     top: 29px;
     width: 48px;
     height: 48px;
   }
 
-  .swiper--adv p {
+  .advantages__swiper p {
     font-size: 14px;
     line-height: 22px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .swiper--adv .swiper-wrapper {
+  .advantages__wrapper {
+    margin: 0 auto;
+    padding: 100px 0 182px;
+    max-width: 1440px;
+  }
+
+  .advantages__title {
+    margin-bottom: 49px;
+    padding-top: 35px;
+  }
+
+  .advantages__duplicate {
+    top: 106px;
+  }
+
+  .advantages .swiper-button {
+    display: block;
+    top: 599px;
+    right: 722px;
+  }
+
+  .advantages .swiper-button-next {
+    right: 681px;
+  }
+
+  .advantages__swiper .swiper-wrapper {
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-start;
     gap: 0;
   }
 
-  .swiper--adv .swiper-slide {
+  .advantages__swiper .swiper-slide {
     padding: 40px 19px;
     width: 380px;
   }
 
-  .swiper--adv .swiper-slide--extra {
+  .advantages__swiper .swiper-slide--extra {
     display: block;
   }
 
-  .swiper--adv .swiper-slide::before {
+  .advantages__swiper .swiper-slide::before {
     top: 40px;
     width: 54px;
     height: 54px;
   }
 
-  .swiper--adv h3 {
+  .advantages__swiper h3 {
     padding-top: 84px;
     font-size: 18px;
     line-height: 18px;
   }
 
-  .swiper--adv h3 br {
+  .advantages__swiper h3 br {
     display: none;
   }
 
-  .swiper--adv .swiper-button {
+  .advantages__swiper .swiper-button {
     display: block;
     top: 399px;
     right: 725px;
   }
 
-  .swiper--adv .swiper-button-next {
+  .advantages__swiper .swiper-button-next {
     right: 685px;
   }
 }

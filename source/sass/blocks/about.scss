@@ -1,8 +1,9 @@
-.about {
+.about__wrapper {
   position: relative;
+  padding: 420px 15px 20px;
 }
 
-.about::before {
+.about__wrapper::before {
   content: "";
   position: absolute;
   display: block;
@@ -14,11 +15,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.about__wrapper {
-  position: relative;
-  padding: 420px 15px 20px;
 }
 
 .about__wrapper h2 {
@@ -64,15 +60,17 @@
 }
 
 @media (min-width: $tablet-width) {
-  .about::before {
+  .about__wrapper {
+    padding: 40px 48px 43px 450px;
+    min-height: 744px;
+  }
+
+  .about__wrapper::before {
     top: 212px;
     left: 0;
     width: 534px;
     height: 337px;
-  }
-
-  .about__wrapper {
-    padding: 40px 48px 43px 450px;
+    z-index: -1;
   }
 
   .about__wrapper h2 {
@@ -105,14 +103,16 @@
 }
 
 @media (min-width: $desktop-width) {
-  .about::before {
+  .about__wrapper {
+    margin: 0 auto;
+    padding: 111px 120px 180px 660px;
+    max-width: 1440px;
+  }
+
+  .about__wrapper::before {
     top: 101px;
     width: 660px;
     height: 498px;
-  }
-
-  .about__wrapper {
-    padding: 111px 120px 180px 660px;
   }
 
   .about__wrapper h2 {

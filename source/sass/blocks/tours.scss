@@ -21,6 +21,7 @@
 }
 
 .tours__wrapper {
+  position: relative;
   padding: 20px 15px;
 }
 
@@ -28,6 +29,82 @@
   position: absolute;
   top: 23px;
   left: 15px;
+}
+
+.tours__swiper {
+  position: relative;
+  margin: auto;
+  margin-bottom: 25px;
+  color: $base-white-color;
+}
+
+.tours__swiper .swiper-slide--elbrus {
+  background:
+    linear-gradient(0deg, rgb(0, 0, 0, 0.6) 22.3%, rgb(0, 0, 0, 0) 60.32%),
+    url("../../img/elbrus-tour@1x.png");
+
+  @media (resolution >= 2dppx) {
+    background:
+      linear-gradient(0deg, rgb(0, 0, 0, 0.6) 22.3%, rgb(0, 0, 0, 0) 60.32%),
+      url("../../img/elbrus-tour@2x.png");
+  }
+}
+
+.tours__swiper .swiper-slide--beluha {
+  background:
+    linear-gradient(0deg, rgb(0, 0, 0, 0.6) 22.3%, rgb(0, 0, 0, 0) 60.32%),
+    url("../../img/beluha-tour@1x.png");
+
+  @media (resolution >= 2dppx) {
+    background:
+      linear-gradient(0deg, rgb(0, 0, 0, 0.6) 22.3%, rgb(0, 0, 0, 0) 60.32%),
+      url("../../img/beluha-tour@2x.png");
+  }
+}
+
+.tours__swiper .swiper-slide--fisht {
+  background:
+    linear-gradient(0deg, rgb(0, 0, 0, 0.6) 22.3%, rgb(0, 0, 0, 0) 60.32%),
+    url("../../img/fisht-tour@1x.png");
+
+  @media (resolution >= 2dppx) {
+    background:
+      linear-gradient(0deg, rgb(0, 0, 0, 0.6) 22.3%, rgb(0, 0, 0, 0) 60.32%),
+      url("../../img/fisht-tour@2x.png");
+  }
+}
+
+.tours__swiper .swiper-slide--manaraga {
+  background:
+    linear-gradient(0deg, rgb(0, 0, 0, 0.6) 22.3%, rgb(0, 0, 0, 0) 60.32%),
+    url("../../img/manaraga-tour@1x.jpg");
+
+  @media (resolution >= 2dppx) {
+    background:
+      linear-gradient(0deg, rgb(0, 0, 0, 0.6) 22.3%, rgb(0, 0, 0, 0) 60.32%),
+      url("../../img/manaraga-tour@2x.jpg");
+  }
+}
+
+.tours__swiper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px 20px;
+  min-height: 416px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba($base-background-color, 0.8);
+}
+
+.tours__swiper h3 {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: left;
 }
 
 .tours__button {
@@ -120,11 +197,24 @@
 
 @media (min-width: $desktop-width) {
   .tours__wrapper {
+    margin: 0 auto;
     padding: 100px 120px;
+    max-width: 1440px;
   }
 
   .tours__duplicate {
     top: 104px;
     left: 120px;
+  }
+
+  .tours__swiper {
+    margin-bottom: 53px;
+  }
+
+  .tours__swiper h3 {
+    padding-right: 107px;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
   }
 }

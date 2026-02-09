@@ -18,6 +18,33 @@
   left: 15px;
 }
 
+.training__swiper {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.training__swiper img {
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.training__swiper p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.training__swiper .swiper-slide {
+  padding: 15px;
+  min-height: 356px;
+  background-color: $base-white-color;
+  border: 1px solid rgb(2, 102, 193, 0.1);
+}
+
+.training__swiper .swiper-button {
+  display: none;
+}
+
 .training__wrapper > p {
   margin: 0;
   margin-bottom: 28px;
@@ -134,6 +161,7 @@
 
   .training__wrapper {
     padding: 40px 45px;
+    max-width: 1100px;
   }
 
   .training__title {
@@ -143,6 +171,20 @@
   .training__duplicate {
     top: 40px;
     left: 45px;
+  }
+
+  .training__swiper .swiper-button {
+    top: -55px;
+    right: 41px;
+  }
+
+  .training__swiper .swiper-button-next {
+    right: 0;
+  }
+
+  .training__swiper .swiper-slide {
+    width: 212.6px;
+    min-height: 388px;
   }
 
   .training__wrapper > p {
@@ -177,7 +219,9 @@
   }
 
   .training__wrapper {
+    margin: 0 auto;
     padding: 40px 120px 30px;
+    max-width: 1440px;
   }
 
   .training__title {
@@ -187,6 +231,15 @@
   .training__duplicate {
     top: 45px;
     left: 120px;
+  }
+
+  .training__swiper {
+    margin-bottom: 56px;
+  }
+
+  .training__swiper .swiper-slide {
+    width: 285px;
+    min-height: 356px;
   }
 
   .training__wrapper > p {

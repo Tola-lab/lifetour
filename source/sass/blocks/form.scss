@@ -1,12 +1,15 @@
 .form {
-  position: relative;
-  padding: 178px 31px;
   color: $base-white-color;
-  background-color: rgb(45, 56, 63, 0.2);
   text-align: center;
 }
 
-.form::before {
+.form__wrapper {
+  position: relative;
+  padding: 178px 31px;
+  background-color: rgb(45, 56, 63, 0.2);
+}
+
+.form__wrapper::before {
   content: "";
   position: absolute;
   display: block;
@@ -83,14 +86,17 @@
 
 @media (min-width: $tablet-width) {
   .form {
-    padding: 186px 204px 181px;
     text-align: center;
   }
 
-  .form::before {
+  .form__wrapper {
+    padding: 183.5px 204px;
+  }
+
+  .form__wrapper::before {
     top: -51px;
-    left: -391px;
-    width: 100em;
+    left: 0;
+    width: 100%;
     height: 790px;
   }
 
@@ -123,11 +129,13 @@
 }
 
 @media (min-width: $desktop-width) {
-  .form {
+  .form__wrapper {
+    margin: 0 auto;
     padding: 292px 204px 290px;
+    max-width: 1440px;
   }
 
-  .form::before {
+  .form__wrapper::before {
     top: -1px;
     left: -2px;
     width: 103em;

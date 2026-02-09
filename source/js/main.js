@@ -1,5 +1,10 @@
 import { initMobileMenu } from './mobile-menu.js';
-import { initHeroSwiper, initToursSwiper, initTrainingSwiper, initReviewsSwiper, initAdvSwiper, initGallerySwiper } from './swiper.js';
+import {initHeroSwiper} from './hero-swiper.js';
+import {initToursSwiper} from './tours-swiper.js';
+import {initTrainingSwiper} from './training-swiper.js';
+import {initReviewsSwiper} from './reviews-swiper.js';
+import {initAdvantagesSwiper} from './advantages-swiper.js';
+import { initGallerySwiper } from './gallery-swiper.js';
 import { initFormValidation } from './form-validation.js';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -8,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initToursSwiper();
   initTrainingSwiper();
   initReviewsSwiper();
-  initAdvSwiper();
+  initAdvantagesSwiper();
   initGallerySwiper();
   initFormValidation();
 });

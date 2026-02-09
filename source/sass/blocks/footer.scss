@@ -5,7 +5,9 @@
 
 .footer__map {
   position: relative;
+  margin: 0 auto;
   padding-bottom: 20px;
+  width: 320px;
   border-bottom: 1px solid rgb(45, 56, 63, 0.2);
 }
 
@@ -34,6 +36,7 @@
 
   .footer__map {
     padding-bottom: 40px;
+    width: 768px;
   }
 }
 
@@ -42,19 +45,27 @@
     position: relative;
   }
 
+  .footer__wrapper {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+
   .footer__contacts {
+    margin: 0 auto;
     padding: 102px 720px 94px 120px;
     border-bottom: 1px solid rgb(45, 56, 63, 0.2);
+    max-width: 1440px;
   }
 
   .footer__map {
     padding: 0;
+    width: 600px;
     border: none;
   }
 
   .footer__map img {
     position: absolute;
     bottom: 146px;
-    right: 120px;
+    right: -300px;
   }
 }
